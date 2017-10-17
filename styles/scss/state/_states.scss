@@ -1,0 +1,31 @@
+/*==============================================================================
+States
+==============================================================================*/
+
+// Grid Display
+
+.is-displayed-mobile {
+  @include mq(small) {
+    display: block;
+    @at-root (with: media) {
+      .is-hidden-mobile {
+        display: none;
+      }
+    }
+  }
+  @include mq(medium) {
+    display: none;
+  }
+}
+
+// Collapsed
+
+.is-collapsed-mobile {
+  @include mq(small) {
+    visibility: collapse;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0;
+  }
+}

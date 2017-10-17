@@ -1,0 +1,60 @@
+/*==============================================================================
+Icons
+==============================================================================*/
+
+.icons {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 40px;
+  @media (min-width: $brkpoint-lg) {
+    background-color: transparent;
+    margin-top: 300px;
+  }
+}
+
+.social-links__icons {
+  display: inline-block;
+  margin: 20px 10px 0;
+}
+
+.social {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 0;
+  transition: color 0.4s, transform 0.4s cubic-bezier(0, 0, 0.17, 1.56);
+  &:hover {
+    @media (min-width: $brkpoint-lg) {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.socialgithub,
+.socialtwitter,
+.socialsteam {
+  color: $black;
+  margin: 0 auto;
+}
+
+#copyright {
+  padding: 30px 0;
+}
+#copyright-txt {
+  color: $black;
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--medium;
+  font-size: 1em;
+  @media (min-width: $brkpoint-md) {
+    font-size: 1.2em;
+  }
+}

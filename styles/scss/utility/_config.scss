@@ -1,0 +1,84 @@
+/*==============================================================================
+Global Config
+==============================================================================*/
+
+// Font Stacks
+
+$font-url--google        : 'https://fonts.googleapis.com/css?family=Droid+Sans:700|Open+Sans:300,400';
+$font-family--primary    : 'Droid Sans', sans-serif;
+$font-family--secondary  : 'Open Sans', sans-serif;
+
+// Font Weights
+
+$font-weight--thin			 : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+
+// Descriptive Base Colors
+
+$white         : #fff;
+$black         : #1d2026;
+$grey          : #797e83;
+
+$dodger-blue   : #1e90ff;
+$purple				 : #901ef5;
+$guppie-green  : #00ff7f;
+$emerald			 : #00cc66;
+$fun-green		 : #007f3f;
+$carrot-orange : #f5901e;
+$trinidad      : #e8460c;
+
+// Color Usage
+
+$color-primary   : $dodger-blue;
+$color-shadow    : rgba($dodger-blue, .4);
+
+// Color Palette Modifiers
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($grey, 43%),
+		x-light  : lighten($grey, 35%),
+	  light    : lighten($grey, 12%),
+	  base     : $grey,
+	 	dark     : darken($grey, 8%),
+	 	x-dark   : darken($grey, 16%)
+	),
+	black: (
+		light    : lighten($black, 10%),
+		base     : $black,
+		dark     : darken($black, 10%)
+	)
+);
+
+// Text
+
+$base__font-size : 16px;
+$base__line      : 24px;
+$letter-space    : 1px;
+
+// Border Radius
+
+$br--default    : .4em;
+$br--round      : 50%;
+
+// Transitions
+
+$trns-duration  : .3s;
+
+// Path to Assets
+
+$path-images    : "../images";
+
+// Grid
+
+$g-col-width    : 65px;
+$g-gutter-width : 20px;
+$g-col-count    : 12;
+$g-cont-max-w   : 1050px;
+
+// Breakpoints
+
+$brkpoint-sm    : 375px;
+$brkpoint-md    : 768px;
+$brkpoint-lg    : 1200px;

@@ -1,0 +1,296 @@
+/*==============================================================================
+Containers
+==============================================================================*/
+
+#home {
+  background: linear-gradient(0deg, $dodger-blue, $purple);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: gradientAnimation 10s ease infinite;
+  -moz-animation: gradientAnimation 10s ease infinite;
+  -o-animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 10s ease infinite;
+
+  @-webkit-keyframes gradientAnimation {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @-moz-keyframes gradientAnimation {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @-o-keyframes gradientAnimation {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  @keyframes gradientAnimation {
+      0%{background-position:50% 0%}
+      50%{background-position:51% 100%}
+      100%{background-position:50% 0%}
+  }
+  height: 100vh;
+  margin: 80px 0 -160px;
+  @media (orientation: landscape) {
+    height: 100vw;
+  }
+  @media (min-width: $brkpoint-lg) {
+    height: 100vh;
+  }
+  & h1, h2 {
+    color: $white;
+    margin: 0;
+  }
+}
+.flex-grow {
+  flex-grow: 1;
+}
+#txt-col, #imac {
+  display: none;
+}
+
+#services {
+  background-color: $white;
+  @media (min-width: $brkpoint-lg) {
+    height: 100vh;
+    margin-bottom: -160px;
+  }
+  & .container {
+    margin: 0 10px;
+    @media (min-width: $brkpoint-md) {
+      margin: 0 80px;
+    }
+    @media (min-width: $brkpoint-lg) {
+      margin: 0 160px;
+    }
+    & header {
+      @media (min-width: $brkpoint-lg) {
+        width: 550px;
+        margin: 0 auto;
+      }
+    }
+  }
+  & .dot {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+  & .skills {
+    @media (min-width: $brkpoint-lg) {
+      display: inline-block;
+      margin: 0 auto;
+      padding-top: 100px;
+    }
+  }
+  & .skill-wrapper {
+    @media (min-width: $brkpoint-lg) {
+      float: left;
+      width: calc(100% / 3);
+      padding: 0 30px;
+    }
+  }
+  & h1 {
+    padding: 80px 0 20px;
+    @media (min-width: $brkpoint-md) {
+      padding: 160px 0 20px;
+    }
+    @media (min-width: $brkpoint-lg) {
+      padding: 100px 0 20px;
+    }
+  }
+  & h2 {
+    padding: 20px 0;
+  }
+  & h1, h2, p {
+    color: $black;
+  }
+  .dot {
+    text-align: center;
+    font-size: 6em;
+    margin: 0 auto;
+    padding: 0;
+  }
+  & .section-header {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+  & .skill-wrapper {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+}
+
+#about {
+  background-color: $carrot-orange;
+  @media (min-width: $brkpoint-lg) {
+    background: linear-gradient(0deg, $carrot-orange, $trinidad);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+
+    @-webkit-keyframes gradientAnimation {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @-moz-keyframes gradientAnimation {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @-o-keyframes gradientAnimation {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+    @keyframes gradientAnimation {
+        0%{background-position:50% 0%}
+        50%{background-position:51% 100%}
+        100%{background-position:50% 0%}
+    }
+  }
+  @media (min-width: $brkpoint-md) {
+    height: 100vh;
+    margin-bottom: -160px;
+  }
+  & .container {
+    margin: 0 10px;
+    @media (min-width: $brkpoint-md) {
+      margin: 0 80px;
+    }
+  }
+  & .section-header {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+  & h1 {
+    margin: 0;
+    padding: 80px 0 20px;
+  }
+  & p {
+    margin: 0;
+    padding: 20px 0;
+    @media (min-width: $brkpoint-md) {
+      padding: 40px 25px 0 25px;
+    }
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+      width: 550px;
+      margin: 0 auto;
+    }
+  }
+  & h1, p {
+    color: $white;
+  }
+}
+
+#portfolio {
+  background-color: $grey;
+  height: 100vh;
+  margin-bottom: -160px;
+  & .container {
+    margin: 0 10px;
+    @media (min-width: $brkpoint-md) {
+      margin: 0 80px;
+    }
+  }
+  & .section-header {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+  & h1 {
+    margin: 0;
+    padding: 80px 0 20px;
+  }
+  & p {
+    margin: 0;
+    padding: 20px 0;
+    @media (min-width: $brkpoint-lg) {
+      width: 700px;
+      margin: 0 auto;
+    }
+  }
+  & h1, p {
+    color: $white;
+  }
+}
+
+#contact {
+  background-color: $guppie-green;
+  height: 100vh;
+  & .container {
+    margin: 0 10px;
+    @media (min-width: $brkpoint-md) {
+      margin: 0 80px;
+    }
+  }
+  & h1 {
+    margin: 0;
+    padding: 80px 0 20px;
+  }
+  & p:first-child {
+    padding: 0;
+  }
+  & p {
+    margin: 0;
+    padding: 40px 0;
+    @media (min-width: $brkpoint-lg) {
+      width: 550px;
+      margin: 0 auto;
+    }
+  }
+  & h1, p {
+    color: $black;
+  }
+}
+#email {
+  & p {
+  background-color: $emerald;
+  font-size: 1em;
+  text-align: center;
+  border-bottom: 4px solid $fun-green;
+  border-radius: 2em;
+  line-height: 45px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+    @media (min-width: $brkpoint-md) {
+      font-size: 1.2em;
+      border-bottom: 5px solid $fun-green;
+      border-radius: 2em;
+      line-height: 45px;
+      width: 320px;
+      padding: 0;
+    }
+  }
+  & a {
+    color: $black;
+    padding: 10px 15px;
+    @media (min-width: $brkpoint-md) {
+      padding: 10px 20px;
+    }
+  }
+}
+
+#page-1, #page-2, #page-4 {
+  margin-bottom: 80px;
+}
+#page-1 {
+  color: $white;
+}
+#page-3 {
+  background-color: $carrot-orange;
+  height: 80px;
+  @media (min-width: $brkpoint-lg) {
+    background-color: transparent;
+  }
+}

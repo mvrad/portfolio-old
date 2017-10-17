@@ -1,0 +1,56 @@
+/*==============================================================================
+Images
+==============================================================================*/
+
+#imac-img {
+  position: absolute;
+  width: 300px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $brkpoint-sm) {
+    width: 350px;
+  }
+  @media (min-width: $brkpoint-md) {
+    width: 500px;
+  }
+  @media (min-width: $brkpoint-lg) {
+    width: 600px;
+  }
+}
+
+.slider img {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 15px;
+  @media (min-width: $brkpoint-sm) {
+    width: 340px;
+    padding-top: 18px;
+  }
+  @media (min-width: $brkpoint-md) {
+    width: 490px;
+    padding-top: 25px;
+  }
+  @media (min-width: $brkpoint-lg) {
+    width: 590px;
+    padding-top: 30px;
+  }
+}
+
+#profile-img {
+  width: 260px;
+  height: auto;
+  margin: 0 auto;
+  & img {
+    border: 8px solid $white;
+    border-radius: $br--round;
+  }
+  @media (min-width: $brkpoint-md) {
+    width: 360px;
+    & img {
+      border: 12px solid $white;
+    }
+  }
+}

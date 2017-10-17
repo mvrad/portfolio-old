@@ -1,0 +1,36 @@
+/*==============================================================================
+Extends
+==============================================================================*/
+
+// Center Alignment
+
+%center-align {
+	text-align: center;
+}
+
+// Center Elements
+
+%centered {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Panel
+
+%panel-default {
+  padding-top: em(30px);
+  padding-bottom: em(20px);
+}
+%panel-padding {
+  padding-top: em(80px);
+  padding-bottom: em(34px);
+}
+
+// For Pseudo-Elements
+
+%pseudos {
+  display: block;
+  content: '';
+  position: absolute;
+}

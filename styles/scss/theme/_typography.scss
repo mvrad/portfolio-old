@@ -1,0 +1,77 @@
+/*==============================================================================
+Typography
+==============================================================================*/
+
+#logo {
+  font-family: $font-family--primary;
+  font-size: 2em;
+  font-weight: $font-weight--bold;
+  color: $grey;
+  text-align: center;
+  margin: 0 auto;
+  margin: 15px 0 15px 25px;
+  padding: 5px;
+}
+
+#in {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--bold;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 60px;
+  @media (min-width: $brkpoint-sm) {
+    font-size: 2.3em;
+  }
+  @media (min-width: $brkpoint-md) {
+    font-size: 3.2em;
+    padding-top: 160px;
+  }
+  @media (min-width: $brkpoint-lg) {
+    padding-top: 100px;
+  }
+}
+#in-2 {
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--thin;
+  font-size: 1.5em;
+  padding-bottom: 40px;
+  @media (min-width: $brkpoint-sm) {
+    font-size: 1.8em;
+  }
+  @media (min-width: $brkpoint-md) {
+    font-size: 2.4em;
+    padding-bottom: 60px;
+  }
+}
+
+h1 {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--bold;
+  font-size: 2em;
+  margin: 0;
+  @media (min-width: $brkpoint-md) {
+    font-size: 3em;
+  }
+}
+
+h2 {
+  font-family: $font-family--primary;
+  font-weight: $font-weight--bold;
+  font-size: 1.5em;
+  margin: 0;
+  padding-bottom: 10px;
+  @media (min-width: $brkpoint-md) {
+    font-size: 2em;
+  }
+}
+
+p {
+  font-family: $font-family--secondary;
+  font-weight: $font-weight--medium;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+h1, h2, p {
+  text-align: center;
+}
