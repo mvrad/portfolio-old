@@ -18,16 +18,17 @@ Typography
   font-weight: $font-weight--bold;
   font-size: 2em;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 120px;
   @media (min-width: $brkpoint-sm) {
     font-size: 2.3em;
+    padding-top: 140px;
   }
   @media (min-width: $brkpoint-md) {
     font-size: 3.2em;
-    padding-top: 160px;
+    padding-top: 180px;
   }
   @media (min-width: $brkpoint-lg) {
-    padding-top: 100px;
+    padding-top: 160px;
   }
 }
 #in-2 {

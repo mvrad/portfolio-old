@@ -32,7 +32,6 @@ Containers
       100%{background-position:50% 0%}
   }
   height: 100vh;
-  margin: 80px 0 -160px;
   @media (orientation: landscape) {
     height: 100vw;
   }
@@ -55,10 +54,9 @@ Containers
   background-color: $white;
   @media (min-width: $brkpoint-lg) {
     height: 100vh;
-    margin-bottom: -160px;
   }
   & .container {
-    margin: 0 10px;
+    margin: 0 20px;
     @media (min-width: $brkpoint-md) {
       margin: 0 80px;
     }
@@ -78,6 +76,7 @@ Containers
     }
   }
   & .skills {
+    padding-bottom: 80px;
     @media (min-width: $brkpoint-lg) {
       display: inline-block;
       margin: 0 auto;
@@ -158,10 +157,9 @@ Containers
   }
   @media (min-width: $brkpoint-md) {
     height: 100vh;
-    margin-bottom: -160px;
   }
   & .container {
-    margin: 0 10px;
+    margin: 0 20px;
     @media (min-width: $brkpoint-md) {
       margin: 0 80px;
     }
@@ -177,7 +175,7 @@ Containers
   }
   & p {
     margin: 0;
-    padding: 20px 0;
+    padding: 20px 0 80px;
     @media (min-width: $brkpoint-md) {
       padding: 40px 25px 0 25px;
     }
@@ -195,9 +193,8 @@ Containers
 #portfolio {
   background-color: $grey;
   height: 100vh;
-  margin-bottom: -160px;
   & .container {
-    margin: 0 10px;
+    margin: 0 20px;
     @media (min-width: $brkpoint-md) {
       margin: 0 80px;
     }
@@ -228,7 +225,7 @@ Containers
   background-color: $guppie-green;
   height: 100vh;
   & .container {
-    margin: 0 10px;
+    margin: 0 20px;
     @media (min-width: $brkpoint-md) {
       margin: 0 80px;
     }
