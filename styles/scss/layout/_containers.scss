@@ -248,33 +248,43 @@ Containers
   & h1, p {
     color: $black;
   }
-}
-#email {
-  & p {
-  background-color: $emerald;
-  font-size: 1em;
-  text-align: center;
-  border-bottom: 4px solid $fun-green;
-  border-radius: 2em;
-  line-height: 45px;
-  width: 260px;
-  margin: 0 auto;
-  padding: 0;
-    @media (min-width: $brkpoint-md) {
-      font-size: 1.2em;
-      border-bottom: 5px solid $fun-green;
-      border-radius: 2em;
-      line-height: 45px;
-      width: 320px;
-      padding: 0;
-    }
+  #copyright span {
+    font-size: 1em;
   }
-  & a {
-    color: $black;
-    padding: 10px 15px;
-    @media (min-width: $brkpoint-md) {
-      padding: 10px 20px;
-    }
+}
+
+#form-container {
+  & .field-wrapper {
+    text-align: center;
+  }
+  & input[type="text"], textarea {
+    background-color: #c9ffd5;
+  	border: 2px solid #c9ffd5;
+    border-radius: 20px;
+    width: 250px;
+    outline: 0;
+    margin: 5px 0;
+    padding: 10px;
+  }
+  & input:focus, textarea:focus {
+    background-color: #ffffcb;
+  	border-color: #004056;
+  	transition: border-color .4s, background-color .4s;
+  }
+  & input[type="submit"],
+  & input[type="reset"] {
+  	color: #fff;
+  	background: #00a693;
+    width: 123px;
+  	cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+  }
+  & input[type="submit"]:hover,
+  & input[type="reset"]:hover {
+  	background: #004056;
   }
 }
 
