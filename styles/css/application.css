@@ -606,9 +606,6 @@ Containers
       padding: 0 30px; } }
   #services h1 {
     padding: 80px 0 20px; }
-    @media (min-width: 768px) {
-      #services h1 {
-        padding: 160px 0 20px; } }
     @media (min-width: 1200px) {
       #services h1 {
         padding: 100px 0 20px; } }
@@ -618,7 +615,7 @@ Containers
     color: #1d2026; }
   #services .dot {
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
     margin: 0 auto;
     padding: 0; }
   @media (min-width: 1200px) {
@@ -629,7 +626,8 @@ Containers
       display: none; } }
 
 #about {
-  background-color: #f5901e; }
+  background-color: #f5901e;
+  height: auto; }
   @media (min-width: 1200px) {
     #about {
       background: linear-gradient(0deg, #f5901e, #e8460c);
@@ -679,7 +677,7 @@ Containers
       display: none; } }
   #about h1 {
     margin: 0;
-    padding: 80px 0 20px; }
+    padding: 80px 0 40px; }
   #about p {
     margin: 0;
     padding: 20px 0 80px; }
@@ -702,33 +700,63 @@ Containers
     @media (min-width: 768px) {
       #portfolio .container {
         margin: 0 80px; } }
-  @media (min-width: 1200px) {
-    #portfolio .section-header {
-      display: none; } }
   #portfolio h1 {
     margin: 0;
     padding: 80px 0 20px; }
+    @media (min-width: 1200px) {
+      #portfolio h1 {
+        display: none; } }
   #portfolio p {
     margin: 0;
     padding: 20px 0; }
     @media (min-width: 1200px) {
       #portfolio p {
+        display: none;
         width: 700px;
         margin: 0 auto; } }
   #portfolio h1, #portfolio p {
     color: #fff; }
+  @media (min-width: 1200px) {
+    #portfolio #portfolio-filter {
+      display: none; } }
+  #portfolio #portfolio-filter ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0; }
+    #portfolio #portfolio-filter ul li {
+      font-family: "Droid Sans", sans-serif;
+      background-color: #fff;
+      color: #1d2026;
+      text-transform: uppercase;
+      border: solid 1px #fff;
+      border-radius: 20px;
+      margin: 10px auto;
+      padding: 10px 20px; }
+      @media (min-width: 1200px) {
+        #portfolio #portfolio-filter ul li:hover {
+          background-color: #901ef5;
+          color: #fff;
+          border: solid 1px #901ef5;
+          transition: background-color .4s ease; } }
 
 #contact {
   background-color: #00ff7f;
-  height: 100vh; }
+  height: auto; }
   #contact .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
       #contact .container {
+        height: 100vh;
         margin: 0 80px; } }
   #contact h1 {
     margin: 0;
-    padding: 80px 0 20px; }
+    padding-top: 80px; }
   #contact p:first-child {
     padding: 0; }
   #contact p {
@@ -743,31 +771,33 @@ Containers
   #contact #copyright span {
     font-size: 1em; }
 
-#form-container .field-wrapper {
-  text-align: center; }
-#form-container input[type="text"], #form-container textarea {
-  background-color: #c9ffd5;
-  border: 2px solid #c9ffd5;
-  border-radius: 20px;
-  width: 250px;
-  outline: 0;
-  margin: 5px 0;
-  padding: 10px; }
-#form-container input:focus, #form-container textarea:focus {
-  background-color: #ffffcb;
-  border-color: #004056;
-  transition: border-color .4s, background-color .4s; }
-#form-container input[type="submit"], #form-container input[type="reset"] {
-  color: #fff;
-  background: #00a693;
-  width: 123px;
-  cursor: pointer;
-  border-radius: 20px;
-  border: none;
-  outline: 0;
-  padding: 10px; }
-#form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
-  background: #004056; }
+#form-container {
+  background-color: #00ff7f; }
+  #form-container .field-wrapper {
+    text-align: center; }
+  #form-container input[type="text"], #form-container textarea {
+    background-color: #c9ffd5;
+    border: 2px solid #c9ffd5;
+    border-radius: 20px;
+    width: 250px;
+    outline: 0;
+    margin: 5px 0;
+    padding: 10px; }
+  #form-container input:focus, #form-container textarea:focus {
+    background-color: #ffffcb;
+    border-color: #004056;
+    transition: border-color .4s, background-color .4s; }
+  #form-container input[type="submit"], #form-container input[type="reset"] {
+    color: #fff;
+    background: #00a693;
+    width: 123px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px; }
+  #form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
+    background: #004056; }
 
 #page-1, #page-2, #page-4 {
   margin-bottom: 80px; }
@@ -884,22 +914,19 @@ h1 {
   margin: 0; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 3em; } }
+      font-size: 2em; } }
 
 h2 {
   font-family: "Droid Sans", sans-serif;
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.313em;
   margin: 0;
   padding-bottom: 10px; }
-  @media (min-width: 768px) {
-    h2 {
-      font-size: 2em; } }
 
 p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.125em;
   margin: 0; }
 
 h1, h2, p {
@@ -939,13 +966,6 @@ Nav
     margin: 15px 25px 0 15px;
     padding: 0; }
 
-li {
-  font-family: "Droid Sans", sans-serif;
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-  margin: 0 auto; }
-
 #site-nav {
   background-color: #fff;
   position: fixed;
@@ -962,9 +982,10 @@ li {
   box-shadow: 0 6px 16px -3px rgba(0, 0, 0, 0.3); }
 
 .nav a {
+  font-family: "Droid Sans", sans-serif;
+  color: #1d2026;
   display: block;
   width: 100%;
-  color: #1d2026;
   font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
@@ -1012,7 +1033,11 @@ li {
     #nav-lg {
       padding: 0 calc(100% / 4); } }
   #nav-lg li {
-    color: #1d2026; }
+    font-family: "Droid Sans", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto; }
     #nav-lg li:after {
       display: block;
       content: '';

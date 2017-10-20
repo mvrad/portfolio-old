@@ -92,9 +92,6 @@ Containers
   }
   & h1 {
     padding: 80px 0 20px;
-    @media (min-width: $brkpoint-md) {
-      padding: 160px 0 20px;
-    }
     @media (min-width: $brkpoint-lg) {
       padding: 100px 0 20px;
     }
@@ -107,7 +104,7 @@ Containers
   }
   .dot {
     text-align: center;
-    font-size: 6em;
+    font-size: 4em;
     margin: 0 auto;
     padding: 0;
   }
@@ -155,6 +152,7 @@ Containers
         100%{background-position:50% 0%}
     }
   }
+  height: auto;
   @media (min-width: $brkpoint-md) {
     height: 100vh;
   }
@@ -171,7 +169,7 @@ Containers
   }
   & h1 {
     margin: 0;
-    padding: 80px 0 20px;
+    padding: 80px 0 40px;
   }
   & p {
     margin: 0;
@@ -199,19 +197,18 @@ Containers
       margin: 0 80px;
     }
   }
-  & .section-header {
-    @media (min-width: $brkpoint-lg) {
-      display: none;
-    }
-  }
   & h1 {
     margin: 0;
     padding: 80px 0 20px;
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
   }
   & p {
     margin: 0;
     padding: 20px 0;
     @media (min-width: $brkpoint-lg) {
+      display: none;
       width: 700px;
       margin: 0 auto;
     }
@@ -219,20 +216,55 @@ Containers
   & h1, p {
     color: $white;
   }
+  #portfolio-filter {
+    @media (min-width: $brkpoint-lg) {
+      display: none;
+    }
+  }
+  #portfolio-filter ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0;
+    & li {
+      font-family: $font-family--primary;
+      background-color: $white;
+      color: $black;
+      text-transform: uppercase;
+      border: solid 1px $white;
+      border-radius: 20px;
+      margin: 10px auto;
+      padding: 10px 20px;
+      &:hover {
+        @media (min-width: $brkpoint-lg) {
+          background-color: $purple;
+          color: $white;
+          border: solid 1px $purple;
+          transition: background-color .4s ease;
+        }
+      }
+    }
+  }
 }
 
 #contact {
   background-color: $guppie-green;
-  height: 100vh;
+  height: auto;
   & .container {
     margin: 0 20px;
     @media (min-width: $brkpoint-md) {
+      height: 100vh;
       margin: 0 80px;
     }
   }
   & h1 {
     margin: 0;
-    padding: 80px 0 20px;
+    padding-top: 80px;
   }
   & p:first-child {
     padding: 0;
@@ -254,6 +286,7 @@ Containers
 }
 
 #form-container {
+  background-color: $guppie-green;
   & .field-wrapper {
     text-align: center;
   }

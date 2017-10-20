@@ -21,19 +21,17 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'matthew.conrad@outlook.com';//<== update the email address
-$email_subject = "New Form submission";
-$email_body = "You have received a new message from the user $name.\n".
-    "Here is the message:\n $message".
-
-$to = "matthew.conrad@outlook.com";//<== update the email address
-$headers = "From: $email_from \r\n";
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
+$email_from = "mattconrad@gator4128.hostgator.com";
+$email_subject = "New Message";
+$email_body = "From: $name\n\n".
+  "Message: $message\n\n".
+	"Visitor Email: ".
+$headers .= "$visitor_email \n";
+$to = "matthew.conrad@outlook.com";
+//Send the email.
 mail($to,$email_subject,$email_body,$headers);
 //done. redirect to thank-you page.
 header("Location: thank-you.html");
-
 
 // Function to validate against any email injection attempts
 function IsInjected($str)

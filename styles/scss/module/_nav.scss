@@ -39,13 +39,6 @@ Nav
     padding: 0;
   }
 }
-li {
-  font-family: $font-family--primary;
-  font-size: $base__font-size;
-  color: $white;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
 #site-nav {
   background-color: $white;
   position: fixed;
@@ -62,9 +55,10 @@ li {
   box-shadow: 0 6px 16px -3px rgba(0,0,0,0.3);
 }
 .nav a {
+  font-family: $font-family--primary;
+  color: $black;
   display: block;
   width: 100%;
-  color: $black;
   font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
@@ -116,7 +110,11 @@ li {
     padding: 0 calc(100% / 4);
   }
   & li {
-    color: $black;
+    font-family: $font-family--primary;
+    font-size: $base__font-size;
+    color: $white;
+    text-transform: uppercase;
+    margin: 0 auto;
     &:after {
       display: block;
       content: '';

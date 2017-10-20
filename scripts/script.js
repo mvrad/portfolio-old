@@ -45,7 +45,17 @@ $(() => {
   });
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 2300 ) {
-      $( '#portfolio .section-header' ).show( 'puff' );
+      $( '#portfolio h1' ).show( 'fade' );
+    }
+  });
+  $( document ).on( 'scroll', function() {
+    if ( $( document ).scrollTop() > 2500 ) {
+      $( '#portfolio p' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
+    }
+  });
+  $( document ).on( 'scroll', function() {
+    if ( $( document ).scrollTop() > 2700 ) {
+      $( '#portfolio-filter' ).show( 'fade' );
     }
   });
 

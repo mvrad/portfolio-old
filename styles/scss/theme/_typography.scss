@@ -51,25 +51,22 @@ h1 {
   font-size: 2em;
   margin: 0;
   @media (min-width: $brkpoint-md) {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
 h2 {
   font-family: $font-family--primary;
   font-weight: $font-weight--bold;
-  font-size: 1.5em;
+  font-size: 1.313em;
   margin: 0;
   padding-bottom: 10px;
-  @media (min-width: $brkpoint-md) {
-    font-size: 2em;
-  }
 }
 
 p {
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
-  font-size: 1.2em;
+  font-size: 1.125em;
   margin: 0;
 }
 
