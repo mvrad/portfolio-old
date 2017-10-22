@@ -913,8 +913,7 @@ Nav
   z-index: 99;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 98; }
+  width: 100%; }
   @media (min-width: 768px) {
     #main-nav {
       display: none; } }
@@ -945,7 +944,7 @@ Nav
   position: fixed;
   display: none;
   list-style: none;
-  z-index: 2;
+  z-index: 99;
   width: 100%;
   padding-top: 80px; }
 
@@ -993,7 +992,7 @@ Nav
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -1323,7 +1322,7 @@ Portfolio Gallery
   height: 100%; }
 
 .grid figure figcaption > a {
-  z-index: 1000;
+  z-index: 98;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;

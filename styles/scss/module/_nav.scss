@@ -6,13 +6,12 @@ Nav
 
 #main-nav {
   z-index: 99;
-  @media (min-width: $brkpoint-md) {
-    display: none;
-  }
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 98;
+  @media (min-width: $brkpoint-md) {
+    display: none;
+  }
   & .container {
     display: flex;
     background-color: $white;
@@ -44,7 +43,7 @@ Nav
   position: fixed;
   display: none;
   list-style: none;
-  z-index: 2;
+  z-index: 99;
   width: 100%;
   padding-top: 80px;
 }
@@ -96,7 +95,7 @@ Nav
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 99;
   margin: 0 auto;
   padding: 0;
   display: flex;
