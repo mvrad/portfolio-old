@@ -1,7 +1,9 @@
 /*==============================================================================
 Containers
 ==============================================================================*/
-
+/*==============================================================================
+Home
+==============================================================================*/
 #home {
   background: linear-gradient(0deg, $dodger-blue, $purple);
   background-size: 1000% 1000%;
@@ -49,7 +51,9 @@ Containers
 #txt-col, #imac {
   display: none;
 }
-
+/*==============================================================================
+Services
+==============================================================================*/
 #services {
   background-color: $white;
   @media (min-width: $brkpoint-lg) {
@@ -65,7 +69,7 @@ Containers
     }
     & header {
       @media (min-width: $brkpoint-lg) {
-        width: 550px;
+        width: 500px;
         margin: 0 auto;
       }
     }
@@ -119,7 +123,9 @@ Containers
     }
   }
 }
-
+/*==============================================================================
+About
+==============================================================================*/
 #about {
   background-color: $carrot-orange;
   @media (min-width: $brkpoint-lg) {
@@ -174,12 +180,9 @@ Containers
   & p {
     margin: 0;
     padding: 20px 0 80px;
-    @media (min-width: $brkpoint-md) {
-      padding: 40px 25px 0 25px;
-    }
     @media (min-width: $brkpoint-lg) {
       display: none;
-      width: 550px;
+      width: 500px;
       margin: 0 auto;
     }
   }
@@ -187,14 +190,18 @@ Containers
     color: $white;
   }
 }
-
+/*==============================================================================
+Portfolio
+==============================================================================*/
 #portfolio {
   background-color: $grey;
-  height: 100vh;
+  @media (min-width: $brkpoint-lg) {
+    height: 150vh;
+  }
   & .container {
     margin: 0 20px;
     @media (min-width: $brkpoint-md) {
-      margin: 0 80px;
+      margin: 0 10px;
     }
   }
   & h1 {
@@ -209,13 +216,16 @@ Containers
     padding: 20px 0;
     @media (min-width: $brkpoint-lg) {
       display: none;
-      width: 700px;
+      width: 500px;
       margin: 0 auto;
     }
   }
   & h1, p {
     color: $white;
   }
+  /*============================================================================
+  Portfolio Filter
+  ============================================================================*/
   #portfolio-filter {
     @media (min-width: $brkpoint-lg) {
       display: none;
@@ -236,22 +246,27 @@ Containers
       background-color: $white;
       color: $black;
       text-transform: uppercase;
-      border: solid 1px $white;
+      border: none;
       border-radius: 20px;
       margin: 10px auto;
       padding: 10px 20px;
       &:hover {
-        @media (min-width: $brkpoint-lg) {
-          background-color: $purple;
-          color: $white;
-          border: solid 1px $purple;
-          transition: background-color .4s ease;
-        }
+        background-color: $black;
+        color: $white;
+        border: none;
+        transition: background-color .4s ease;
+      }
+      &:active {
+        background-color: $black;
+        color: $white;
+        border: none;
       }
     }
   }
 }
-
+/*==============================================================================
+Contact
+==============================================================================*/
 #contact {
   background-color: $guppie-green;
   height: auto;
@@ -273,7 +288,7 @@ Containers
     margin: 0;
     padding: 40px 0;
     @media (min-width: $brkpoint-lg) {
-      width: 550px;
+      width: 500px;
       margin: 0 auto;
     }
   }
@@ -284,15 +299,17 @@ Containers
     font-size: 1em;
   }
 }
-
+/*==============================================================================
+Email Form
+==============================================================================*/
 #form-container {
   background-color: $guppie-green;
   & .field-wrapper {
     text-align: center;
   }
   & input[type="text"], textarea {
-    background-color: #c9ffd5;
-  	border: 2px solid #c9ffd5;
+    background-color: $snowy-mint;
+  	border: 2px solid $snowy-mint;
     border-radius: 20px;
     width: 250px;
     outline: 0;
@@ -300,16 +317,15 @@ Containers
     padding: 10px;
   }
   & input:focus, textarea:focus {
-    background-color: #ffffcb;
-  	border-color: #004056;
-  	transition: border-color .4s, background-color .4s;
+    background-color: $cream;
+  	border-color: $sherpa-blue;
+  	transition: border-color .4s ease, background-color .4s ease;
   }
   & input[type="submit"],
   & input[type="reset"] {
-  	color: #fff;
-  	background: #00a693;
+  	background: $persian-green;
+  	color: $white;
     width: 123px;
-  	cursor: pointer;
     border-radius: 20px;
     border: none;
     outline: 0;
@@ -317,20 +333,7 @@ Containers
   }
   & input[type="submit"]:hover,
   & input[type="reset"]:hover {
-  	background: #004056;
-  }
-}
-
-#page-1, #page-2, #page-4 {
-  margin-bottom: 80px;
-}
-#page-1 {
-  color: $white;
-}
-#page-3 {
-  background-color: $carrot-orange;
-  height: 80px;
-  @media (min-width: $brkpoint-lg) {
-    background-color: transparent;
+  	background: $sherpa-blue;
+    transition: background-color .4s ease;
   }
 }

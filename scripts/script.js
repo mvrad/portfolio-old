@@ -54,8 +54,13 @@ $(() => {
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2700 ) {
+    if ( $( document ).scrollTop() > 2600 ) {
       $( '#portfolio-filter' ).show( 'fade' );
+    }
+  });
+  $( document ).on( 'scroll', function() {
+    if ( $( document ).scrollTop() > 2700 ) {
+      $( '.grid' ).show( 'fade' );
     }
   });
 
@@ -128,13 +133,14 @@ $(() => {
       fade: true,
       speed: 1000,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2000,
       infinite: true,
       dots: false,
       arrows: false,
     });
   });
 
+  // Email form validator
   var frmvalidator  = new Validator("emailform");
   frmvalidator.addValidation("name","req","Please provide your name");
   frmvalidator.addValidation("email","req","Please provide your email");
