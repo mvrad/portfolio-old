@@ -12,10 +12,12 @@ Icons
 .social-links {
   background-color: $guppie-green;
   text-align: center;
+  background-color: $black;
   margin-top: 40px;
   @media (min-width: $brkpoint-lg) {
-    background-color: $guppie-green;
-    margin-top: 200px;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 40px;
   }
 }
 
@@ -26,8 +28,8 @@ Icons
 
 .social {
   display: inline-block;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -43,15 +45,19 @@ Icons
 .socialgithub,
 .socialtwitter,
 .socialsteam {
-  color: $black;
+  color: $guppie-green;
   margin: 0 auto;
 }
 
 #copyright {
   padding: 10px 0;
+  @media (min-width: $brkpoint-lg) {
+    display: inline-block;
+    padding-left: 40px;
+  }
 }
 #copyright-txt {
-  color: $black;
+  color: $guppie-green;
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
   font-size: 1em;

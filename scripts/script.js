@@ -34,32 +34,32 @@ $(() => {
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 1400 ) {
+    if ( $( document ).scrollTop() > 1100 ) {
       $( '#about .section-header' ).show( 'puff' );
     }
   });
   $( document ).on( 'scroll', function() {
-  	if ( $( document ).scrollTop() > 1600 ) {
+  	if ( $( document ).scrollTop() > 1400 ) {
       $( '#about p' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2300 ) {
+    if ( $( document ).scrollTop() > 1800 ) {
       $( '#portfolio h1' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2500 ) {
+    if ( $( document ).scrollTop() > 1800 ) {
       $( '#portfolio p' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2600 ) {
+    if ( $( document ).scrollTop() > 2000 ) {
       $( '#portfolio-filter' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2700 ) {
+    if ( $( document ).scrollTop() > 2000 ) {
       $( '.grid' ).show( 'fade' );
     }
   });

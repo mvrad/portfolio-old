@@ -57,7 +57,7 @@ Services
 #services {
   background-color: $white;
   @media (min-width: $brkpoint-lg) {
-    height: 100vh;
+    height: 651px;
   }
   & .container {
     margin: 0 20px;
@@ -129,38 +129,7 @@ About
 #about {
   background-color: $carrot-orange;
   @media (min-width: $brkpoint-lg) {
-    background: linear-gradient(0deg, $carrot-orange, $trinidad);
-    background-size: 1000% 1000%;
-
-    -webkit-animation: gradientAnimation 10s ease infinite;
-    -moz-animation: gradientAnimation 10s ease infinite;
-    -o-animation: gradientAnimation 10s ease infinite;
-    animation: gradientAnimation 10s ease infinite;
-
-    @-webkit-keyframes gradientAnimation {
-        0%{background-position:50% 0%}
-        50%{background-position:51% 100%}
-        100%{background-position:50% 0%}
-    }
-    @-moz-keyframes gradientAnimation {
-        0%{background-position:50% 0%}
-        50%{background-position:51% 100%}
-        100%{background-position:50% 0%}
-    }
-    @-o-keyframes gradientAnimation {
-        0%{background-position:50% 0%}
-        50%{background-position:51% 100%}
-        100%{background-position:50% 0%}
-    }
-    @keyframes gradientAnimation {
-        0%{background-position:50% 0%}
-        50%{background-position:51% 100%}
-        100%{background-position:50% 0%}
-    }
-  }
-  height: auto;
-  @media (min-width: $brkpoint-md) {
-    height: 100vh;
+    height: 744px;
   }
   & .container {
     margin: 0 20px;
@@ -273,7 +242,7 @@ Contact
   & .container {
     margin: 0 20px;
     @media (min-width: $brkpoint-md) {
-      height: 100vh;
+      height: auto;
       margin: 0 80px;
     }
   }
@@ -304,6 +273,9 @@ Email Form
 ==============================================================================*/
 #form-container {
   background-color: $guppie-green;
+  @media (min-width: $brkpoint-lg) {
+    margin-bottom: 40px;
+  }
   & .field-wrapper {
     text-align: center;
   }
