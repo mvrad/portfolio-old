@@ -671,7 +671,7 @@ Portfolio
   ============================================================================*/ }
   @media (min-width: 1274px) {
     #portfolio {
-      height: 150vh; } }
+      height: 1259px; } }
   #portfolio .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
@@ -758,10 +758,8 @@ Contact
 Email Form
 ==============================================================================*/
 #form-container {
-  background-color: #00ff7f; }
-  @media (min-width: 1274px) {
-    #form-container {
-      margin-bottom: 40px; } }
+  background-color: #00ff7f;
+  margin-bottom: 80px; }
   #form-container .field-wrapper {
     text-align: center; }
   #form-container input[type="text"], #form-container textarea {

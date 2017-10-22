@@ -165,7 +165,7 @@ Portfolio
 #portfolio {
   background-color: $grey;
   @media (min-width: $brkpoint-lg) {
-    height: 150vh;
+    height: 1259px;
   }
   & .container {
     margin: 0 20px;
@@ -273,9 +273,7 @@ Email Form
 ==============================================================================*/
 #form-container {
   background-color: $guppie-green;
-  @media (min-width: $brkpoint-lg) {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 80px;
   & .field-wrapper {
     text-align: center;
   }
