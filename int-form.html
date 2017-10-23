@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Google Analytics -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-100016596-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <!-- Meta Data -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The Portfolio Site of Matthew Conrad, Web Developer">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google" content="notranslate">
+  <meta name="subject" content="Web design and development">
+  <meta name="rating" content="General">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+  <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
+  <meta http-equiv="Window-Target" content="_value">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=bOLGLKdYq6">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=bOLGLKdYq6">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=bOLGLKdYq6">
+  <link rel="manifest" href="/manifest.json?v=bOLGLKdYq6">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=bOLGLKdYq6" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon.ico?v=bOLGLKdYq6">
+  <meta name="apple-mobile-web-app-title" content="Matthew Conrad | Web Developer">
+  <meta name="application-name" content="Matthew Conrad | Web Developer">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Document Title -->
+  <title>Matthew Conrad | Web Developer</title>
+
+  <!-- Stylesheets -->
+  <link href="styles/css/int-form.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700|Raleway:400,700" rel="stylesheet">
+</head>
+
+<body>
+  <form id="form-container" action="int-form.html" method="post" name="registration">
+
+    <header id="title-container">
+      <h2>Register for</h2>
+      <h1>WebDev Conf 2018</h1>
+    </header>
+
+    <fieldset class="field-wrapper">
+      <legend>Basic Info</legend>
+      <input type="text" id="first_name" name="user_first_name" placeholder="First Name" required>
+      <input type="text" id="last_name" name="user_last_name" placeholder="Last Name" required>
+
+      <input type="email" id="email" name="user_email" placeholder="Email" required><br>
+
+      <legend>Title</legend>
+      <select id="title" name="user_title">
+        <option value="full-stack developer">Front End Developer</option>
+        <option value="front-end developer">Web Developer</option>
+        <option value="designer">Designer</option>
+        <option value="student">Student</option>
+        <option value="other">Other</option>
+      </select><br>
+      <input type="text" id="other-title" name="user_other_title" placeholder="Your Job Role" required>
+    </fieldset>
+
+    <fieldset class="field-wrapper">
+      <legend>T-Shirt Info</legend>
+
+      <div id="shirt-container__flex">
+        <div id="shirt-container__1">
+          <label for="size">Size</label>
+          <select id="size" name="user_size">
+            <option value="" disabled selected hidden></option>
+            <option value="small">S</option>
+            <option value="medium">M</option>
+            <option value="large">L</option>
+            <option value="extra large">XL</option>
+          </select>
+        </div>
+
+        <div id="shirt-container__2">
+          <label for="design">Design</label>
+          <select id="design" name="user_design">
+            <option value="" disabled selected hidden>Select Design</option>
+            <option value="heart wd">Theme - I &#9829; WebDev</option>
+            <option value="wd conf">Theme - WebDev Conf 2018</option>
+          </select>
+        </div>
+
+        <div id="shirt-container__3" class="">
+          <label id="color-label" for="color">Color</label>
+          <select id="color" name="user_color" required>
+            <option value="" disabled selected hidden>Select Color</option>
+            <option class="heart-wd" value="cornflowerblue">Cornflower Blue</option>
+            <option class="heart-wd" value="darkslategrey">Dark Slate Grey</option>
+            <option class="wd-conf" value="gold">Gold</option>
+            <option class="wd-conf" value="tomato">Tomato</option>
+            <option class="wd-conf" value="steelblue">Steel Blue</option>
+            <option class="wd-conf" value="dimgrey">Dim Grey</option>
+          </select>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset class="activities">
+      <legend>Register for Activities</legend>
+      <label><input type="checkbox" name="main"> Main Conference — $200</label>
+      <label id="js-workshop"><input id="js" type="checkbox" name="js-workshop"> JavaScript Workshop — Tuesday 9am-12pm, $100</label>
+      <label id="php-workshop"><input id="php" type="checkbox" name="php-workshop"> PHP Workshop — Tuesday 1pm-4pm, $100</label>
+      <label id="ruby-workshop"><input id="ruby" type="checkbox" name="ruby-workshop"> Ruby Workshop — Tuesday 9am-12pm, $100</label>
+      <label id="java-workshop"><input id="java" type="checkbox" name="java-workshop"> Java Workshop — Tuesday 1pm-4pm, $100</label>
+      <label id="csharp-workshop"><input type="checkbox" name="csharp-workshop"> C# Workshop — Wednesday 9am-12pm, $100</label>
+      <label id="swift-workshop"><input type="checkbox" name="swift-workshop"> Swift Workshop — Wednesday 1pm-4pm, $100</label>
+    </fieldset>
+
+    <fieldset class="field-wrapper last">
+      <legend>Payment Info</legend>
+
+      <label for="payment">I'm going to pay with</label>
+      <select id="payment" name="user_payment" required>
+        <option value="" disabled selected hidden>Select Payment Method</option>
+        <option value="credit card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bitcoin">Bitcoin</option>
+      </select>
+
+      <div id="credit-card" class="credit-card">
+
+        <div class="card-info__flex">
+          <div class="card-info__col">
+            <label for="cc-num">Card Number</label>
+            <input id="cc-num" name="user_cc-num" type=" text" minlength="16" maxlength="16" required>
+          </div>
+
+          <div id="zip-code" class="card-info__col">
+            <label for="zip">Zip Code</label>
+            <input id="zip" name="user_zip" type="text" minlength="5" maxlength="5" required>
+          </div>
+
+          <div>
+            <label for="cvv">CVV</label>
+            <input id="cvv" name="user_cvv" type="text" minlength="3" maxlength="3" required>
+          </div>
+        </div>
+
+        <div class="card-info__flex">
+          <div id="exp-month-col">
+          <label for="exp-month">Exp Date</label>
+          <select id="exp-month" name="user_exp-month">
+            <option value="1">1 - January</option>
+            <option value="2">2 - February</option>
+            <option value="3">3 - March</option>
+            <option value="4">4 - April</option>
+            <option value="5">5 - May</option>
+            <option value="6">6 - June</option>
+            <option value="7">7 - July</option>
+            <option value="8">8 - August</option>
+            <option value="9">9 - September</option>
+            <option value="10">10 - October</option>
+            <option value="11">11 - November</option>
+            <option value="12">12 - December</option>
+          </select>
+          </div>
+
+          <div>
+          <label for="exp-year">Exp Year</label>
+          <select id="exp-year" name="user_exp-year">
+            <option value="2016">2018</option>
+            <option value="2017">2019</option>
+            <option value="2018">2020</option>
+            <option value="2019">2021</option>
+            <option value="2020">2022</option>
+          </select>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
+      </div>
+
+      <div>
+        <p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
+      </div>
+
+      <button type="submit">Register</button>
+
+    </fieldset>
+
+  </form>
+
+  <!-- JavaScript -->
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="scripts/int-form.js"></script>
+</body>
+
+</html>

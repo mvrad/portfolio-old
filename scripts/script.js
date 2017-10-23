@@ -1,10 +1,21 @@
+/*==============================================================================
+Main Script
+==============================================================================*/
+
 $(() => {
+
+  /*============================================================================
+  Landing page opening titles and effects
+  ============================================================================*/
 
   // Titles and iMac slider effects
   $( '#txt-col' ).show( { effect: 'slide', direction: 'left', duration: 1000 } );
   $( '#imac' ).show( { effect: 'slide', direction: 'down', duration: 1000 } );
 
-  // Adds .small class to nav bar on scroll
+  /*============================================================================
+  Adds .small class to nav bar on scroll
+  ============================================================================*/
+
   // For mobile / tablet
   $( document ).on( 'scroll', function() {
   	if ( $( document ).scrollTop() > 100 ) {
@@ -22,7 +33,10 @@ $(() => {
   	}
   });
 
-  // More titles and effects
+  /*============================================================================
+  Title effects
+  ============================================================================*/
+
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 400 ) {
       $( '#services .section-header' ).show( 'puff' );
@@ -64,7 +78,10 @@ $(() => {
     }
   });
 
-  // Animates hamburger menu 'for mobile'
+  /*============================================================================
+  Hamburger menu animation
+  ============================================================================*/
+
   const $hamburger = $( '.hamburger' );
   $( '.hamburger' ).on( 'click', (e) => {
     $( '.hamburger' ).toggleClass( 'is-active' );
@@ -75,7 +92,10 @@ $(() => {
     $( '#site-nav' ).hide();
   });
 
-  // Nav bar links
+  /*============================================================================
+  Nav bar links
+  ============================================================================*/
+
   $( '#first' ).on( 'click', (e) => {
     $( 'html, body' ).animate({
       scrollTop: ( $( '#services' ).first().offset().top )
@@ -127,7 +147,10 @@ $(() => {
     $( '.hamburger' ).toggleClass( 'is-active' );
   });
 
-  // Photo slider
+  /*============================================================================
+  Photo slider
+  ============================================================================*/
+
   $( document ).ready(() => {
     $( '.slider' ).slick({
       fade: true,
@@ -140,7 +163,10 @@ $(() => {
     });
   });
 
-  // Email form validator
+  /*============================================================================
+  Email form validator
+  ============================================================================*/
+
   var frmvalidator  = new Validator("emailform");
   frmvalidator.addValidation("name","req","Please provide your name");
   frmvalidator.addValidation("email","req","Please provide your email");
