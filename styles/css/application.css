@@ -664,6 +664,7 @@ Email Sent
     height: auto;
     margin: 0 auto; }
   #sent h1 {
+    color: #fff;
     font-size: 1.4em;
     margin-top: 40px; }
     @media (min-width: 768px) {
@@ -672,7 +673,7 @@ Email Sent
   #sent h2 {
     font-size: 1.4em;
     text-decoration: underline; }
-  #sent h1, #sent h2 {
+  #sent a {
     color: #fff; }
 
 /*==============================================================================
