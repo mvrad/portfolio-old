@@ -36,7 +36,7 @@ Icons
   padding: 0;
   transition: color 0.4s, transform 0.4s cubic-bezier(0, 0, 0.17, 1.56);
   &:hover {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       transform: scale(1.5);
     }
   }
@@ -51,7 +51,7 @@ Icons
 
 #copyright {
   padding: 10px 0;
-  @media (min-width: $brkpoint-lg) {
+  @include mq(large) {
     display: inline-block;
     padding-left: 40px;
   }
@@ -61,7 +61,7 @@ Icons
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
   font-size: 1em;
-  @media (min-width: $brkpoint-md) {
+  @include mq(medium) {
     font-size: 1.2em;
   }
 }

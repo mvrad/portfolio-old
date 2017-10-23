@@ -439,83 +439,18 @@ Mixins
 /*==============================================================================
 Extends
 ==============================================================================*/
-.panel--centered, .panel--padded--centered {
-  text-align: center; }
+#portfolio #portfolio-filter ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
-.grid {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.panel, .panel--centered {
-  padding-top: 1.875em;
-  padding-bottom: 1.25em; }
-
-.panel--padded, .panel--padded--centered {
-  padding-top: 5em;
-  padding-bottom: 2.125em; }
-
-/*==============================================================================
-Grid
-==============================================================================*/
-@media (min-width: 769px) {
-  .grid__col--1 {
-    width: 6.5%; }
-
-  .grid__col--2 {
-    width: 15%; }
-
-  .grid__col--3 {
-    width: 23.5%; }
-
-  .grid__col--4 {
-    width: 32%; }
-
-  .grid__col--5 {
-    width: 40.5%; }
-
-  .grid__col--6 {
-    width: 49%; }
-
-  .grid__col--7 {
-    width: 57.5%; }
-
-  .grid__col--8 {
-    width: 66%; }
-
-  .grid__col--9 {
-    width: 74.5%; }
-
-  .grid__col--10 {
-    width: 83%; }
-
-  .grid__col--11 {
-    width: 91.5%; }
-
-  .grid__col--12 {
-    width: 100%; } }
-@media (min-width: 1px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 0.75em;
-    margin-bottom: 0.75em; } }
-@media (min-width: 769px) {
-  [class^="grid__col--"] {
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 2%; }
-    [class^="grid__col--"]:last-of-type {
-      float: right; } }
-
-.grid {
-  width: 90%; }
-  [class*="grid__col--"] > .grid {
-    width: 100%; }
-  @media (min-width: 1100px) {
-    .grid {
-      max-width: 1050px; } }
+.grid:after {
+  display: table;
+  clear: both;
+  content: ""; }
 
 /*==============================================================================
 Containers
@@ -524,41 +459,8 @@ Containers
 Home
 ==============================================================================*/
 #home {
-  background: linear-gradient(0deg, #1e90ff, #901ef5);
-  background-size: 1000% 1000%;
-  -webkit-animation: gradientAnimation 10s ease infinite;
-  -moz-animation: gradientAnimation 10s ease infinite;
-  -o-animation: gradientAnimation 10s ease infinite;
-  animation: gradientAnimation 10s ease infinite;
-  height: 100vh; }
-@-webkit-keyframes gradientAnimation {
-  0% {
-    background-position: 50% 0%; }
-  50% {
-    background-position: 51% 100%; }
-  100% {
-    background-position: 50% 0%; } }
-@-moz-keyframes gradientAnimation {
-  0% {
-    background-position: 50% 0%; }
-  50% {
-    background-position: 51% 100%; }
-  100% {
-    background-position: 50% 0%; } }
-@-o-keyframes gradientAnimation {
-  0% {
-    background-position: 50% 0%; }
-  50% {
-    background-position: 51% 100%; }
-  100% {
-    background-position: 50% 0%; } }
-@keyframes gradientAnimation {
-  0% {
-    background-position: 50% 0%; }
-  50% {
-    background-position: 51% 100%; }
-  100% {
-    background-position: 50% 0%; } }
+  height: 100vh;
+  background: linear-gradient(0deg, #1e90ff, #901ef5); }
   @media (orientation: landscape) {
     #home {
       height: 100vw; } }
@@ -635,7 +537,7 @@ Services
 About
 ==============================================================================*/
 #about {
-  background-color: #f5901e; }
+  background: linear-gradient(0deg, #f5901e, #e8460c); }
   @media (min-width: 1274px) {
     #about {
       height: 744px; } }
@@ -697,12 +599,6 @@ Portfolio
     #portfolio #portfolio-filter {
       display: none; } }
   #portfolio #portfolio-filter ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
     max-width: 400px;
     margin: 40px auto;
     padding: 0; }
@@ -755,36 +651,29 @@ Contact
     font-size: 1em; }
 
 /*==============================================================================
-Email Form
+Email Sent
 ==============================================================================*/
-#form-container {
-  background-color: #00ff7f;
-  margin-bottom: 80px; }
-  #form-container .field-wrapper {
-    text-align: center; }
-  #form-container input[type="text"], #form-container textarea {
-    background-color: #c9ffd5;
-    border: 2px solid #c9ffd5;
-    border-radius: 20px;
-    width: 250px;
-    outline: 0;
-    margin: 5px 0;
-    padding: 10px; }
-  #form-container input:focus, #form-container textarea:focus {
-    background-color: #ffffcb;
-    border-color: #004056;
-    transition: border-color .4s ease, background-color .4s ease; }
-  #form-container input[type="submit"], #form-container input[type="reset"] {
-    background: #00a693;
-    color: #fff;
-    width: 123px;
-    border-radius: 20px;
-    border: none;
-    outline: 0;
-    padding: 10px; }
-  #form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
-    background: #004056;
-    transition: background-color .4s ease; }
+#sent-bg {
+  background: linear-gradient(0deg, #1e90ff, #901ef5); }
+
+#sent {
+  padding-top: 140px; }
+  #sent img {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin: 0 auto; }
+  #sent h1 {
+    font-size: 1.4em;
+    margin-top: 40px; }
+    @media (min-width: 768px) {
+      #sent h1 {
+        font-size: 2.4em; } }
+  #sent h2 {
+    font-size: 1.4em;
+    text-decoration: underline; }
+  #sent h1, #sent h2 {
+    color: #fff; }
 
 /*==============================================================================
 Images
@@ -1278,11 +1167,6 @@ Portfolio Gallery
     .grid {
       display: none; } }
 
-.grid:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 .grid figure {
   display: inline-block;
   position: relative;
@@ -1322,7 +1206,7 @@ Portfolio Gallery
   height: 100%; }
 
 .grid figure figcaption > a {
-  z-index: 98;
+  z-index: 97;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
@@ -1393,23 +1277,35 @@ figure.effect-goliath:hover h5 {
   transform: translate3d(0, 0, 0); }
 
 /*==============================================================================
-States
+Email Form
 ==============================================================================*/
-@media (min-width: 375px) and (max-width: 768px) {
-  .is-displayed-mobile {
-    display: block; }
-    .is-hidden-mobile {
-      display: none; } }
-@media (min-width: 769px) {
-  .is-displayed-mobile {
-    display: none; } }
-
-@media (min-width: 375px) and (max-width: 768px) {
-  .is-collapsed-mobile {
-    visibility: collapse;
-    padding: 0;
-    height: 0;
-    margin: 0;
-    line-height: 0; } }
+#form-container {
+  background-color: #00ff7f;
+  margin-bottom: 80px; }
+  #form-container .field-wrapper {
+    text-align: center; }
+  #form-container input[type="text"], #form-container textarea {
+    background-color: #c9ffd5;
+    border: 2px solid #c9ffd5;
+    border-radius: 20px;
+    width: 250px;
+    outline: 0;
+    margin: 5px 0;
+    padding: 10px; }
+  #form-container input:focus, #form-container textarea:focus {
+    background-color: #ffffcb;
+    border-color: #004056;
+    transition: border-color .4s ease, background-color .4s ease; }
+  #form-container input[type="submit"], #form-container input[type="reset"] {
+    background: #00a693;
+    color: #fff;
+    width: 123px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px; }
+  #form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
+    background: #004056;
+    transition: background-color .4s ease; }
 
 /*# sourceMappingURL=application.css.map */

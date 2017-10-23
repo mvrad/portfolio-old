@@ -1,0 +1,31 @@
+/*==============================================================================
+Email Sent
+==============================================================================*/
+
+#sent-bg {
+  background: linear-gradient(0deg, $dodger-blue, $purple);
+}
+
+#sent {
+  padding-top: 140px;
+  & img {
+    display: block;
+    width: 96px;
+    height: auto;
+    margin: 0 auto;
+  }
+  & h1 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    @include mq(medium) {
+      font-size: 2.4em;
+    }
+  }
+  & h2 {
+    font-size: 1.4em;
+    text-decoration: underline;
+  }
+  & h1, h2 {
+    color: $white;
+  }
+}

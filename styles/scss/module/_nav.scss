@@ -9,7 +9,7 @@ Nav
   position: fixed;
   top: 0;
   width: 100%;
-  @media (min-width: $brkpoint-md) {
+  @include mq(medium) {
     display: none;
   }
   & .container {
@@ -24,7 +24,7 @@ Nav
   }
   & .logo-sm {
     border: solid 2px $grey;
-    @media (min-width: $brkpoint-md) {
+    @include mq(medium) {
       display: none;
     }
   }
@@ -77,7 +77,7 @@ Nav
   padding: 5px;
 }
 #hamburger {
-  @media (min-width: $brkpoint-md) {
+  @include mq(medium) {
     display: none;
   }
 }
@@ -86,7 +86,7 @@ Nav
 
 #main-nav-lg {
   display: none;
-  @media (min-width: $brkpoint-md) {
+  @include mq(medium) {
     display: block;
   }
 }
@@ -98,14 +98,16 @@ Nav
   z-index: 99;
   margin: 0 auto;
   padding: 0;
+
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+
   padding: 0 100px;
-  @media (min-width: $brkpoint-lg) {
+  @include mq(large) {
     padding: 0 calc(100% / 4);
   }
   & li {
@@ -145,7 +147,7 @@ Nav
     max-height: 60px;
     box-shadow: 0 6px 16px -3px rgba(0,0,0,0.4);
     padding: 0 100px;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       padding: 0 calc(100% / 3.5);
     }
     & a {

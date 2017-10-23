@@ -1,0 +1,40 @@
+/*==============================================================================
+Email Form
+==============================================================================*/
+
+#form-container {
+  background-color: $guppie-green;
+  margin-bottom: 80px;
+  & .field-wrapper {
+    text-align: center;
+  }
+  & input[type="text"], textarea {
+    background-color: $snowy-mint;
+  	border: 2px solid $snowy-mint;
+    border-radius: 20px;
+    width: 250px;
+    outline: 0;
+    margin: 5px 0;
+    padding: 10px;
+  }
+  & input:focus, textarea:focus {
+    background-color: $cream;
+  	border-color: $sherpa-blue;
+  	transition: border-color .4s ease, background-color .4s ease;
+  }
+  & input[type="submit"],
+  & input[type="reset"] {
+  	background: $persian-green;
+  	color: $white;
+    width: 123px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+  }
+  & input[type="submit"]:hover,
+  & input[type="reset"]:hover {
+  	background: $sherpa-blue;
+    transition: background-color .4s ease;
+  }
+}

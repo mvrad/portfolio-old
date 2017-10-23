@@ -2,35 +2,32 @@
 Extends
 ==============================================================================*/
 
-// Center Alignment
+// Flexbox 'wrap'
 
-%center-align {
-	text-align: center;
+%flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-// Center Elements
+// Flexbox 'nowrap'
 
-%centered {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
+%flex-nowrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-// Panel
+// Clearfix
 
-%panel-default {
-  padding-top: em(30px);
-  padding-bottom: em(20px);
-}
-%panel-padding {
-  padding-top: em(80px);
-  padding-bottom: em(34px);
-}
-
-// For Pseudo-Elements
-
-%pseudos {
-  display: block;
-  content: '';
-  position: absolute;
+%clearfix {
+  display: table;
+  clear: both;
+  content: "";
 }

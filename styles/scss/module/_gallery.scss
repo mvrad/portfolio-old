@@ -9,14 +9,12 @@ Portfolio Gallery
 	text-align: center;
 	margin: 0 auto;
 	padding: 0 0 80px;
-	@media (min-width: $brkpoint-lg) {
+	@include mq(large) {
     display: none;
   }
 }
 .grid:after {
-  content: "";
-  display: table;
-  clear: both;
+	@extend %clearfix;
 }
 
 .grid figure {
@@ -63,7 +61,7 @@ Portfolio Gallery
 }
 
 .grid figure figcaption > a {
-	z-index: 98;
+	z-index: 97;
 	text-indent: 200%;
 	white-space: nowrap;
 	font-size: 0;

@@ -1,45 +1,20 @@
 /*==============================================================================
 Containers
 ==============================================================================*/
+
 /*==============================================================================
 Home
 ==============================================================================*/
+
 #home {
-  background: linear-gradient(0deg, $dodger-blue, $purple);
-  background-size: 1000% 1000%;
-
-  -webkit-animation: gradientAnimation 10s ease infinite;
-  -moz-animation: gradientAnimation 10s ease infinite;
-  -o-animation: gradientAnimation 10s ease infinite;
-  animation: gradientAnimation 10s ease infinite;
-
-  @-webkit-keyframes gradientAnimation {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-  }
-  @-moz-keyframes gradientAnimation {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-  }
-  @-o-keyframes gradientAnimation {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-  }
-  @keyframes gradientAnimation {
-      0%{background-position:50% 0%}
-      50%{background-position:51% 100%}
-      100%{background-position:50% 0%}
-  }
   height: 100vh;
   @media (orientation: landscape) {
     height: 100vw;
   }
-  @media (min-width: $brkpoint-lg) {
+  @include mq(large) {
     height: 100vh;
   }
+  background: linear-gradient(0deg, $dodger-blue, $purple);
   & h1, h2 {
     color: $white;
     margin: 0;
@@ -51,44 +26,46 @@ Home
 #txt-col, #imac {
   display: none;
 }
+
 /*==============================================================================
 Services
 ==============================================================================*/
+
 #services {
   background-color: $white;
-  @media (min-width: $brkpoint-lg) {
+  @include mq(large) {
     height: 651px;
   }
   & .container {
     margin: 0 20px;
-    @media (min-width: $brkpoint-md) {
+    @include mq(medium) {
       margin: 0 80px;
     }
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       margin: 0 160px;
     }
     & header {
-      @media (min-width: $brkpoint-lg) {
+      @include mq(large) {
         width: 500px;
         margin: 0 auto;
       }
     }
   }
   & .dot {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
   & .skills {
     padding-bottom: 80px;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: inline-block;
       margin: 0 auto;
       padding-top: 100px;
     }
   }
   & .skill-wrapper {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       float: left;
       width: calc(100% / 3);
       padding: 0 30px;
@@ -96,7 +73,7 @@ Services
   }
   & h1 {
     padding: 80px 0 20px;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       padding: 100px 0 20px;
     }
   }
@@ -113,32 +90,34 @@ Services
     padding: 0;
   }
   & .section-header {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
   & .skill-wrapper {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
 }
+
 /*==============================================================================
 About
 ==============================================================================*/
+
 #about {
-  background-color: $carrot-orange;
-  @media (min-width: $brkpoint-lg) {
+  background: linear-gradient(0deg, $carrot-orange, $trinidad);
+  @include mq(large) {
     height: 744px;
   }
   & .container {
     margin: 0 20px;
-    @media (min-width: $brkpoint-md) {
+    @include mq(medium) {
       margin: 0 80px;
     }
   }
   & .section-header {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
@@ -149,7 +128,7 @@ About
   & p {
     margin: 0;
     padding: 40px 0 80px;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
       width: 500px;
       margin: 0 auto;
@@ -159,31 +138,33 @@ About
     color: $white;
   }
 }
+
 /*==============================================================================
 Portfolio
 ==============================================================================*/
+
 #portfolio {
   background-color: $grey;
-  @media (min-width: $brkpoint-lg) {
+  @include mq(large) {
     height: 1259px;
   }
   & .container {
     margin: 0 20px;
-    @media (min-width: $brkpoint-md) {
+    @include mq(medium) {
       margin: 0 10px;
     }
   }
   & h1 {
     margin: 0;
     padding: 80px 0 20px;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
   & p {
     margin: 0;
     padding: 20px 0;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
       width: 500px;
       margin: 0 auto;
@@ -196,17 +177,12 @@ Portfolio
   Portfolio Filter
   ============================================================================*/
   #portfolio-filter {
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       display: none;
     }
   }
   #portfolio-filter ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    @extend %flex-wrap;
     max-width: 400px;
     margin: 40px auto;
     padding: 0;
@@ -233,15 +209,17 @@ Portfolio
     }
   }
 }
+
 /*==============================================================================
 Contact
 ==============================================================================*/
+
 #contact {
   background-color: $guppie-green;
   height: auto;
   & .container {
     margin: 0 20px;
-    @media (min-width: $brkpoint-md) {
+    @include mq(medium) {
       height: auto;
       margin: 0 80px;
     }
@@ -256,7 +234,7 @@ Contact
   & p {
     margin: 0;
     padding: 40px 0;
-    @media (min-width: $brkpoint-lg) {
+    @include mq(large) {
       width: 500px;
       margin: 0 auto;
     }
@@ -266,44 +244,5 @@ Contact
   }
   #copyright span {
     font-size: 1em;
-  }
-}
-/*==============================================================================
-Email Form
-==============================================================================*/
-#form-container {
-  background-color: $guppie-green;
-  margin-bottom: 80px;
-  & .field-wrapper {
-    text-align: center;
-  }
-  & input[type="text"], textarea {
-    background-color: $snowy-mint;
-  	border: 2px solid $snowy-mint;
-    border-radius: 20px;
-    width: 250px;
-    outline: 0;
-    margin: 5px 0;
-    padding: 10px;
-  }
-  & input:focus, textarea:focus {
-    background-color: $cream;
-  	border-color: $sherpa-blue;
-  	transition: border-color .4s ease, background-color .4s ease;
-  }
-  & input[type="submit"],
-  & input[type="reset"] {
-  	background: $persian-green;
-  	color: $white;
-    width: 123px;
-    border-radius: 20px;
-    border: none;
-    outline: 0;
-    padding: 10px;
-  }
-  & input[type="submit"]:hover,
-  & input[type="reset"]:hover {
-  	background: $sherpa-blue;
-    transition: background-color .4s ease;
   }
 }

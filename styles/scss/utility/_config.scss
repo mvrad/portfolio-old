@@ -2,19 +2,19 @@
 Global Config
 ==============================================================================*/
 
-// Font Stacks
+// Font stacks
 
 $font-url--google        : 'https://fonts.googleapis.com/css?family=Nunito+Sans:800|Open+Sans:300,400';
 $font-family--primary    : 'Nunito Sans', sans-serif;
 $font-family--secondary  : 'Open Sans', sans-serif;
 
-// Font Weights
+// Font weights
 
 $font-weight--thin       : 300;
 $font-weight--medium     : 400;
 $font-weight--bold       : 800;
 
-// Descriptive Base Colors
+// Descriptive base colors
 
 $white         : #fff;
 $black         : #1d2026;
@@ -32,12 +32,12 @@ $trinidad      : #e8460c;
 $carrot-orange : #f5901e;
 $cream         : #ffffcb;
 
-// Color Usage
+// Color usage
 
 $color-primary   : $dodger-blue;
 $color-shadow    : rgba($dodger-blue, .4);
 
-// Color Palette Modifiers
+// Color palette modifiers
 
 $color-palettes: (
 	grey: (
@@ -61,7 +61,7 @@ $base__font-size : 16px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
-// Border Radius
+// Border radius
 
 $br--default    : .4em;
 $br--round      : 50%;
@@ -70,7 +70,7 @@ $br--round      : 50%;
 
 $trns-duration  : .3s;
 
-// Path to Assets
+// Path to assets
 
 $path-images    : "../images";
 
