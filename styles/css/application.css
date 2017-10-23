@@ -9,7 +9,7 @@ Normalize
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans:700|Open+Sans:300,400");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:800|Open+Sans:300,400");
 html {
   line-height: 1.15;
   /* 1 */
@@ -707,7 +707,7 @@ Portfolio
     margin: 40px auto;
     padding: 0; }
     #portfolio #portfolio-filter ul li {
-      font-family: "Droid Sans", sans-serif;
+      font-family: "Nunito Sans", sans-serif;
       background-color: #fff;
       color: #1d2026;
       text-transform: uppercase;
@@ -841,9 +841,9 @@ Images
 Typography
 ==============================================================================*/
 #logo {
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: 800;
   color: #797e83;
   text-align: center;
   margin: 0 auto;
@@ -851,8 +851,8 @@ Typography
   padding: 5px; }
 
 #in {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
   font-size: 2em;
   text-align: center;
   padding-top: 120px; }
@@ -882,8 +882,8 @@ Typography
       padding-bottom: 60px; } }
 
 h1 {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
   font-size: 2em;
   margin: 0; }
   @media (min-width: 768px) {
@@ -891,8 +891,8 @@ h1 {
       font-size: 2.4em; } }
 
 h2 {
-  font-family: "Droid Sans", sans-serif;
-  font-weight: 700;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 800;
   font-size: 1.5em;
   margin: 0;
   padding-bottom: 10px; }
@@ -944,7 +944,7 @@ Nav
   position: fixed;
   display: none;
   list-style: none;
-  z-index: 99;
+  z-index: 98;
   width: 100%;
   padding-top: 80px; }
 
@@ -955,7 +955,7 @@ Nav
   box-shadow: 0 6px 16px -3px rgba(0, 0, 0, 0.3); }
 
 .nav a {
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #1d2026;
   display: block;
   width: 100%;
@@ -967,7 +967,7 @@ Nav
   padding: 20px 0; }
 
 #logo-lg {
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   color: #fff;
   font-size: 2.5em;
@@ -1006,7 +1006,7 @@ Nav
     #nav-lg {
       padding: 0 calc(100% / 4); } }
   #nav-lg li {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     color: #fff;
     text-transform: uppercase;
@@ -1023,7 +1023,7 @@ Nav
     #nav-lg li:nth-child(3):after {
       border-bottom: none; }
   #nav-lg a {
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     color: #fff;
     font-size: 1em;
@@ -1330,7 +1330,7 @@ Portfolio Gallery
 
 .grid figure h4 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   text-shadow: 3px 3px #1d2026;
   word-spacing: -0.15em; }
 
