@@ -39,7 +39,7 @@ $(() => {
 
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 400 ) {
-      $( '#services .section-header' ).show( 'puff' );
+      $( '#services .section-header').show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
@@ -49,31 +49,22 @@ $(() => {
   });
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 1100 ) {
-      $( '#about .section-header' ).show( 'puff' );
+      $( '#about .section-header' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
   	if ( $( document ).scrollTop() > 1400 ) {
-      $( '#about p' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
+      $( '#about p' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 1800 ) {
-      $( '#portfolio h1' ).show( 'fade' );
-    }
-  });
-  $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 1800 ) {
-      $( '#portfolio p' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
+      $( '#portfolio .section-header' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 2000 ) {
       $( '#portfolio-filter' ).show( 'fade' );
-    }
-  });
-  $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2000 ) {
       $( '.grid' ).show( 'fade' );
     }
   });

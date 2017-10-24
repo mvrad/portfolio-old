@@ -154,18 +154,19 @@ Portfolio
       margin: 0 10px;
     }
   }
-  & h1 {
-    margin: 0;
-    padding: 80px 0 20px;
+  & .section-header {
     @include mq(large) {
       display: none;
     }
+  }
+  & h1 {
+    margin: 0;
+    padding: 80px 0 20px;
   }
   & p {
     margin: 0;
     padding: 20px 0;
     @include mq(large) {
-      display: none;
       width: 500px;
       margin: 0 auto;
     }

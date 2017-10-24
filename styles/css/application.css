@@ -579,18 +579,17 @@ Portfolio
     @media (min-width: 768px) {
       #portfolio .container {
         margin: 0 10px; } }
+  @media (min-width: 1274px) {
+    #portfolio .section-header {
+      display: none; } }
   #portfolio h1 {
     margin: 0;
     padding: 80px 0 20px; }
-    @media (min-width: 1274px) {
-      #portfolio h1 {
-        display: none; } }
   #portfolio p {
     margin: 0;
     padding: 20px 0; }
     @media (min-width: 1274px) {
       #portfolio p {
-        display: none;
         width: 500px;
         margin: 0 auto; } }
   #portfolio h1, #portfolio p {
