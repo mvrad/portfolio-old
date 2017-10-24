@@ -108,7 +108,7 @@ About
 #about {
   background: linear-gradient(0deg, $carrot-orange, $trinidad);
   @include mq(large) {
-    height: 744px;
+    height: 804px;
   }
   & .container {
     margin: 0 20px;
