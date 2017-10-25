@@ -40,17 +40,14 @@ Images
 }
 
 #profile-img {
-  width: 260px;
+  display: block;
+  width: 340px;
   height: auto;
   margin: 0 auto;
-  & img {
-    border: 8px solid $white;
-    border-radius: $br--round;
-  }
+  border: 8px solid $white;
+  border-radius: $br--round;
   @include mq(medium) {
     width: 360px;
-    & img {
-      border: 12px solid $white;
-    }
+    border: 12px solid $white;
   }
 }
