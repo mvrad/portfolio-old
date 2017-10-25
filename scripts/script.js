@@ -65,7 +65,7 @@ $(() => {
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 2000 ) {
       $( '#portfolio-filter' ).show( 'fade' );
-      $( '.grid' ).show( 'fade' );
+      $( '.grid' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });
 
