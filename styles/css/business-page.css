@@ -427,100 +427,190 @@ audio, canvas, iframe, img, svg, video {
   vertical-align: middle; }
 
 /*==============================================================================
-Parallax Page
+Business Page
 ==============================================================================*/
-.section-container {
-  width: 600px;
-  margin: 450px auto;
-  border: solid 2px #d3d3d3; }
+/*==============================================================================
+Color Palette / Fonts
+==============================================================================*/
+/*
 
-.section-container-last {
-  width: 600px;
-  margin: 450px auto 390px auto;
-  border: solid 2px #d3d3d3; }
+font-family: 'Saira Extra Condensed', sans-serif;
+font-family: 'Montserrat', sans-serif;
 
-h1 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  margin: 0 75px;
-  padding: 30px 0;
-  border-bottom: solid 2px #d3d3d3; }
+*/
+/*==============================================================================
+Containers
+==============================================================================*/
+#about {
+  margin-top: -477px; }
 
-h2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  font-weight: 400;
-  margin: 0;
-  padding: 30px 0; }
-  h2 a {
-    color: #a9a9a9; }
+.image-container-1 {
+  background-image: url(https://www.dropbox.com/s/oqlxaa7o1cb2ess/sashimi.jpg?dl=1); }
 
-h3 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin: 0;
-  padding: 60px 0; }
+.image-container-2 {
+  background-image: url(https://www.dropbox.com/s/f1xedjcwa3ym0bf/sushi.jpg?dl=1); }
 
-h1, h2, h3 {
-  text-align: center; }
+.image-container-3 {
+  background-image: url(https://www.dropbox.com/s/6w50vlnth7s1sbr/reservations.jpg?dl=1); }
 
-footer {
-  background-color: #000; }
-
-footer a {
-  color: #fff; }
-
-.lake-container {
-  background-attachment: fixed; }
-
-.lake-container {
+.image-container-1, .image-container-2, .image-container-3 {
+  background-attachment: fixed;
   position: relative;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden; }
 
-.lake-container {
-  background-image: url(https://www.dropbox.com/s/5conzszf4idk7bp/lake.jpg?dl=1); }
+.section-header {
+  background-color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0; }
 
-.bg-eagle {
-  height: 200px;
+.section-header-clear {
+  background-color: transparent;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0; }
+
+.col-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 40px 0; }
+
+.col-wrapper img {
+  width: auto;
+  height: 1200px; }
+
+/*==============================================================================
+Main Nav
+==============================================================================*/
+#main-nav ul {
+  background-color: transparent;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 40px;
+  padding: 0; }
+
+#main-nav li {
+  padding: 0 40px; }
+
+#main-nav li:nth-child(-n+2) {
+  padding: 0; }
+
+#space {
+  flex-grow: 1; }
+
+/*==============================================================================
+Images
+==============================================================================*/
+#main-logo {
+  width: 200px;
+  height: auto; }
+
+/*==============================================================================
+Typography
+==============================================================================*/
+h1 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0; }
+
+h2 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 2.3em;
+  text-align: center;
+  margin: 0; }
+
+h2 span {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 300; }
+
+#main-nav li {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1.1em;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  margin: 0;
+  padding-bottom: 20px; }
+
+h4 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: center; }
+
+p {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-align: center; }
+
+p a {
+  font-weight: 700;
+  color: #000; }
+
+/*==============================================================================
+Fullscreen Video
+==============================================================================*/
+.homepage-hero-module {
+  border-right: none;
+  border-left: none;
+  position: relative; }
+
+.no-video .video-container video,
+.touch .video-container video {
+  display: none; }
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+  display: block !important; }
+
+.video-container {
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+  height: 50%;
   width: 100%;
-  background-image: url(../../images/eagle.png);
-  background-position: center;
-  background-size: 200px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 5%; }
+  overflow: hidden;
+  background: #000; }
 
-.logo {
-  height: 650px;
+.video-container .poster img {
   width: 100%;
-  background-image: url(../../images/logo.svg);
-  background-position: center;
-  background-repeat: no-repeat; }
+  bottom: 0;
+  position: absolute; }
 
-.fg-salmon {
-  width: 400px;
-  height: 100%;
-  background-image: url(../../images/salmon.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.video-container .filter {
+  z-index: 1;
   position: absolute;
-  top: 25%;
-  left: 40%; }
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%; }
 
-.fg-splash {
-  height: 110%;
-  width: 100%;
-  background-image: url(../../images/splash.png);
-  background-position: center;
-  background-size: 600px;
-  background-repeat: no-repeat;
+.video-container video {
   position: absolute;
-  top: 55%;
-  margin-top: -50px; }
+  z-index: 0;
+  bottom: 0; }
 
-/*# sourceMappingURL=parallax-page.css.map */
+.video-container video.fillWidth {
+  width: 100%; }
+
+/*# sourceMappingURL=business-page.css.map */

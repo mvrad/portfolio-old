@@ -61,7 +61,7 @@ footer a {
 .lake-container {
   background-attachment: fixed;
 }
-.lake-container, .coast, .rainforest, .camping {
+.lake-container {
   position: relative;
   height: 100vh;
   background-size: cover;
@@ -70,15 +70,6 @@ footer a {
 }
 .lake-container {
   background-image: url(https://www.dropbox.com/s/5conzszf4idk7bp/lake.jpg?dl=1);
-}
-.coast {
-  background-image: url(https://www.dropbox.com/s/uwj3hgt8u3ljpqh/coast.jpg?dl=1);
-}
-.rainforest {
-  background-image: url(https://www.dropbox.com/s/nfau4v8hqna737g/rainforest.jpg?dl=1);
-}
-.camping {
-  background-image: url(https://www.dropbox.com/s/9nt7586p2q7fddr/camping.jpg?dl=1);
 }
 
 .bg-eagle {
