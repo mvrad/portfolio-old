@@ -182,35 +182,39 @@ Portfolio
   Portfolio Filter
   ============================================================================*/
   #portfolio-filter {
+    @extend %flex-wrap;
+    max-width: 500px;
+    text-align: center;
+    margin: 40px auto 60px;
+    padding: 0;
     @include mq(large) {
       display: none;
     }
-  }
-  #portfolio-filter ul {
-    @extend %flex-wrap;
-    max-width: 400px;
-    margin: 40px auto;
-    padding: 0;
-    & li {
+    & a {
       font-family: $font-family--primary;
       background-color: $white;
       color: $black;
       text-transform: uppercase;
       border: none;
       border-radius: 20px;
-      margin: 10px auto;
+      margin: 10px 5px;
       padding: 10px 20px;
-      &:hover {
-        background-color: $black;
-        color: $white;
-        border: none;
-        transition: background-color .4s ease;
-      }
-      &:active {
-        background-color: $black;
-        color: $white;
-        border: none;
-      }
+    }
+    & a:hover {
+      background-color: $black;
+      color: $white;
+      border: none;
+      transition: background-color .4s ease;
+    }
+    & a:active {
+      background-color: $black;
+      color: $white;
+      border: none;
+    }
+    & a.active {
+      background-color: $black;
+      color: $white;
+      border: none;
     }
   }
 }

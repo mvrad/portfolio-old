@@ -60,11 +60,11 @@ $(() => {
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 1800 ) {
       $( '#portfolio .section-header' ).show( 'fade' );
+      $( '#portfolio-filter' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
     if ( $( document ).scrollTop() > 2000 ) {
-      $( '#portfolio-filter' ).show( 'fade' );
       $( '.grid' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });
@@ -152,6 +152,51 @@ $(() => {
       dots: false,
       arrows: false,
     });
+  });
+
+  /*============================================================================
+  Sequential Filtering Component
+  ============================================================================*/
+
+  (function($) {
+
+    'use strict';
+
+    var $filters = $('.filter [data-filter]'),
+      $boxes = $('.boxes [data-category]');
+
+    $filters.on('click', function(e) {
+      e.preventDefault();
+      var $this = $(this);
+
+      $filters.removeClass('active');
+      $this.addClass('active');
+
+      var $filterType = $this.attr('data-filter');
+
+      if ($filterType == 'all') {
+        $boxes.fadeOut().finish().promise().done(() => {
+            $boxes.each(function(i) {
+              $(this).delay((i++) * 500).fadeIn();
+            });
+          });
+      } else {
+        $boxes.fadeOut().finish().promise().done(() => {
+            $boxes.filter('[data-category = "' + $filterType + '"]').each(function(i) {
+              $(this).delay((i++) * 500).fadeIn();
+            });
+          });
+      }
+    });
+
+  })(jQuery);
+
+  /*============================================================================
+  Keep Filter Links Highlighted
+  ============================================================================*/
+
+  jQuery('a').click(() => {
+    jQuery(this).toggleClass('active');
   });
 
   /*============================================================================

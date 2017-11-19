@@ -72,13 +72,7 @@ Portfolio Gallery
 .grid figure h4 {
 	font-family: $font-family--secondary;
 	font-weight: $font-weight--bold;
-  text-shadow: 3px 3px $black;
-	word-spacing: -0.15em;
-}
-
-.grid figure h4 span {
-	font-family: $font-family--secondary;
-	font-weight: $font-weight--thin;
+  text-shadow: 3px 3px 6px $black;
 }
 
 .grid figure h4,
@@ -93,9 +87,9 @@ Portfolio Gallery
 	font-size: 68.5%;
 }
 
-/*-----------------*/
-/***** Goliath *****/
-/*-----------------*/
+/*==============================================================================
+Hover Effect
+==============================================================================*/
 
 figure.effect-goliath {
 	background: $black;

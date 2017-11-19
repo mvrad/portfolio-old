@@ -1,0 +1,223 @@
+/*==============================================================================
+Registration Form
+==============================================================================*/
+
+/*==============================================================================
+Headings
+==============================================================================*/
+
+body, button {
+  font-family: "Open Sans", serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.25em;
+  text-align: center;
+  color: #fff;
+  background-color: #ea5f4a;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 30px;
+}
+
+h2, legend {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: .94em;
+}
+
+h2, h3, #copyright {
+  text-align: center;
+}
+
+/*==============================================================================
+Wrappers
+==============================================================================*/
+
+.container {
+  margin: 0 5%;
+}
+
+.sub-container {
+  padding: 15px 0;
+  border-bottom: solid 4px #000;
+}
+
+.contact-container {
+  margin: 3px 0;
+  padding-top: 25px;
+  border-top: solid 2px #000;
+}
+
+.newsletter-container {
+  margin: 3px 0;
+  padding-top: 25px;
+  border-top: solid 2px #000;
+}
+
+/*==============================================================================
+Form Styles
+==============================================================================*/
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+label {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+legend {
+  margin-bottom: 25px;
+}
+
+legend, label {
+  display: inline-block;
+}
+
+.contact label {
+  margin-bottom: 10px;
+}
+
+.newsletter label {
+  margin-bottom: 20px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline-block;
+}
+
+input::placeholder {
+  font-weight: 300;
+  text-align: right;
+  color: #8a97a0;
+}
+
+/*==============================================================================
+Input Styles
+==============================================================================*/
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  border: none;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  background-color: #fdfeb8;
+}
+
+#copyright {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1em;
+  margin-bottom: 25px;
+}
+
+/*==============================================================================
+Submit Button
+==============================================================================*/
+
+button {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #ea5f4a;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #9d3222;
+}
+
+/*==============================================================================
+Breakpoints
+==============================================================================*/
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .contact-container legend {
+    margin-bottom: 25px;
+  }
+
+  .contact > div {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .contact > div > label, input, select {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .contact > div > input, select {
+    width: 350px;
+    float: right;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    margin: 0;
+  }
+
+  input#zip {
+    width: 50%;
+    float: left;
+    margin-left: 9%;
+  }
+
+  .contact > div {
+    margin-bottom: 30px;
+  }
+
+  textarea {
+    margin-bottom: 30px;
+  }
+
+}
