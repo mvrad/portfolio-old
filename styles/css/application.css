@@ -715,19 +715,19 @@ Images
 .slider img {
   width: 300px;
   margin: 0 auto;
-  padding-top: 15px; }
+  padding-top: 10px; }
   @media (min-width: 375px) {
     .slider img {
       width: 340px;
-      padding-top: 18px; } }
+      padding-top: 12px; } }
   @media (min-width: 768px) {
     .slider img {
       width: 490px;
-      padding-top: 25px; } }
+      padding-top: 18px; } }
   @media (min-width: 1545px) {
     .slider img {
       width: 590px;
-      padding-top: 30px; } }
+      padding-top: 22px; } }
 
 #profile-img {
   display: block;

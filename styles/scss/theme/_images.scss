@@ -24,18 +24,18 @@ Images
 .slider img {
   width: 300px;
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 10px;
   @include mq(small) {
     width: 340px;
-    padding-top: 18px;
+    padding-top: 12px;
   }
   @include mq(medium) {
     width: 490px;
-    padding-top: 25px;
+    padding-top: 18px;
   }
   @include mq(large) {
     width: 590px;
-    padding-top: 30px;
+    padding-top: 22px;
   }
 }
 
