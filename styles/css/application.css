@@ -484,7 +484,7 @@ Services
   background-color: #fff; }
   @media (min-width: 1545px) {
     #services {
-      height: 651px; } }
+      height: 100vh; } }
   #services .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
@@ -520,7 +520,7 @@ Services
     padding: 80px 0 20px; }
     @media (min-width: 1545px) {
       #services h1 {
-        padding: 100px 0 20px; } }
+        padding: 220px 0 20px; } }
   #services h2 {
     padding: 20px 0; }
   #services h1, #services h2, #services p {
@@ -544,7 +544,7 @@ About
   background: linear-gradient(0deg, #f5901e, #e8460c); }
   @media (min-width: 1545px) {
     #about {
-      height: 804px; } }
+      height: 100vh; } }
   #about .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
@@ -556,6 +556,9 @@ About
   #about h1 {
     margin: 0;
     padding: 80px 0 40px; }
+    @media (min-width: 1545px) {
+      #about h1 {
+        padding: 160px 0 40px; } }
   #about p {
     margin: 0 auto;
     padding: 40px 0 80px; }
@@ -640,13 +643,16 @@ Contact
 ==============================================================================*/
 #contact {
   background-color: #00ff7f;
-  height: auto; }
+  padding-bottom: 1px; }
   #contact .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
       #contact .container {
         height: auto;
         margin: 0 80px; } }
+    @media (min-width: 1545px) {
+      #contact .container {
+        height: calc(100vh - 120px); } }
   #contact .section-header {
     margin: 0 auto; }
     @media (min-width: 768px) {
@@ -655,6 +661,9 @@ Contact
   #contact h1 {
     margin: 0;
     padding-top: 80px; }
+    @media (min-width: 1545px) {
+      #contact h1 {
+        padding-top: 160px; } }
   #contact p:first-child {
     padding: 0; }
   #contact p {
@@ -973,8 +982,7 @@ Icons
 .social-links {
   background-color: #00ff7f;
   text-align: center;
-  background-color: #1d2026;
-  margin-top: 40px; }
+  background-color: #1d2026; }
   @media (min-width: 1545px) {
     .social-links {
       text-align: center;
@@ -1297,7 +1305,7 @@ Email Form
 ==============================================================================*/
 #form-container {
   background-color: #00ff7f;
-  margin-bottom: 80px; }
+  margin-bottom: 39px; }
   #form-container .field-wrapper {
     text-align: center; }
   #form-container input[type="text"], #form-container textarea {

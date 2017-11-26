@@ -142,16 +142,23 @@ $(() => {
   Photo slider
   ============================================================================*/
 
-  $( document ).ready(() => {
-    $( '.slider' ).slick({
-      fade: true,
-      speed: 1000,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      infinite: true,
-      dots: false,
-      arrows: false,
-    });
+  $( '.slider' ).slick({
+    // Disable defaults
+    accessibility: false,
+    draggable: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    swipe: false,
+    touchMove: false,
+    waitForAnimate: false,
+    dots: false,
+    arrows: false,
+
+    autoplay: true,
+    autoplaySpeed: 2000,
+    fade: true,
+    speed: 1000,
+    infinite: true,
   });
 
   /*============================================================================
