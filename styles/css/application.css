@@ -568,6 +568,10 @@ About
   #about h1, #about p {
     color: #fff; }
 
+#treehouse {
+  color: #fff;
+  text-decoration: underline; }
+
 /*==============================================================================
 Portfolio
 ==============================================================================*/
@@ -578,7 +582,7 @@ Portfolio
   ============================================================================*/ }
   @media (min-width: 1545px) {
     #portfolio {
-      height: 1259px; } }
+      height: 1579.590px; } }
   #portfolio .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
