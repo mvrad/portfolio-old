@@ -43,28 +43,28 @@ $(() => {
     }
   });
   $( document ).on( 'scroll', function() {
-  	if ( $( document ).scrollTop() > 600 ) {
+  	if ( $( document ).scrollTop() > 700 ) {
       $( '.skill-wrapper' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 1100 ) {
+    if ( $( document ).scrollTop() > 1400 ) {
       $( '#about .section-header' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
-  	if ( $( document ).scrollTop() > 1400 ) {
+  	if ( $( document ).scrollTop() > 1700 ) {
       $( '#about p' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 1800 ) {
+    if ( $( document ).scrollTop() > 2200 ) {
       $( '#portfolio .section-header' ).show( 'fade' );
       $( '#portfolio-filter' ).show( 'fade' );
     }
   });
   $( document ).on( 'scroll', function() {
-    if ( $( document ).scrollTop() > 2000 ) {
+    if ( $( document ).scrollTop() > 2400 ) {
       $( '.grid' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
     }
   });

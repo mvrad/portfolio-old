@@ -117,19 +117,6 @@ Nav
     text-transform: uppercase;
     margin: 0 auto;
     padding: 0;
-    &:after {
-      display: block;
-      content: '';
-      border-bottom: solid 2px $white;
-      transform: scaleX(0);
-      transition: transform 250ms ease-in-out;
-    }
-    &:hover:after {
-      transform: scaleX(1);
-    }
-    &:nth-child(3):after {
-      border-bottom: none;
-    }
   }
   & a {
     font-family: $font-family--primary;

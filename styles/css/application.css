@@ -929,16 +929,6 @@ Nav
     text-transform: uppercase;
     margin: 0 auto;
     padding: 0; }
-    #nav-lg li:after {
-      display: block;
-      content: '';
-      border-bottom: solid 2px #fff;
-      transform: scaleX(0);
-      transition: transform 250ms ease-in-out; }
-    #nav-lg li:hover:after {
-      transform: scaleX(1); }
-    #nav-lg li:nth-child(3):after {
-      border-bottom: none; }
   #nav-lg a {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
