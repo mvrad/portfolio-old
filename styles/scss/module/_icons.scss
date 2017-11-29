@@ -60,7 +60,4 @@ Icons
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
   font-size: 1em;
-  @include mq(medium) {
-    font-size: 1.2em;
-  }
 }

@@ -1014,9 +1014,6 @@ Icons
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1em; }
-  @media (min-width: 768px) {
-    #copyright-txt {
-      font-size: 1.2em; } }
 
 /*==============================================================================
 Hamburger Icon
