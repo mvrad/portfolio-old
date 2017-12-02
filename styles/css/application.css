@@ -1254,38 +1254,51 @@ figure.effect-goliath h4 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s; }
 
-figure.effect-goliath img {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+@media (min-width: 768px) {
+  figure.effect-goliath img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; } }
 
-figure.effect-goliath h4,
-figure.effect-goliath h5 {
+figure.effect-goliath h4 {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 30px; }
 
 figure.effect-goliath h5 {
-  text-transform: none;
-  font-size: 90%;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0); }
+  display: none; }
+  @media (min-width: 768px) {
+    figure.effect-goliath h5 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 30px; } }
 
-figure.effect-goliath:hover img {
-  -webkit-transform: translate3d(0, -80px, 0);
-  transform: translate3d(0, -80px, 0); }
+@media (min-width: 768px) {
+  figure.effect-goliath h5 {
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0); } }
+
+@media (min-width: 768px) {
+  figure.effect-goliath:hover img {
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0); } }
 
 figure.effect-goliath:hover h4 {
   -webkit-transform: translate3d(0, -100px, 0);
   transform: translate3d(0, -100px, 0); }
 
-figure.effect-goliath:hover h5 {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0); }
+@media (min-width: 768px) {
+  figure.effect-goliath:hover h5 {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
 
 /*==============================================================================
 Email Form
