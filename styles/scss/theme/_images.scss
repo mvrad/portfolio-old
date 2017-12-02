@@ -2,41 +2,33 @@
 Images
 ==============================================================================*/
 
-#imac-img {
-  position: absolute;
-  width: 300px;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  @include mq(small) {
-    width: 350px;
-  }
-  @include mq(medium) {
-    width: 500px;
-  }
-  @include mq(large) {
-    width: 600px;
-  }
+#slider-wrapper {
+  display: none;
 }
 
-.slider img {
-  width: 300px;
-  margin: 0 auto;
-  padding-top: 10px;
-  @include mq(small) {
-    width: 340px;
-    padding-top: 12px;
-  }
-  @include mq(medium) {
-    width: 490px;
-    padding-top: 18px;
-  }
-  @include mq(large) {
-    width: 590px;
-    padding-top: 22px;
-  }
+#macbook-pro-img {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  height: 380px;
+  z-index: 2;
+  margin-left: -316.914px;
+}
+#macbook-pro {
+  position: relative;
+}
+#macbook-slider {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 30px;
+  height: 307px;
+  width: auto;
+  z-index: 1;
+  margin-left: -245.594px;
+}
+#macbook-slider img {
+  height: 307px;
 }
 
 #profile-img {

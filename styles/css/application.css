@@ -587,6 +587,7 @@ Portfolio
     #portfolio {
       height: 1579.590px; } }
   #portfolio .container {
+    position: relative;
     margin: 0 20px; }
     @media (min-width: 768px) {
       #portfolio .container {
@@ -707,40 +708,32 @@ Email Sent
 /*==============================================================================
 Images
 ==============================================================================*/
-#imac-img {
-  position: absolute;
-  width: 300px;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto; }
-  @media (min-width: 375px) {
-    #imac-img {
-      width: 350px; } }
-  @media (min-width: 768px) {
-    #imac-img {
-      width: 500px; } }
-  @media (min-width: 1545px) {
-    #imac-img {
-      width: 600px; } }
+#slider-wrapper {
+  display: none; }
 
-.slider img {
-  width: 300px;
-  margin: 0 auto;
-  padding-top: 10px; }
-  @media (min-width: 375px) {
-    .slider img {
-      width: 340px;
-      padding-top: 12px; } }
-  @media (min-width: 768px) {
-    .slider img {
-      width: 490px;
-      padding-top: 18px; } }
-  @media (min-width: 1545px) {
-    .slider img {
-      width: 590px;
-      padding-top: 22px; } }
+#macbook-pro-img {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  height: 380px;
+  z-index: 2;
+  margin-left: -316.914px; }
+
+#macbook-pro {
+  position: relative; }
+
+#macbook-slider {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 30px;
+  height: 307px;
+  width: auto;
+  z-index: 1;
+  margin-left: -245.594px; }
+
+#macbook-slider img {
+  height: 307px; }
 
 #profile-img {
   display: block;
@@ -797,6 +790,10 @@ Typography
     #in-2 {
       font-size: 2.4em;
       padding-bottom: 60px; } }
+
+@media (min-width: 1545px) {
+  #txt-col {
+    display: none; } }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
@@ -1167,6 +1164,11 @@ Photo Slider
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.slick-list,
+.slick-track,
+.slick-slide img {
+  height: 100%; }
 
 /*==============================================================================
 Portfolio Gallery
