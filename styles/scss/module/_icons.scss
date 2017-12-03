@@ -3,7 +3,7 @@ Icons
 ==============================================================================*/
 
 .icons {
-  display: block;
+  // display: inline-block;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -25,38 +25,38 @@ Icons
   margin: 20px 10px 0;
 }
 
-.social {
-  display: inline-block;
-  width: 2.5em;
-  height: 2.5em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  padding: 0;
-  transition: color 0.4s, transform 0.4s cubic-bezier(0, 0, 0.17, 1.56);
-  &:hover {
-    @include mq(large) {
-      transform: scale(1.5);
-    }
-  }
+.socialgithub,
+.socialtwitter,
+.socialsteam {
+  color: $white;
 }
 
 .socialgithub,
 .socialtwitter,
-.socialsteam {
-  color: $guppie-green;
-  margin: 0 auto;
+.socialsteam, {
+  height: 2em;
+  width: 2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 0;
+  transition: color 0.4s;
+  &:hover {
+    @include mq(large) {
+      color:$guppie-green;
+    }
+  }
 }
 
 #copyright {
-  padding: 10px 0;
+  padding: 10px 0 20px;
   @include mq(large) {
     display: inline-block;
     padding-left: 40px;
   }
 }
 #copyright-txt {
-  color: $guppie-green;
+  color: $white;
   font-family: $font-family--secondary;
   font-weight: $font-weight--medium;
   font-size: 1em;
