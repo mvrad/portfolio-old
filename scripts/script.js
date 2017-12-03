@@ -8,9 +8,9 @@ $(() => {
   Landing page opening titles and effects
   ============================================================================*/
 
-  // Titles and iMac slider effects
-  $( '#txt-col' ).show( { effect: 'slide', direction: 'left', duration: 1000 } );
-  $( '#imac' ).show( { effect: 'slide', direction: 'down', duration: 1000 } );
+  // Titles and slider effects
+  $( '#txt-col' ).show( { effect: 'slide', direction: 'down', duration: 1000 } );
+  $( '#slider-wrapper' ).show( { effect: 'fade', duration: 1000 } );
 
   /*============================================================================
   Adds .small class to nav bar on scroll
@@ -142,7 +142,7 @@ $(() => {
   Photo slider
   ============================================================================*/
 
-  $( '.slider' ).slick({
+  $( '#macbook-slider' ).slick({
     // Disable defaults
     accessibility: false,
     draggable: false,

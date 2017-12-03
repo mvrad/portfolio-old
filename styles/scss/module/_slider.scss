@@ -101,3 +101,9 @@ Photo Slider
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slick-list,
+.slick-track,
+.slick-slide img {
+  height: 100%;
+}

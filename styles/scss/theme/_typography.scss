@@ -46,6 +46,12 @@ Typography
   }
 }
 
+#txt-col {
+  @include mq(large) {
+    display: none;
+  }
+}
+
 h1 {
   font-family: $font-family--primary;
   font-weight: $font-weight--bold;

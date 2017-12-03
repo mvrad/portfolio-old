@@ -162,6 +162,7 @@ Portfolio
     height: 1579.590px;
   }
   & .container {
+    position: relative;
     margin: 0 20px;
     @include mq(medium) {
       margin: 0 10px;
