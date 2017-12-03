@@ -10,9 +10,18 @@ Images
   position: absolute;
   left: 50%;
   right: 0;
-  height: 380px;
   z-index: 2;
-  margin-left: -316.914px;
+  height: 180px;
+  width: auto;
+  margin-left: -150.117px;
+  @include mq(small) {
+    height: 210px;
+    margin-left: -175.133px;
+  }
+  @include mq(medium) {
+    height: 380px;
+    margin-left: -316.914px;
+  }
 }
 #macbook-pro {
   position: relative;
@@ -21,14 +30,30 @@ Images
   position: absolute;
   left: 50%;
   right: 0;
-  top: 30px;
-  height: 307px;
+  top: 14px;
+  height: 145px;
   width: auto;
   z-index: 1;
-  margin-left: -245.594px;
+  margin-left: -116px;
+  @include mq(small) {
+    top: 17px;
+    height: 167px;
+    margin-left: -133.594px;
+  }
+  @include mq(medium) {
+    top: 30px;
+    height: 307px;
+    margin-left: -245.594px;
+  }
 }
 #macbook-slider img {
-  height: 307px;
+  height: 145px;
+  @include mq(small) {
+    height: 167px;
+  }
+  @include mq(medium) {
+    height: 307px;
+  }
 }
 
 #profile-img {

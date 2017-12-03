@@ -715,9 +715,18 @@ Images
   position: absolute;
   left: 50%;
   right: 0;
-  height: 380px;
   z-index: 2;
-  margin-left: -316.914px; }
+  height: 180px;
+  width: auto;
+  margin-left: -150.117px; }
+  @media (min-width: 375px) {
+    #macbook-pro-img {
+      height: 210px;
+      margin-left: -175.133px; } }
+  @media (min-width: 768px) {
+    #macbook-pro-img {
+      height: 380px;
+      margin-left: -316.914px; } }
 
 #macbook-pro {
   position: relative; }
@@ -726,14 +735,30 @@ Images
   position: absolute;
   left: 50%;
   right: 0;
-  top: 30px;
-  height: 307px;
+  top: 14px;
+  height: 145px;
   width: auto;
   z-index: 1;
-  margin-left: -245.594px; }
+  margin-left: -116px; }
+  @media (min-width: 375px) {
+    #macbook-slider {
+      top: 17px;
+      height: 167px;
+      margin-left: -133.594px; } }
+  @media (min-width: 768px) {
+    #macbook-slider {
+      top: 30px;
+      height: 307px;
+      margin-left: -245.594px; } }
 
 #macbook-slider img {
-  height: 307px; }
+  height: 145px; }
+  @media (min-width: 375px) {
+    #macbook-slider img {
+      height: 167px; } }
+  @media (min-width: 768px) {
+    #macbook-slider img {
+      height: 307px; } }
 
 #profile-img {
   display: block;
@@ -765,11 +790,11 @@ Typography
   font-weight: 800;
   font-size: 2em;
   text-align: center;
-  padding-top: 120px; }
+  padding-top: 150px; }
   @media (min-width: 375px) {
     #in {
       font-size: 2.3em;
-      padding-top: 140px; } }
+      padding-top: 180px; } }
   @media (min-width: 768px) {
     #in {
       font-size: 3.2em;
