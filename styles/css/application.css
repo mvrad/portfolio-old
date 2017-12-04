@@ -798,10 +798,7 @@ Typography
   @media (min-width: 768px) {
     #in {
       font-size: 3.2em;
-      padding-top: 180px; } }
-  @media (min-width: 1545px) {
-    #in {
-      padding-top: 160px; } }
+      padding-top: 220px; } }
 
 #in-2 {
   font-family: "Open Sans", sans-serif;

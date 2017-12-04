@@ -25,10 +25,7 @@ Typography
   }
   @include mq(medium) {
     font-size: 3.2em;
-    padding-top: 180px;
-  }
-  @include mq(large) {
-    padding-top: 160px;
+    padding-top: 220px;
   }
 }
 
