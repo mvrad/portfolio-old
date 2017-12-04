@@ -44,7 +44,11 @@ $(() => {
   });
   $( document ).on( 'scroll', function() {
   	if ( $( document ).scrollTop() > 700 ) {
-      $( '.skill-wrapper' ).show( { effect: 'drop', direction: 'down', duration: 1000 } );
+      $.each($('.skill-wrapper'), function(i, el) {
+        setTimeout(function() {
+          $(el).show( { effect: 'drop', direction: 'down', duration: 1000 } );;
+        }, 250 + (i * 250));
+      });
     }
   });
   $( document ).on( 'scroll', function() {
