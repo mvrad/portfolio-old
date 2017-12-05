@@ -46,8 +46,8 @@ $(() => {
   	if ( $( document ).scrollTop() > 700 ) {
       $.each($('.skill-wrapper'), function(i, el) {
         setTimeout(function() {
-          $(el).show( { effect: 'drop', direction: 'down', duration: 1000 } );;
-        }, 0 + (i * 250));
+          $(el).show( { effect: 'drop', direction: 'down', duration: 1000 } );
+        }, (i * 250));
       });
     }
   });
