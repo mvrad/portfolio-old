@@ -47,7 +47,7 @@ $(() => {
       $.each($('.skill-wrapper'), function(i, el) {
         setTimeout(function() {
           $(el).show( { effect: 'drop', direction: 'down', duration: 1000 } );;
-        }, 250 + (i * 250));
+        }, 0 + (i * 250));
       });
     }
   });
