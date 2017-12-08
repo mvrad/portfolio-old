@@ -680,6 +680,37 @@ Contact
     font-size: 1em; }
 
 /*==============================================================================
+Email Form
+==============================================================================*/
+#form-container {
+  margin-bottom: 39px; }
+  #form-container .field-wrapper {
+    text-align: center; }
+  #form-container input[type="text"], #form-container textarea {
+    background-color: #c9ffd5;
+    border: 2px solid #c9ffd5;
+    border-radius: 20px;
+    width: 250px;
+    outline: 0;
+    margin: 5px 0;
+    padding: 10px 15px; }
+  #form-container input:focus, #form-container textarea:focus {
+    background-color: #ffffcb;
+    border-color: #004056;
+    transition: border-color .4s ease, background-color .4s ease; }
+  #form-container input[type="submit"], #form-container input[type="reset"] {
+    background: #00a693;
+    color: #fff;
+    width: 123px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    padding: 10px; }
+  #form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
+    background: #004056;
+    transition: background-color .4s ease; }
+
+/*==============================================================================
 Email Sent
 ==============================================================================*/
 #sent-bg {
@@ -704,73 +735,6 @@ Email Sent
     text-decoration: underline; }
   #sent a {
     color: #fff; }
-
-/*==============================================================================
-Images
-==============================================================================*/
-#slider-wrapper {
-  display: none; }
-
-#macbook-pro-img {
-  position: absolute;
-  left: 50%;
-  right: 0;
-  z-index: 2;
-  height: 180px;
-  width: auto;
-  margin-left: -150.117px; }
-  @media (min-width: 375px) {
-    #macbook-pro-img {
-      height: 210px;
-      margin-left: -175.133px; } }
-  @media (min-width: 768px) {
-    #macbook-pro-img {
-      height: 380px;
-      margin-left: -316.914px; } }
-
-#macbook-pro {
-  position: relative; }
-
-#macbook-slider {
-  position: absolute;
-  left: 50%;
-  right: 0;
-  top: 14px;
-  height: 145px;
-  width: auto;
-  z-index: 1;
-  margin-left: -116px; }
-  @media (min-width: 375px) {
-    #macbook-slider {
-      top: 17px;
-      height: 167px;
-      margin-left: -133.594px; } }
-  @media (min-width: 768px) {
-    #macbook-slider {
-      top: 30px;
-      height: 307px;
-      margin-left: -245.594px; } }
-
-#macbook-slider img {
-  height: 145px; }
-  @media (min-width: 375px) {
-    #macbook-slider img {
-      height: 167px; } }
-  @media (min-width: 768px) {
-    #macbook-slider img {
-      height: 307px; } }
-
-#profile-img {
-  display: block;
-  width: 340px;
-  height: auto;
-  margin: 0 auto;
-  border: 8px solid #fff;
-  border-radius: 50%; }
-  @media (min-width: 768px) {
-    #profile-img {
-      width: 360px;
-      border: 12px solid #fff; } }
 
 /*==============================================================================
 Typography
@@ -841,6 +805,73 @@ p {
 
 h1, h2, p {
   text-align: center; }
+
+/*==============================================================================
+Images
+==============================================================================*/
+#slider-wrapper {
+  display: none; }
+
+#macbook-pro-img {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  z-index: 2;
+  height: 180px;
+  width: auto;
+  margin-left: -150.117px; }
+  @media (min-width: 375px) {
+    #macbook-pro-img {
+      height: 210px;
+      margin-left: -175.133px; } }
+  @media (min-width: 768px) {
+    #macbook-pro-img {
+      height: 380px;
+      margin-left: -316.914px; } }
+
+#macbook-pro {
+  position: relative; }
+
+#macbook-slider {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 14px;
+  height: 145px;
+  width: auto;
+  z-index: 1;
+  margin-left: -116px; }
+  @media (min-width: 375px) {
+    #macbook-slider {
+      top: 17px;
+      height: 167px;
+      margin-left: -133.594px; } }
+  @media (min-width: 768px) {
+    #macbook-slider {
+      top: 30px;
+      height: 307px;
+      margin-left: -245.594px; } }
+
+#macbook-slider img {
+  height: 145px; }
+  @media (min-width: 375px) {
+    #macbook-slider img {
+      height: 167px; } }
+  @media (min-width: 768px) {
+    #macbook-slider img {
+      height: 307px; } }
+
+#profile-img {
+  display: block;
+  width: 340px;
+  height: auto;
+  margin: 0 auto;
+  border: 8px solid #fff;
+  border-radius: 50%; }
+  @media (min-width: 768px) {
+    #profile-img {
+      width: 360px;
+      border: 12px solid #fff; } }
 
 /*==============================================================================
 Nav
@@ -1324,37 +1355,5 @@ figure.effect-goliath:hover h4 {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-
-/*==============================================================================
-Email Form
-==============================================================================*/
-#form-container {
-  background-color: #00ff7f;
-  margin-bottom: 39px; }
-  #form-container .field-wrapper {
-    text-align: center; }
-  #form-container input[type="text"], #form-container textarea {
-    background-color: #c9ffd5;
-    border: 2px solid #c9ffd5;
-    border-radius: 20px;
-    width: 250px;
-    outline: 0;
-    margin: 5px 0;
-    padding: 10px 15px; }
-  #form-container input:focus, #form-container textarea:focus {
-    background-color: #ffffcb;
-    border-color: #004056;
-    transition: border-color .4s ease, background-color .4s ease; }
-  #form-container input[type="submit"], #form-container input[type="reset"] {
-    background: #00a693;
-    color: #fff;
-    width: 123px;
-    border-radius: 20px;
-    border: none;
-    outline: 0;
-    padding: 10px; }
-  #form-container input[type="submit"]:hover, #form-container input[type="reset"]:hover {
-    background: #004056;
-    transition: background-color .4s ease; }
 
 /*# sourceMappingURL=application.css.map */
