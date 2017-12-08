@@ -1248,7 +1248,7 @@ Portfolio Gallery
   text-align: center;
   cursor: pointer;
   margin: 0 auto;
-  paddign: 0; }
+  padding: 0; }
 
 .grid figure img {
   position: relative;
@@ -1346,9 +1346,10 @@ figure.effect-goliath h5 {
     -webkit-transform: translate3d(0, -80px, 0);
     transform: translate3d(0, -80px, 0); } }
 
-figure.effect-goliath:hover h4 {
-  -webkit-transform: translate3d(0, -100px, 0);
-  transform: translate3d(0, -100px, 0); }
+@media (min-width: 768px) {
+  figure.effect-goliath:hover h4 {
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0); } }
 
 @media (min-width: 768px) {
   figure.effect-goliath:hover h5 {
