@@ -1,4 +1,4 @@
-# Portfolio [![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio)
+# Portfolio [![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio)[![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)](https://github.com/matthew-conrad/portfolio/graphs/commit-activity)[![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)]()[![GitHub language count](https://img.shields.io/github/languages/count/badges/shields.svg)](https://github.com/matthew-conrad/portfolio)
 ![screenshot](images/screenshot-main.jpeg)
 My personal portfolio site featuring some of my best work in web development.
 ## Goals
