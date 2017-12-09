@@ -14,12 +14,6 @@ if(empty($name)||empty($visitor_email))
   exit;
 }
 
-if(IsInjected($visitor_email))
-{
-  echo "Bad email value!";
-  exit;
-}
-
 $email_from = "mattconrad@gator4128.hostgator.com";
 $email_subject = "New Message";
 $email_body = "From: $name\n\n".
@@ -31,6 +25,5 @@ $to = "matthew.conrad@outlook.com";
 mail($to,$email_subject,$email_body,$headers);
 
 header("Location: thank-you.html");
-}
 
 ?>
