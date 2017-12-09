@@ -1,4 +1,4 @@
-# Portfolio [![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)
+# Portfolio [![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio)
 ![screenshot](images/screenshot-main.jpeg)
 My personal portfolio site featuring some of my best work in web development.
 ## Goals
