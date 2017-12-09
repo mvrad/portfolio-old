@@ -7,6 +7,6 @@
       "jshint": "^2.6.0"
     },
     "scripts": {
-      "test": "hello.js"
+      "test": "/home/travis/build/matthew-conrad/portfolio/hello.js"
     }
   }
