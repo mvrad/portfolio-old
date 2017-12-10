@@ -1,5 +1,5 @@
 # Portfolio
-[![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio) [![GitHub last commit](https://img.shields.io/github/last-commit/portfolio.svg?branch=master)](https://github.com/matthew-conrad/portfolio/graphs/commit-activity) [![GitHub language count](https://img.shields.io/github/languages/count/portfolio.svg?branch=master)](https://github.com/matthew-conrad/portfolio/?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/matthew-conrad/portfolio/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/matthew-conrad/portfolio/?branch=master)
+[![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/matthew-conrad/portfolio/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/matthew-conrad/portfolio/?branch=master) [![NSP Status](https://nodesecurity.io/orgs/matthew-conrad/projects/7d5ee241-a31d-4cb6-8025-b29794046e5d/badge)](https://nodesecurity.io/orgs/matthew-conrad/projects/7d5ee241-a31d-4cb6-8025-b29794046e5d)
 ![screenshot](images/screenshot-main.jpeg)
 My personal portfolio site featuring some of my best work in web development.
 ## Goals
