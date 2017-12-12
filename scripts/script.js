@@ -1,13 +1,11 @@
 /*==============================================================================
 Main Script
 ==============================================================================*/
-
 $(() => {
 
   /*============================================================================
   Landing page opening titles and effects
   ============================================================================*/
-
   // Titles and slider effects
   $('#txt-col').show({effect: 'slide', direction: 'down', duration: 1000});
   $('#slider-wrapper').show({ effect: 'fade', duration: 1000 });
@@ -15,7 +13,6 @@ $(() => {
   /*============================================================================
   Adds .small class to nav bar on scroll
   ============================================================================*/
-
   // For mobile / tablet
   $(document).on('scroll', () => {
   	if ($(document).scrollTop() > 100) {
@@ -36,38 +33,27 @@ $(() => {
   /*============================================================================
   Title effects
   ============================================================================*/
-
   $(document).on('scroll', () => {
     if ($(document).scrollTop() > 400) {
       $('#services .section-header').show('fade');
     }
-  });
-  $(document).on('scroll', () => {
-  	if ($(document).scrollTop() > 700) {
+    if ($(document).scrollTop() > 700) {
       $.each($('.skill-wrapper'), (i, el) => {
         setTimeout(() => {
           $(el).show({effect: 'drop', direction: 'down', duration: 1000});
         }, (i * 250));
       });
     }
-  });
-  $(document).on('scroll', () => {
     if ($(document).scrollTop() > 1400) {
       $('#about .section-header').show('fade');
     }
-  });
-  $(document).on('scroll', () => {
-  	if ($(document).scrollTop() > 1700) {
+    if ($(document).scrollTop() > 1700) {
       $('#about p').show('fade');
     }
-  });
-  $(document).on('scroll', () => {
     if ($(document).scrollTop() > 2200) {
       $('#portfolio .section-header').show('fade');
       $('#portfolio-filter').show('fade');
     }
-  });
-  $(document).on('scroll', () => {
     if ($( document).scrollTop() > 2400) {
       $('.grid').show({effect: 'drop', direction: 'down', duration: 1000});
     }
@@ -76,7 +62,6 @@ $(() => {
   /*============================================================================
   Hamburger menu animation
   ============================================================================*/
-
   $('.hamburger').on('click', () => {
     $('.hamburger').toggleClass('is-active');
     $('#site-nav').toggle({effect: 'slide', direction: 'up', duration: 500});
@@ -89,7 +74,6 @@ $(() => {
   /*============================================================================
   Nav bar links
   ============================================================================*/
-
   $('#first').on('click', () => {
     $('html, body').animate({
       scrollTop: ($('#services').first().offset().top)
@@ -144,7 +128,6 @@ $(() => {
   /*============================================================================
   Photo slider
   ============================================================================*/
-
   $('#macbook-slider').slick({
     // Disable defaults
     accessibility: false,
@@ -167,7 +150,6 @@ $(() => {
   /*============================================================================
   Sequential Filtering Component
   ============================================================================*/
-    
   const $filters = $('.filter [data-filter]'),
         $boxes = $('.boxes [data-category]');
 
@@ -194,7 +176,6 @@ $(() => {
   /*============================================================================
   Keep Filter Links Highlighted
   ============================================================================*/
-
   $('a').click(() => {
     $(this).toggleClass('active');
   });
@@ -202,7 +183,6 @@ $(() => {
   /*============================================================================
   Dynamic copyright year
   ============================================================================*/
-
   $('#year').html(new Date().getFullYear());
 
 });
