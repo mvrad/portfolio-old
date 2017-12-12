@@ -439,7 +439,7 @@ Mixins
 /*==============================================================================
 Extends
 ==============================================================================*/
-#portfolio #portfolio-filter {
+#portfolio-filter {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -579,10 +579,7 @@ About
 Portfolio
 ==============================================================================*/
 #portfolio {
-  background-color: #797e83;
-  /*============================================================================
-  Portfolio Filter
-  ============================================================================*/ }
+  background-color: #797e83; }
   @media (min-width: 1545px) {
     #portfolio {
       height: 1579.590px; } }
@@ -608,36 +605,36 @@ Portfolio
     padding: 20px 0; }
   #portfolio h1, #portfolio p {
     color: #fff; }
-  #portfolio #portfolio-filter {
-    max-width: 500px;
-    text-align: center;
-    margin: 40px auto 60px;
-    padding: 0; }
-    @media (min-width: 1545px) {
-      #portfolio #portfolio-filter {
-        display: none; } }
-    #portfolio #portfolio-filter a {
-      font-family: "Nunito Sans", sans-serif;
-      background-color: #fff;
-      color: #1d2026;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 20px;
-      margin: 10px 5px;
-      padding: 10px 20px; }
-    #portfolio #portfolio-filter a:hover {
-      background-color: #1d2026;
-      color: #fff;
-      border: none;
-      transition: background-color .4s ease; }
-    #portfolio #portfolio-filter a:active {
-      background-color: #1d2026;
-      color: #fff;
-      border: none; }
-    #portfolio #portfolio-filter a.active {
-      background-color: #1d2026;
-      color: #fff;
-      border: none; }
+
+/*============================================================================
+Portfolio Filter
+============================================================================*/
+#portfolio-filter {
+  max-width: 500px;
+  text-align: center;
+  margin: 40px auto 60px;
+  padding: 0; }
+  @media (min-width: 1545px) {
+    #portfolio-filter {
+      display: none; } }
+  #portfolio-filter a {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fff;
+    color: #1d2026;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 5px;
+    padding: 10px 20px; }
+  #portfolio-filter a:hover {
+    background-color: #1d2026;
+    color: #fff;
+    border: none;
+    transition: background-color .4s ease; }
+  #portfolio-filter a:active {
+    background-color: #1d2026;
+    color: #fff;
+    border: none; }
 
 /*==============================================================================
 Contact
@@ -676,8 +673,9 @@ Contact
         margin: 0 auto; } }
   #contact h1, #contact p {
     color: #1d2026; }
-  #contact #copyright span {
-    font-size: 1em; }
+
+#copyright span {
+  font-size: 1em; }
 
 /*==============================================================================
 Email Form

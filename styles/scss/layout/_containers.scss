@@ -188,51 +188,45 @@ Portfolio
   & h1, p {
     color: $white;
   }
+}
   /*============================================================================
   Portfolio Filter
   ============================================================================*/
-  #portfolio-filter {
-    @extend %flex-wrap;
-    max-width: 500px;
-    text-align: center;
-    margin: 40px auto 60px;
-    padding: 0;
-    @include mq(large) {
-      display: none;
-    }
-    & a {
-      font-family: $font-family--primary;
-      background-color: $white;
-      color: $black;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 20px;
-      margin: 10px 5px;
-      padding: 10px 20px;
-    }
-    & a:hover {
-      background-color: $black;
-      color: $white;
-      border: none;
-      transition: background-color .4s ease;
-    }
-    & a:active {
-      background-color: $black;
-      color: $white;
-      border: none;
-    }
-    & a.active {
-      background-color: $black;
-      color: $white;
-      border: none;
-    }
+#portfolio-filter {
+  @extend %flex-wrap;
+  max-width: 500px;
+  text-align: center;
+  margin: 40px auto 60px;
+  padding: 0;
+  @include mq(large) {
+    display: none;
+  }
+  & a {
+    font-family: $font-family--primary;
+    background-color: $white;
+    color: $black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+  }
+  & a:hover {
+    background-color: $black;
+    color: $white;
+    border: none;
+    transition: background-color .4s ease;
+  }
+  & a:active {
+    background-color: $black;
+    color: $white;
+    border: none;
   }
 }
 
 /*==============================================================================
 Contact
 ==============================================================================*/
-
 #contact {
   background-color: $guppie-green;
   padding-bottom: 1px;
@@ -273,7 +267,7 @@ Contact
   & h1, p {
     color: $black;
   }
-  #copyright span {
-    font-size: 1em;
-  }
+}
+#copyright span {
+  font-size: 1em;
 }
