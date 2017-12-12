@@ -25,10 +25,12 @@ $(() => {
   		$("#nav-lg").removeClass("large").addClass("small");
   	} else {
   		$("#nav-lg").removeClass("small").addClass("large");
-  	}
+    }
+  });
   /*============================================================================
   Title effects
   ============================================================================*/
+  $(document).on("scroll", () => {
     if ($(document).scrollTop() > 400) {
       $("#services .section-header").show("fade");
     }
