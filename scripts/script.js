@@ -13,27 +13,22 @@ $(() => {
   /*============================================================================
   Adds .small class to nav bar on scroll
   ============================================================================*/
-  // For mobile / tablet
   $(document).on("scroll", () => {
+    // For mobile, tablet
   	if ($(document).scrollTop() > 100) {
   		$("#main-nav").removeClass("large").addClass("small");
     } else {
   		$("#main-nav").removeClass("small").addClass("large");
   	}
-  });
-  // For desktop
-  $(document).on("scroll", () => {
+    // For desktop
   	if ($(document).scrollTop() > 50) {
   		$("#nav-lg").removeClass("large").addClass("small");
   	} else {
   		$("#nav-lg").removeClass("small").addClass("large");
   	}
-  });
-
   /*============================================================================
   Title effects
   ============================================================================*/
-  $(document).on("scroll", () => {
     if ($(document).scrollTop() > 400) {
       $("#services .section-header").show("fade");
     }
@@ -75,27 +70,19 @@ $(() => {
   Nav bar links
   ============================================================================*/
   $("#first, #first-lg").on("click", () => {
-    $("html, body").animate({
-      scrollTop: ($("#services").first().offset().top)
-    }, 1000);
+    $("html, body").animate({scrollTop: ($("#services").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#second, #second-lg").on("click", () => {
-    $("html, body").animate({
-      scrollTop: ($("#about").first().offset().top)
-    }, 1000);
+    $("html, body").animate({scrollTop: ($("#about").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#third, #third-lg").on("click", () => {
-    $("html, body").animate({
-      scrollTop: ($("#portfolio").first().offset().top)
-    }, 1000);
+    $("html, body").animate({scrollTop: ($("#portfolio").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#fourth, #fourth-lg").on("click", () => {
-    $("html, body").animate({
-      scrollTop: ($("#contact").first().offset().top)
-    }, 1000);
+    $("html, body").animate({scrollTop: ($("#contact").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
 
