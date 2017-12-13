@@ -15,9 +15,9 @@ $(() => {
   Adds .small class to nav bar on scroll
   ============================================================================*/
   $(document).on("scroll", () => {
-  	const a = ($(document).scrollTop() > 1) ?
-  		$("#nav-lg").removeClass("large").addClass("small") :
-  		$("#nav-lg").removeClass("small").addClass("large");
+  	($(document).scrollTop() > 1) ?
+    $("#nav-lg").removeClass("large").addClass("small") :
+    $("#nav-lg").removeClass("small").addClass("large");
   });
 
   /*============================================================================
