@@ -3,6 +3,7 @@ Main Script
 ==============================================================================*/
 $(() => {
   "use strict";
+
   /*============================================================================
   Landing page opening titles and effects
   ============================================================================*/
@@ -14,44 +15,36 @@ $(() => {
   Adds .small class to nav bar on scroll
   ============================================================================*/
   $(document).on("scroll", () => {
-    // For mobile, tablet
-  	if ($(document).scrollTop() > 100) {
-  		$("#main-nav").removeClass("large").addClass("small");
-    } else {
-  		$("#main-nav").removeClass("small").addClass("large");
-  	}
-    // For desktop
-  	if ($(document).scrollTop() > 50) {
-  		$("#nav-lg").removeClass("large").addClass("small");
-  	} else {
+  	const a = ($(document).scrollTop() > 1) ?
+  		$("#nav-lg").removeClass("large").addClass("small") :
   		$("#nav-lg").removeClass("small").addClass("large");
-    }
   });
+
   /*============================================================================
   Title effects
   ============================================================================*/
-  $(document).on("scroll", () => {
-    if ($(document).scrollTop() > 400) {
+  $(window).on("scroll", () => {
+    if ($(this).scrollTop() > 400) {
       $("#services .section-header").show("fade");
     }
-    if ($(document).scrollTop() > 700) {
+    if ($(this).scrollTop() > 700) {
       $.each($(".skill-wrapper"), (i, el) => {
         setTimeout(() => {
           $(el).show({effect: "drop", direction: "down", duration: 1000});
         }, (i * 250));
       });
     }
-    if ($(document).scrollTop() > 1400) {
+    if ($(this).scrollTop() > 1400) {
       $("#about .section-header").show("fade");
     }
-    if ($(document).scrollTop() > 1700) {
+    if ($(this).scrollTop() > 1700) {
       $("#about p").show("fade");
     }
-    if ($(document).scrollTop() > 2200) {
+    if ($(this).scrollTop() > 2200) {
       $("#portfolio .section-header").show("fade");
       $("#portfolio-filter").show("fade");
     }
-    if ($( document).scrollTop() > 2400) {
+    if ($(this).scrollTop() > 2400) {
       $(".grid").show({effect: "drop", direction: "down", duration: 1000});
     }
   });
@@ -71,20 +64,21 @@ $(() => {
   /*============================================================================
   Nav bar links
   ============================================================================*/
+  const el = ("html, body");
   $("#first, #first-lg").on("click", () => {
-    $("html, body").animate({scrollTop: ($("#services").first().offset().top)}, 1000);
+    $(el).animate({scrollTop: ($("#services").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#second, #second-lg").on("click", () => {
-    $("html, body").animate({scrollTop: ($("#about").first().offset().top)}, 1000);
+    $(el).animate({scrollTop: ($("#about").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#third, #third-lg").on("click", () => {
-    $("html, body").animate({scrollTop: ($("#portfolio").first().offset().top)}, 1000);
+    $(el).animate({scrollTop: ($("#portfolio").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#fourth, #fourth-lg").on("click", () => {
-    $("html, body").animate({scrollTop: ($("#contact").first().offset().top)}, 1000);
+    $(el).animate({scrollTop: ($("#contact").first().offset().top)}, 1000);
     $(".hamburger").toggleClass("is-active");
   });
 
@@ -92,7 +86,6 @@ $(() => {
   Photo slider
   ============================================================================*/
   $("#macbook-slider").slick({
-    // Disable defaults
     accessibility: false,
     draggable: false,
     pauseOnFocus: false,
