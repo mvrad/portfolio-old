@@ -217,7 +217,7 @@ Portfolio
     border: none;
     transition: background-color .4s ease;
   }
-  & a:active {
+  .active {
     background-color: $black;
     color: $white;
     border: none;

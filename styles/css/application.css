@@ -631,7 +631,7 @@ Portfolio Filter
     color: #fff;
     border: none;
     transition: background-color .4s ease; }
-  #portfolio-filter a:active {
+  #portfolio-filter .active {
     background-color: #1d2026;
     color: #fff;
     border: none; }
