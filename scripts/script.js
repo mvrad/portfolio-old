@@ -3,7 +3,7 @@ Main Script
 ==============================================================================*/
 $(() => {
   "use strict";
-//  Landing page opening titles and effects
+  //  Landing page opening titles and effects
   $("#txt-col").show({
     effect: "slide",
     direction: "down",
