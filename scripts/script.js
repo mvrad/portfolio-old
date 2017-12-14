@@ -3,26 +3,23 @@ Main Script
 ==============================================================================*/
 $(() => {
   "use strict";
-
-  /*============================================================================
-  Landing page opening titles and effects
-  ============================================================================*/
-  // Titles and slider effects
-  $("#txt-col").show({effect: "slide", direction: "down", duration: 1000});
-  $("#slider-wrapper").show({ effect: "fade", duration: 1000 });
-
-  /*============================================================================
-  Adds .small class to nav bar on scroll
-  ============================================================================*/
-  $(document).on("scroll", () => {
-  	($(document).scrollTop() > 1) ?
-    $("#nav-lg").removeClass("large").addClass("small") :
-    $("#nav-lg").removeClass("small").addClass("large");
+//  Landing page opening titles and effects
+  $("#txt-col").show({
+    effect: "slide",
+    direction: "down",
+    duration: 1000
   });
-
-  /*============================================================================
-  Title effects
-  ============================================================================*/
+  $("#slider-wrapper").show({
+    effect: "fade",
+    duration: 1000
+  });
+  // Adds .small class to nav bar on scroll
+  $(document).on("scroll", () => {
+    ($(document).scrollTop() > 1) ?
+    $("#nav-lg").removeClass("large").addClass("small"):
+      $("#nav-lg").removeClass("small").addClass("large");
+  });
+  // Title effects
   $(window).on("scroll", () => {
     if ($(this).scrollTop() > 400) {
       $("#services .section-header").show("fade");
@@ -30,7 +27,11 @@ $(() => {
     if ($(this).scrollTop() > 700) {
       $.each($(".skill-wrapper"), (i, el) => {
         setTimeout(() => {
-          $(el).show({effect: "drop", direction: "down", duration: 1000});
+          $(el).show({
+            effect: "drop",
+            direction: "down",
+            duration: 1000
+          });
         }, (i * 250));
       });
     }
@@ -45,46 +46,52 @@ $(() => {
       $("#portfolio-filter").show("fade");
     }
     if ($(this).scrollTop() > 2400) {
-      $(".grid").show({effect: "drop", direction: "down", duration: 1000});
+      $(".grid").show({
+        effect: "drop",
+        direction: "down",
+        duration: 1000
+      });
     }
   });
-
-  /*============================================================================
-  Hamburger menu animation
-  ============================================================================*/
+  // Hamburger menu animation
   $(".hamburger").on("click", () => {
     $(".hamburger").toggleClass("is-active");
-    $("#site-nav").toggle({effect: "slide", direction: "up", duration: 500});
+    $("#site-nav").toggle({
+      effect: "slide",
+      direction: "up",
+      duration: 500
+    });
     $(this).toggleClass("nav");
   });
   $(".nav a").on("click", () => {
     $("#site-nav").hide();
   });
-
-  /*============================================================================
-  Nav bar links
-  ============================================================================*/
-  const el = ("html, body");
+  // Nav bar links
   $("#first, #first-lg").on("click", () => {
-    $(el).animate({scrollTop: ($("#services").first().offset().top)}, 1000);
+    $("html, body").animate({
+      scrollTop: ($("#services").first().offset().top)
+    }, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#second, #second-lg").on("click", () => {
-    $(el).animate({scrollTop: ($("#about").first().offset().top)}, 1000);
+    $("html, body").animate({
+      scrollTop: ($("#about").first().offset().top)
+    }, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#third, #third-lg").on("click", () => {
-    $(el).animate({scrollTop: ($("#portfolio").first().offset().top)}, 1000);
+    $("html, body").animate({
+      scrollTop: ($("#portfolio").first().offset().top)
+    }, 1000);
     $(".hamburger").toggleClass("is-active");
   });
   $("#fourth, #fourth-lg").on("click", () => {
-    $(el).animate({scrollTop: ($("#contact").first().offset().top)}, 1000);
+    $("html, body").animate({
+      scrollTop: ($("#contact").first().offset().top)
+    }, 1000);
     $(".hamburger").toggleClass("is-active");
   });
-
-  /*============================================================================
-  Photo slider
-  ============================================================================*/
+  // Photo slider
   $("#macbook-slider").slick({
     accessibility: false,
     draggable: false,
@@ -102,12 +109,9 @@ $(() => {
     speed: 1000,
     autoplaySpeed: 2000
   });
-
-  /*============================================================================
-  Sequential Filtering Component
-  ============================================================================*/
+  // Sequential Filtering Component
   const $filters = $(".filter [data-filter]"),
-        $boxes = $(".boxes [data-category]");
+  $boxes = $(".boxes [data-category]");
 
   $filters.on("click", function(e) {
     e.preventDefault();
@@ -128,17 +132,11 @@ $(() => {
       });
     }
   });
-
-  /*============================================================================
-  Keep Filter Links Highlighted
-  ============================================================================*/
+  // Keep Filter Links Highlighted
   $("a").click(() => {
     $(this).toggleClass("active");
   });
-
-  /*============================================================================
-  Dynamic copyright year
-  ============================================================================*/
+  // Dynamic copyright year
   $("#year").html(new Date().getFullYear());
 
 });
