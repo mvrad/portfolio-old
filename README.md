@@ -6,7 +6,7 @@ My personal portfolio site featuring some of my best work in web development.
 - Showcase some of my best work in web design and development
 - Provide background information and contact information
 ## Under the Hood
-This site is made with :heart: using tools like VS Code and Chrome DevTools in a Linux environment.
+This site was made using Visual Studio Code in a Linux environment.
 ## To Set up Locally
 You can take all the files of this site and run them on your computer as if it were live online, only it's just on your machine.
 ### Requirements
