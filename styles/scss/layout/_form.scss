@@ -2,9 +2,9 @@
 Email Form
 ==============================================================================*/
 
-#form-container {
+#ajax-contact {
   margin-bottom: 39px;
-  & .field-wrapper {
+  & .field {
     text-align: center;
   }
   & input[type="text"], textarea {
@@ -36,4 +36,32 @@ Email Form
   	background: $sherpa-blue;
     transition: background-color .4s ease;
   }
+  & textarea {
+    height: 160px;
+  }
+}
+
+.success {
+  font-family: $font-family--secondary;
+  width: 250px;
+  padding: 1em;
+  margin: 0 auto;
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.error {
+  font-family: $font-family--secondary;
+  width: 250px;
+  padding: 1em;
+  margin: 0 auto;
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+          border-radius: 4px;
 }
