@@ -253,11 +253,16 @@
       <div id="form-messages"></div>
       <form id="ajax-contact" method="post" action="mailer.php">
         <fieldset class="field">
-          <input id="name" type="text" name="name" placeholder="Name" required><br>
-          <input id="email" type="text" name="email" placeholder="Email" required><br>
-          <textarea id="message" name="message" placeholder="Message" required></textarea><br>
-	        <input type="submit" name="submit" value="Submit">
-          <input type="reset" name="reset" value="Reset">
+          <label>Name</label>
+          <input id="name" type="text" name="name" required><br>
+          <label>Email</label>
+          <input id="email" type="text" name="email" required><br>
+          <label>Message</label>
+          <textarea id="message" name="message" required></textarea><br>
+          <div id="btns">
+	          <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+          </div>
         </fieldset>
       </form>
     </div>
