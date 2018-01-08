@@ -41,6 +41,9 @@ $(() => {
     if ($(this).scrollTop() > 1700) {
       $("#about p").show("fade");
     }
+    if ($(this).scrollTop() > 1800) {
+      $("#blogbtn").show("fade");
+    }
     if ($(this).scrollTop() > 2200) {
       $("#portfolio .section-header").show("fade");
       $("#portfolio-filter").show("fade");

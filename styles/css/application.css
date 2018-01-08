@@ -561,7 +561,7 @@ About
         padding: 160px 0 40px; } }
   #about p {
     margin: 0 auto;
-    padding: 40px 0 80px; }
+    padding: 40px 0 40px; }
     @media (min-width: 768px) {
       #about p {
         width: 500px; } }
@@ -574,6 +574,28 @@ About
 #treehouse {
   color: #fff;
   text-decoration: underline; }
+
+#blogbtn-wrapper {
+  text-align: center; }
+
+#blogbtn {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #fff;
+  color: #1d2026;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 80px;
+  outline: 0; }
+  @media (min-width: 1545px) {
+    #blogbtn {
+      display: none; } }
+
+#blogbtn:hover {
+  background-color: #1e90ff;
+  color: #fff;
+  transition: background-color .4s ease; }
 
 /*==============================================================================
 Portfolio

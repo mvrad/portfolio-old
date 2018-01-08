@@ -135,7 +135,7 @@ About
   }
   & p {
     margin: 0 auto;
-    padding: 40px 0 80px;
+    padding: 40px 0 40px;
     @include mq(medium) {
       width: 500px;
     }
@@ -150,6 +150,28 @@ About
 #treehouse {
   color: #fff;
   text-decoration: underline;
+}
+#blogbtn-wrapper {
+  text-align: center;
+}
+#blogbtn {
+  font-family: $font-family--primary;
+  background-color: $white;
+  color: $black;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 80px;
+  outline: 0;
+  @include mq(large) {
+    display: none;
+  }
+}
+#blogbtn:hover {
+  background-color: $dodger-blue;
+  color: $white;
+  transition: background-color .4s ease;
 }
 
 /*==============================================================================
