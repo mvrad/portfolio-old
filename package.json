@@ -11,10 +11,12 @@
   },
   "homepage": "https://github.com/matthew-conrad/portfolio",
   "devDependencies": {
+    "browser-sync": "^2.23.5",
     "gulp": "^3.9.1",
     "gulp-babel-minify": "^0.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.3",
     "jshint": "^2.9.5"
   },
   "scripts": {
