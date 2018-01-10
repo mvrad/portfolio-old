@@ -1,12 +1,22 @@
 {
-    "name": "portfolio",
-    "description": "Simple Travis-CI check for JSHint (Code Linting)",
-    "author": "Matthew Conrad",
-    "version": "0.0.1",
-    "devDependencies": {
-        "jshint": "^2.9.5"
-    },
-    "scripts": {
-        "test": "./node_modules/jshint/bin/jshint hello.js"
-    }
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio site",
+  "main": "index.js",
+  "author": "Matthew Conrad",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthew-conrad/portfolio.git"
+  },
+  "homepage": "https://github.com/matthew-conrad/portfolio",
+  "devDependencies": {
+    "babel-minify": "^0.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint hello.js"
+  }
 }
