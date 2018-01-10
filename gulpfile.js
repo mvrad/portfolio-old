@@ -2,7 +2,7 @@
 
 const gulp = require("gulp"),
   concat = require("gulp-concat"),
-  uglify = require("gulp-uglify");
+  minify = require("gulp-babel-minify");
 
 gulp.task("concatScripts", () => {
   gulp.src([
@@ -15,6 +15,10 @@ gulp.task("concatScripts", () => {
 
 gulp.task("minifyScripts", () => {
   gulp.src("scripts/main.js")
-    .pipe(uglify())
+    .pipe(minify({
+      mangle: {
+        keepClassName: true
+      }
+    }))
     .pipe(gulp.dest("scripts"));
 });

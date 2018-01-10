@@ -11,8 +11,8 @@
   },
   "homepage": "https://github.com/matthew-conrad/portfolio",
   "devDependencies": {
-    "babel-minify": "^0.2.0",
     "gulp": "^3.9.1",
+    "gulp-babel-minify": "^0.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0"
   },
