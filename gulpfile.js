@@ -2,10 +2,11 @@
 
 const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
+  sass = require("gulp-sass"),
+  maps = require("gulp-sourcemaps"),
   concat = require("gulp-concat"),
   minify = require("gulp-babel-minify"),
-  sass = require("gulp-sass"),
-  maps = require("gulp-sourcemaps");
+  rename = require("gulp-rename");
 
 gulp.task("browser-sync", () => {
   browserSync.init({
@@ -42,6 +43,7 @@ gulp.task("minifyScripts", () => {
         keepClassName: true
       }
     }))
+      .pipe(rename("app.min.js"))
       .pipe(gulp.dest("scripts"));
 });
 
