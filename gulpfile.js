@@ -15,48 +15,53 @@ gulp.task("browser-sync", () => {
   });
 });
 
+gulp.task("compileSass", () => {
+  return gulp.src("styles/scss/application.scss")
+    .pipe(maps.init())
+    .pipe(sass())
+    .pipe(maps.write("./"))
+    .pipe(gulp.dest("styles/css"))
+    .pipe(browserSync.stream());
+});
+
 gulp.task("concatScripts", () => {
-  gulp.src([
+  return gulp.src([
     "scripts/script.js",
     "scripts/slick.min.js"
   ])
-  .pipe(maps.init())
-  .pipe(concat("main.js"))
-  .pipe(maps.write("./"))
-  .pipe(gulp.dest("scripts"));
+    .pipe(maps.init())
+    .pipe(concat("main.js"))
+    .pipe(maps.write("./"))
+    .pipe(gulp.dest("scripts"));
 });
 
 gulp.task("minifyScripts", () => {
-  gulp.src("scripts/main.js")
+  return gulp.src("scripts/main.js")
     .pipe(minify({
       mangle: {
         keepClassName: true
       }
     }))
-    .pipe(gulp.dest("scripts"));
+      .pipe(gulp.dest("scripts"));
 });
 
-gulp.task("watchSass", () => {
-  gulp.watch("styles/scss/**/*.scss",
-  ["compileSass"]);
+gulp.task("watchFiles", () => {
   gulp.watch("*.html")
+    .on("change", browserSync.reload);
+  gulp.watch("styles/scss/**/*.scss", ["compileSass"])
+    .on("change", browserSync.reload);
+  gulp.watch("scripts/main.js*", ["concatScripts"])
     .on("change", browserSync.reload);
 });
 
-gulp.task("compileSass", () => {
-  gulp.src("styles/scss/application.scss")
-    .pipe(sass())
-    .pipe(gulp.dest("styles/css"))
-    .pipe(browserSync.stream());
-});
+gulp.task("serve", ["watchFiles"]);
 
 gulp.task("build", [
   "browser-sync",
+  "compileSass",
   "concatScripts",
   "minifyScripts",
-  "compileSass",
-  "watchSass",
-  "compileSass"
+  "watchFiles"
 ]);
 
 gulp.task("default", ["build"]);
