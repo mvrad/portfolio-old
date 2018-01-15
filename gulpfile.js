@@ -2,6 +2,7 @@
 
 const gulp = require("gulp"),
   browserSync = require("browser-sync").create(),
+  htmlmin = require("gulp-htmlmin"),
   sass = require("gulp-sass"),
   maps = require("gulp-sourcemaps"),
   concat = require("gulp-concat"),
@@ -20,33 +21,20 @@ const gulp = require("gulp"),
 gulp.task("browserSync", () => {
   browserSync.init({
     server: {
-      baseDir: "app"
+      baseDir: "./dist/"
     }
   })
 })
 
 // Compile Sass
 gulp.task("compileSass", () => {
-  return gulp.src("app/styles/scss/application.scss")
+  return gulp.src("styles/scss/application.scss")
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("app/styles/css"))
+    .pipe(gulp.dest("styles/css"))
     .pipe(browserSync.stream());
-})
-
-// Optimization Tasks 
-// ------------------
-
-// Optimizing CSS 
-gulp.task("minifyCSS", () => {
-  return gulp.src("app/styles/css/*.css")
-    .pipe(maps.init())
-    .pipe(cssnano())
-    .pipe(rename("application.min.css"))
-    .pipe(maps.write("./"))
-    .pipe(gulp.dest("dist/styles"));
-})
+});
 
 // Concatenating JS files
 gulp.task("concatScripts", () => {
@@ -60,7 +48,29 @@ gulp.task("concatScripts", () => {
     .pipe(gulp.dest("dist/scripts"));
 })
 
-// Optimizing JS files
+// Optimization Tasks 
+// ------------------
+
+// Optimizing HTML
+gulp.task("minifyHTML", () => {
+  return gulp.src("app/*.html")
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest("dist"));
+});
+
+// Optimizing CSS 
+gulp.task("minifyCSS", () => {
+  return gulp.src("app/styles/css/*.css")
+    .pipe(maps.init())
+    .pipe(cssnano())
+    .pipe(rename("application.min.css"))
+    .pipe(maps.write("./"))
+    .pipe(gulp.dest("dist/styles"));
+})
+
+// Optimizing JS
 gulp.task("minifyScripts", () => {
   return gulp.src("app/scripts/main.js")
     .pipe(minifyJS({
@@ -96,11 +106,9 @@ gulp.task("watchFiles", [
     .on("change", browserSync.reload);
 })
 
-gulp.task("serve", ["watch"]);
-
 // Cleaning 
 gulp.task("clean:dist", () => {
-  return del.sync(["dist/**/*", "!dist/images", "!dist/images/**/*"]);
+  return del.sync(["dist/**/*", "!dist/images", "!dist/images/**/*", "!dist/*.php"]);
 })
 
 // Build Sequences
@@ -110,6 +118,7 @@ gulp.task("build", (callback) => {
   runSequence("clean:dist", [
     "compileSass",
     "concatScripts",
+    "minifyHTML",
     "minifyCSS",
     "minifyScripts",
     "imageMin",
@@ -117,9 +126,8 @@ gulp.task("build", (callback) => {
 });
 
 gulp.task("default", (callback) => {
-  runSequence([
-    "build",
+  runSequence("build", [
     "browserSync",
     "watchFiles"
-], callback);
+  ], callback);
 });
