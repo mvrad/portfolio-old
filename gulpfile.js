@@ -67,7 +67,6 @@ gulp.task("minifyCSS", () => {
     .pipe(maps.init())
     .pipe(cssnano())
     .pipe(rename("application.min.css"))
-    .pipe(maps.write("./"))
     .pipe(gulp.dest("dist/styles/css"));
 })
 
