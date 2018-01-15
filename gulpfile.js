@@ -53,10 +53,11 @@ gulp.task("concatScripts", () => {
 
 // Optimizing HTML
 gulp.task("minifyHTML", () => {
-  return gulp.src("app/*.html")
+  return gulp.src("*.html")
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
+    .pipe(rename("index.min.html"))
     .pipe(gulp.dest("dist"));
 });
 
@@ -67,7 +68,7 @@ gulp.task("minifyCSS", () => {
     .pipe(cssnano())
     .pipe(rename("application.min.css"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("styles/css"));
+    .pipe(gulp.dest("dist/styles/css"));
 })
 
 // Optimizing JS
