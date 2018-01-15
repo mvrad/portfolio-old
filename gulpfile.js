@@ -5,26 +5,50 @@ const gulp = require("gulp"),
   sass = require("gulp-sass"),
   maps = require("gulp-sourcemaps"),
   concat = require("gulp-concat"),
-  minify = require("gulp-babel-minify"),
-  rename = require("gulp-rename");
+  cssnano = require('gulp-cssnano'),
+  minifyJS = require("gulp-babel-minify"),
+  rename = require("gulp-rename"),
+  imagemin = require('gulp-imagemin'),
+  cache = require("gulp-cache"),
+  del = require("del"),
+  runSequence = require("run-sequence");
 
-gulp.task("browser-sync", () => {
+// Development Tasks 
+// -----------------
+
+// Start browserSync server
+gulp.task("browserSync", () => {
   browserSync.init({
     server: {
-      baseDir: "./"
+      baseDir: "app"
     }
-  });
-});
+  })
+})
 
+// Compile Sass
 gulp.task("compileSass", () => {
-  return gulp.src("styles/scss/application.scss")
+  return gulp.src("app/styles/scss/application.scss")
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("styles/css"))
+    .pipe(gulp.dest("app/styles/css"))
     .pipe(browserSync.stream());
-});
+})
 
+// Optimization Tasks 
+// ------------------
+
+// Optimizing CSS 
+gulp.task("minifyCSS", () => {
+  return gulp.src("app/styles/css/*.css")
+    .pipe(maps.init())
+    .pipe(cssnano())
+    .pipe(rename("application.min.css"))
+    .pipe(maps.write("./"))
+    .pipe(gulp.dest("dist/styles"));
+})
+
+// Concatenating JS files
 gulp.task("concatScripts", () => {
   return gulp.src([
     "scripts/script.js",
@@ -33,37 +57,69 @@ gulp.task("concatScripts", () => {
     .pipe(maps.init())
     .pipe(concat("main.js"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("scripts"));
-});
+    .pipe(gulp.dest("dist/scripts"));
+})
 
+// Optimizing JS files
 gulp.task("minifyScripts", () => {
-  return gulp.src("scripts/main.js")
-    .pipe(minify({
+  return gulp.src("app/scripts/main.js")
+    .pipe(minifyJS({
       mangle: {
         keepClassName: true
       }
     }))
-      .pipe(rename("app.min.js"))
-      .pipe(gulp.dest("scripts"));
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("dist/scripts"));
+})
+
+// Optimizing Images 
+gulp.task("imageMin", () => {
+  return gulp.src("app/images/*")
+    .pipe(cache(imagemin({
+      interlaced: true
+    })))
+    .pipe(gulp.dest("dist/images"))
+})
+
+// Watchers
+gulp.task("watchFiles", [
+  "browserSync",
+  "compileSass"
+], () => {
+  gulp.watch("app/styles/scss/**/*.scss", ["compileSass"])
+    .on("change", browserSync.reload);
+  gulp.watch("app/scripts/main.js", ["concatScripts"])
+    .on("change", browserSync.reload);
+  gulp.watch("app/*.html")
+    .on("change", browserSync.reload);
+  gulp.watch("app/*.php")
+    .on("change", browserSync.reload);
+})
+
+gulp.task("serve", ["watch"]);
+
+// Cleaning 
+gulp.task("clean:dist", () => {
+  return del.sync(["dist/**/*", "!dist/images", "!dist/images/**/*"]);
+})
+
+// Build Sequences
+// ---------------
+
+gulp.task("build", (callback) => {
+  runSequence("clean:dist", [
+    "compileSass",
+    "concatScripts",
+    "minifyCSS",
+    "minifyScripts",
+    "imageMin",
+  ], callback);
 });
 
-gulp.task("watchFiles", () => {
-  gulp.watch("*.html")
-    .on("change", browserSync.reload);
-  gulp.watch("styles/scss/**/*.scss", ["compileSass"])
-    .on("change", browserSync.reload);
-  gulp.watch("scripts/main.js*", ["concatScripts"])
-    .on("change", browserSync.reload);
+gulp.task("default", (callback) => {
+  runSequence([
+    "build",
+    "browserSync",
+    "watchFiles"
+], callback);
 });
-
-gulp.task("serve", ["watchFiles"]);
-
-gulp.task("build", [
-  "browser-sync",
-  "compileSass",
-  "concatScripts",
-  "minifyScripts",
-  "watchFiles"
-]);
-
-gulp.task("default", ["build"]);
