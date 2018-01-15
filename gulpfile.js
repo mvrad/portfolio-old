@@ -21,18 +21,18 @@ const gulp = require("gulp"),
 gulp.task("browserSync", () => {
   browserSync.init({
     server: {
-      baseDir: "./dist/"
+      baseDir: "app"
     }
   })
 })
 
 // Compile Sass
 gulp.task("compileSass", () => {
-  return gulp.src("styles/scss/application.scss")
+  return gulp.src("app/styles/scss/application.scss")
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("styles/css"))
+    .pipe(gulp.dest("app/styles/css"))
     .pipe(browserSync.stream());
 });
 
@@ -45,7 +45,7 @@ gulp.task("concatScripts", () => {
     .pipe(maps.init())
     .pipe(concat("main.js"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("dist/scripts"));
+    .pipe(gulp.dest("scripts"));
 })
 
 // Optimization Tasks 
@@ -67,7 +67,7 @@ gulp.task("minifyCSS", () => {
     .pipe(cssnano())
     .pipe(rename("application.min.css"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("dist/styles"));
+    .pipe(gulp.dest("dist/styles/css"));
 })
 
 // Optimizing JS
@@ -106,6 +106,8 @@ gulp.task("watchFiles", [
     .on("change", browserSync.reload);
 })
 
+gulp.task("serve", ["watchFiles"]);
+
 // Cleaning 
 gulp.task("clean:dist", () => {
   return del.sync(["dist/**/*", "!dist/images", "!dist/images/**/*", "!dist/*.php"]);
@@ -121,13 +123,13 @@ gulp.task("build", (callback) => {
     "minifyHTML",
     "minifyCSS",
     "minifyScripts",
-    "imageMin",
+    "imageMin"
   ], callback);
 });
 
 gulp.task("default", (callback) => {
   runSequence("build", [
-    "browserSync",
-    "watchFiles"
+  "browserSync",
+  "watchFiles"
   ], callback);
 });
