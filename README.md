@@ -1,6 +1,6 @@
 # Portfolio
 [![Build Status](https://travis-ci.org/matthew-conrad/portfolio.svg?branch=master)](https://travis-ci.org/matthew-conrad/portfolio) [![NSP Status](https://nodesecurity.io/orgs/matthew-conrad/projects/7d5ee241-a31d-4cb6-8025-b29794046e5d/badge)](https://nodesecurity.io/orgs/matthew-conrad/projects/7d5ee241-a31d-4cb6-8025-b29794046e5d)
-![screenshot](app/images/screenshot.jpg)
+![screenshot](images/screenshot.jpg)
 My personal portfolio site featuring some of my best work in web development.
 ## Goals
 - Showcase some of my best work in web design and development
