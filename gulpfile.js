@@ -98,7 +98,7 @@ gulp.task("watchFiles", [
 ], () => {
   gulp.watch("styles/scss/**/*.scss", ["compileSass"])
     .on("change", browserSync.reload);
-  gulp.watch("scripts/main.js", ["concatScripts"])
+  gulp.watch("scripts/*.js")
     .on("change", browserSync.reload);
   gulp.watch("*.html")
     .on("change", browserSync.reload);
