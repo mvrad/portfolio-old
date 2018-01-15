@@ -21,18 +21,18 @@ const gulp = require("gulp"),
 gulp.task("browserSync", () => {
   browserSync.init({
     server: {
-      baseDir: "app"
+      baseDir: "./"
     }
   })
 })
 
 // Compile Sass
 gulp.task("compileSass", () => {
-  return gulp.src("app/styles/scss/application.scss")
+  return gulp.src("styles/scss/application.scss")
     .pipe(maps.init())
     .pipe(sass())
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("app/styles/css"))
+    .pipe(gulp.dest("styles/css"))
     .pipe(browserSync.stream());
 });
 
@@ -62,17 +62,17 @@ gulp.task("minifyHTML", () => {
 
 // Optimizing CSS 
 gulp.task("minifyCSS", () => {
-  return gulp.src("app/styles/css/*.css")
+  return gulp.src("styles/css/*.css")
     .pipe(maps.init())
     .pipe(cssnano())
     .pipe(rename("application.min.css"))
     .pipe(maps.write("./"))
-    .pipe(gulp.dest("dist/styles/css"));
+    .pipe(gulp.dest("styles/css"));
 })
 
 // Optimizing JS
 gulp.task("minifyScripts", () => {
-  return gulp.src("app/scripts/main.js")
+  return gulp.src("scripts/main.js")
     .pipe(minifyJS({
       mangle: {
         keepClassName: true
@@ -84,7 +84,7 @@ gulp.task("minifyScripts", () => {
 
 // Optimizing Images 
 gulp.task("imageMin", () => {
-  return gulp.src("app/images/*")
+  return gulp.src("images/*")
     .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -96,13 +96,13 @@ gulp.task("watchFiles", [
   "browserSync",
   "compileSass"
 ], () => {
-  gulp.watch("app/styles/scss/**/*.scss", ["compileSass"])
+  gulp.watch("styles/scss/**/*.scss", ["compileSass"])
     .on("change", browserSync.reload);
-  gulp.watch("app/scripts/main.js", ["concatScripts"])
+  gulp.watch("scripts/main.js", ["concatScripts"])
     .on("change", browserSync.reload);
-  gulp.watch("app/*.html")
+  gulp.watch("*.html")
     .on("change", browserSync.reload);
-  gulp.watch("app/*.php")
+  gulp.watch("*.php")
     .on("change", browserSync.reload);
 })
 
