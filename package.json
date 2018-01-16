@@ -27,6 +27,6 @@
     "run-sequence": "^2.2.1"
   },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint ./scripts/script.js"
+    "test": "./node_modules/jshint/bin/jshint scripts/script.js"
   }
 }
