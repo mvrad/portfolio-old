@@ -893,30 +893,30 @@ Images
   position: absolute;
   left: 50%;
   right: 0;
-  top: 14px;
-  height: 145px;
+  top: 11px;
+  height: 148px;
   width: auto;
   z-index: 1;
-  margin-left: -116px; }
+  margin-left: -114px; }
   @media (min-width: 375px) {
     #macbook-slider {
-      top: 17px;
-      height: 167px;
-      margin-left: -133.594px; } }
+      top: 13px;
+      height: 175px;
+      margin-left: -135px; } }
   @media (min-width: 768px) {
     #macbook-slider {
       top: 23px;
-      height: 310px;
-      margin-left: -256.5px; } }
+      height: 315px;
+      margin-left: -244px; } }
 
 #macbook-slider img {
-  height: 145px; }
+  height: 148px; }
   @media (min-width: 375px) {
     #macbook-slider img {
-      height: 167px; } }
+      height: 174px; } }
   @media (min-width: 768px) {
     #macbook-slider img {
-      height: 328px; } }
+      height: 315px; } }
 
 #profile-img {
   display: block;
