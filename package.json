@@ -25,8 +25,5 @@
     "gulp-sourcemaps": "^2.6.3",
     "jshint": "^2.9.5",
     "run-sequence": "^2.2.1"
-  },
-  "scripts": {
-    "test": "./node_modules/jshint/bin/jshint scripts/script.js"
   }
 }
