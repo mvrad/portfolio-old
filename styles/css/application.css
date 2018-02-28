@@ -602,9 +602,6 @@ Portfolio
 ==============================================================================*/
 #portfolio {
   background-color: #797e83; }
-  @media (min-width: 1545px) {
-    #portfolio {
-      height: 1579.590px; } }
   #portfolio .container {
     position: relative;
     margin: 0 20px; }
