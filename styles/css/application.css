@@ -613,9 +613,6 @@ Portfolio
     @media (min-width: 768px) {
       #portfolio .section-header {
         width: 500px; } }
-    @media (min-width: 1545px) {
-      #portfolio .section-header {
-        display: none; } }
   #portfolio h1 {
     margin: 0;
     padding: 80px 0 20px; }
@@ -633,9 +630,6 @@ Portfolio Filter
   text-align: center;
   margin: 40px auto 60px;
   padding: 0; }
-  @media (min-width: 1545px) {
-    #portfolio-filter {
-      display: none; } }
   #portfolio-filter a {
     font-family: "Nunito Sans", sans-serif;
     background-color: #fff;
@@ -1287,9 +1281,6 @@ Portfolio Gallery
   text-align: center;
   margin: 0 auto;
   padding: 0 0 80px; }
-  @media (min-width: 1545px) {
-    .grid {
-      display: none; } }
 
 .grid figure {
   display: inline-block;

@@ -9,9 +9,6 @@ Portfolio Gallery
 	text-align: center;
 	margin: 0 auto;
 	padding: 0 0 80px;
-	@include mq(large) {
-    display: none;
-  }
 }
 .grid:after {
 	@extend %clearfix;

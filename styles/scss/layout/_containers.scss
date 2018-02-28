@@ -192,9 +192,6 @@ Portfolio
     @include mq(medium) {
       width: 500px;
     }
-    @include mq(large) {
-      display: none;
-    }
   }
   & h1 {
     margin: 0;
@@ -217,9 +214,6 @@ Portfolio
   text-align: center;
   margin: 40px auto 60px;
   padding: 0;
-  @include mq(large) {
-    display: none;
-  }
   & a {
     font-family: $font-family--primary;
     background-color: $white;

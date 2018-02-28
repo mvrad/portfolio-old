@@ -32,7 +32,7 @@ $(() => {
             direction: "down",
             duration: 1000
           });
-        }, (i * 250));
+        }, (i * 175));
       });
     }
     if ($(this).scrollTop() > 1400) {
@@ -43,17 +43,6 @@ $(() => {
     }
     if ($(this).scrollTop() > 1800) {
       $("#blogbtn").show("fade");
-    }
-    if ($(this).scrollTop() > 2200) {
-      $("#portfolio .section-header").show("fade");
-      $("#portfolio-filter").show("fade");
-    }
-    if ($(this).scrollTop() > 2400) {
-      $(".grid").show({
-        effect: "drop",
-        direction: "down",
-        duration: 1000
-      });
     }
   });
   // Hamburger menu animation
