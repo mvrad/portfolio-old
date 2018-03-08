@@ -789,13 +789,15 @@ Typography
 ==============================================================================*/
 #logo {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 2em;
+  font-size: 2.4em;
   font-weight: 800;
-  color: #797e83;
   text-align: center;
   margin: 0 auto;
-  margin: 15px 0 15px 25px;
+  margin: 5px 10px 0;
   padding: 5px; }
+  @media (min-width: 768px) {
+    #logo {
+      display: none; } }
 
 #in {
   font-family: "Nunito Sans", sans-serif;
@@ -934,23 +936,19 @@ Nav
   #main-nav .container {
     display: flex;
     background-color: #fff;
+    height: 60px;
     margin: 0 auto; }
   #main-nav ul {
     display: flex;
     margin: 0 auto;
     padding: 0; }
-  #main-nav .logo-sm {
-    border: solid 2px #797e83; }
-    @media (min-width: 768px) {
-      #main-nav .logo-sm {
-        display: none; } }
   #main-nav button {
     width: 50px;
     height: 50px;
     border: none;
     background-color: #fff;
     text-decoration: none;
-    margin: 15px 25px 0 15px;
+    margin: 7px 15px 0 15px;
     padding: 0; }
 
 #site-nav {
@@ -960,7 +958,7 @@ Nav
   list-style: none;
   z-index: 98;
   width: 100%;
-  padding-top: 80px; }
+  padding-top: 60px; }
 
 .nav {
   display: block;
@@ -979,6 +977,9 @@ Nav
   text-align: center;
   margin: 0 auto;
   padding: 20px 0; }
+
+#logo-sm {
+  color: #797e83; }
 
 #logo-lg {
   font-family: "Nunito Sans", sans-serif;
@@ -1174,7 +1175,7 @@ Hamburger Icon
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: #1d2026;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;

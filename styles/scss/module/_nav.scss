@@ -15,6 +15,7 @@ Nav
   & .container {
     display: flex;
     background-color: $white;
+    height: 60px;
     margin: 0 auto;
   }
   & ul {
@@ -22,19 +23,13 @@ Nav
     margin: 0 auto;
     padding: 0;
   }
-  & .logo-sm {
-    border: solid 2px $grey;
-    @include mq(medium) {
-      display: none;
-    }
-  }
   & button {
     width: 50px;
     height: 50px;
     border: none;
     background-color: $white;
     text-decoration: none;
-    margin: 15px 25px 0 15px;
+    margin: 7px 15px 0 15px;
     padding: 0;
   }
 }
@@ -45,7 +40,7 @@ Nav
   list-style: none;
   z-index: 98;
   width: 100%;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .nav {
   display: block;
@@ -64,6 +59,9 @@ Nav
   text-align: center;
   margin: 0 auto;
   padding: 20px 0;
+}
+#logo-sm {
+  color: $grey;
 }
 #logo-lg {
   font-family: $font-family--primary;
