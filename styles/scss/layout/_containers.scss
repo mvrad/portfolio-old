@@ -277,8 +277,9 @@ Contact
       margin: 0 auto;
     }
   }
-  & h1, p {
+  & h1 {
     color: $black;
+    padding-bottom: 40px;
   }
 }
 #copyright span {

@@ -684,8 +684,9 @@ Contact
       #contact p {
         width: 500px;
         margin: 0 auto; } }
-  #contact h1, #contact p {
-    color: #1d2026; }
+  #contact h1 {
+    color: #1d2026;
+    padding-bottom: 40px; }
 
 #copyright span {
   font-size: 1em; }
