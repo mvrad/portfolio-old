@@ -460,16 +460,13 @@ Home
 ==============================================================================*/
 #home {
   height: 100vh;
+  overflow: hidden;
   background: linear-gradient(0deg, #1e90ff, #901ef5); }
-  @media (orientation: landscape) {
-    #home {
-      height: 100vw; } }
   @media (min-width: 1545px) {
     #home {
       height: 100vh; } }
   #home h1, #home h2 {
-    color: #fff;
-    margin: 0; }
+    color: #fff; }
 
 .flex-grow {
   flex-grow: 1; }
@@ -819,18 +816,27 @@ Typography
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  padding-bottom: 40px; }
+  padding-bottom: 38px; }
   @media (min-width: 375px) {
     #in-2 {
-      font-size: 1.8em; } }
+      font-size: 1.8em;
+      padding-bottom: 110px; } }
   @media (min-width: 768px) {
     #in-2 {
       font-size: 2.4em;
-      padding-bottom: 60px; } }
+      padding-bottom: 200px; } }
 
-@media (min-width: 1545px) {
-  #txt-col {
-    display: none; } }
+#txt-col {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: transparent; }
+  @media (min-width: 1545px) {
+    #txt-col {
+      display: none; } }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
@@ -861,7 +867,13 @@ h1, h2, p {
 Images
 ==============================================================================*/
 #slider-wrapper {
-  display: none; }
+  position: absolute;
+  top: 44%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
 #macbook-pro-img {
   position: absolute;
@@ -879,9 +891,6 @@ Images
     #macbook-pro-img {
       height: 380px; } }
 
-#macbook-pro {
-  position: relative; }
-
 #macbook-slider {
   position: absolute;
   left: 50%;
@@ -890,6 +899,7 @@ Images
   height: 148px;
   width: auto;
   z-index: 1;
+  overflow: hidden;
   margin-left: -117px; }
   @media (min-width: 375px) {
     #macbook-slider {

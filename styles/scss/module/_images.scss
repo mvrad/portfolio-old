@@ -3,7 +3,13 @@ Images
 ==============================================================================*/
 
 #slider-wrapper {
-  display: none;
+  position: absolute;
+  top: 44%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 #macbook-pro-img {
@@ -22,9 +28,7 @@ Images
     height: 380px;
   }
 }
-#macbook-pro {
-  position: relative;
-}
+
 #macbook-slider {
   position: absolute;
   left: 50%;
@@ -33,6 +37,7 @@ Images
   height: 148px;
   width: auto;
   z-index: 1;
+  overflow: hidden;
   margin-left: -117px;
   @include mq(small) {
     top: 13px;

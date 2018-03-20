@@ -8,16 +8,13 @@ Home
 
 #home {
   height: 100vh;
-  @media (orientation: landscape) {
-    height: 100vw;
-  }
+  overflow: hidden;
   @include mq(large) {
     height: 100vh;
   }
   background: linear-gradient(0deg, $dodger-blue, $purple);
   & h1, h2 {
     color: $white;
-    margin: 0;
   }
 }
 .flex-grow {
