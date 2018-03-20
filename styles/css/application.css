@@ -879,6 +879,7 @@ Images
 
 #macbook-pro-img {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 2;
@@ -923,6 +924,9 @@ Images
     #macbook-slider img {
       height: 315px; } }
 
+#black-bg {
+  background-color: #1d2026; }
+
 #profile-img {
   display: block;
   width: 340px;
@@ -934,6 +938,32 @@ Images
     #profile-img {
       width: 360px;
       border: 12px solid #fff; } }
+
+#black-bg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#black-bg {
+  background-color: #000;
+  display: inline-block;
+  height: 160px;
+  width: 240px;
+  z-index: 1;
+  margin: 5px auto 0; }
+  @media (min-width: 375px) {
+    #black-bg {
+      height: 175px;
+      width: 280px;
+      margin: 10px auto 0; } }
+  @media (min-width: 768px) {
+    #black-bg {
+      height: 315px;
+      width: 504px;
+      margin: 20px auto 0; } }
+
+#black-bg h1 {
+  color: #000; }
 
 /*==============================================================================
 Nav
