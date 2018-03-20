@@ -54,7 +54,7 @@ Typography
   margin-right: auto;
   width: 100%;
   background-color: transparent;
-  @include mq(large) {
+  @include mq(medium) {
     display: none;
   }
 }

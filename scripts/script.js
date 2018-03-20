@@ -9,10 +9,6 @@ $(() => {
     direction: "down",
     duration: 1000
   });
-  $("#slider-wrapper").show({
-    effect: "fade",
-    duration: 1000
-  });
   // Adds .small class to nav bar on scroll
   $(document).on("scroll", () => {
     ($(document).scrollTop() > 1) ?

@@ -471,9 +471,6 @@ Home
 .flex-grow {
   flex-grow: 1; }
 
-#txt-col, #imac {
-  display: none; }
-
 /*==============================================================================
 Services
 ==============================================================================*/
@@ -834,7 +831,7 @@ Typography
   margin-right: auto;
   width: 100%;
   background-color: transparent; }
-  @media (min-width: 1545px) {
+  @media (min-width: 768px) {
     #txt-col {
       display: none; } }
 
