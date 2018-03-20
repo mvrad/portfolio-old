@@ -9,12 +9,13 @@ Home
 #home {
   height: 100vh;
   overflow: hidden;
-  @include mq(large) {
-    height: 100vh;
-  }
   background: linear-gradient(0deg, $dodger-blue, $purple);
   & h1, h2 {
     color: $white;
+  }
+  @media only screen and (orientation: landscape)
+    and (max-device-width: 823px) {
+    height: 100vw;
   }
 }
 .flex-grow {

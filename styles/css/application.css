@@ -462,11 +462,11 @@ Home
   height: 100vh;
   overflow: hidden;
   background: linear-gradient(0deg, #1e90ff, #901ef5); }
-  @media (min-width: 1545px) {
-    #home {
-      height: 100vh; } }
   #home h1, #home h2 {
     color: #fff; }
+  @media only screen and (orientation: landscape) and (max-device-width: 823px) {
+    #home {
+      height: 100vw; } }
 
 .flex-grow {
   flex-grow: 1; }
@@ -868,12 +868,14 @@ Images
 ==============================================================================*/
 #slider-wrapper {
   position: absolute;
-  top: 44%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  top: 250px;
   width: 100%; }
+  @media (min-width: 375px) {
+    #slider-wrapper {
+      top: 300px; } }
+  @media (min-width: 768px) {
+    #slider-wrapper {
+      top: 360px; } }
 
 #macbook-pro-img {
   position: absolute;
