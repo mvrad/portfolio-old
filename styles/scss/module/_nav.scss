@@ -3,7 +3,6 @@ Nav
 ==============================================================================*/
 
 // Mobile Nav
-
 #main-nav {
   z-index: 99;
   position: fixed;
@@ -33,6 +32,7 @@ Nav
     padding: 0;
   }
 }
+
 #site-nav {
   background-color: $white;
   position: fixed;
@@ -42,12 +42,14 @@ Nav
   width: 100%;
   padding-top: 60px;
 }
+
 .nav {
   display: block;
   margin: 0 auto;
   padding: 0;
   box-shadow: 0 6px 16px -3px rgba(0,0,0,0.3);
 }
+
 .nav a {
   font-family: $font-family--primary;
   color: $black;
@@ -60,9 +62,11 @@ Nav
   margin: 0 auto;
   padding: 20px 0;
 }
+
 #logo-sm {
   color: $grey;
 }
+
 #logo-lg {
   font-family: $font-family--primary;
   font-weight: $font-weight--medium;
@@ -74,6 +78,7 @@ Nav
   margin: 16px 0;
   padding: 5px;
 }
+
 #hamburger {
   @include mq(medium) {
     display: none;
@@ -81,13 +86,13 @@ Nav
 }
 
 // Tablet/Desktop Nav
-
 #main-nav-lg {
   display: none;
   @include mq(medium) {
     display: block;
   }
 }
+
 #nav-lg {
   background-color: transparent;
   position: fixed;

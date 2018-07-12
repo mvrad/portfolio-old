@@ -49,6 +49,7 @@ Email Form
     padding: 0;
   }
 }
+
 #btns {
   display: flex;
 }
@@ -65,6 +66,7 @@ Email Form
       -moz-border-radius: 4px;
           border-radius: 4px;
 }
+
 .error {
   font-family: $font-family--secondary;
   width: 250px;

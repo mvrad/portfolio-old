@@ -3,7 +3,6 @@ Extends
 ==============================================================================*/
 
 // Flexbox 'wrap'
-
 %flex-wrap {
   display: flex;
   flex-direction: row;
@@ -14,7 +13,6 @@ Extends
 }
 
 // Flexbox 'nowrap'
-
 %flex-nowrap {
   display: flex;
   flex-direction: row;
@@ -25,7 +23,6 @@ Extends
 }
 
 // Clearfix
-
 %clearfix {
   display: table;
   clear: both;

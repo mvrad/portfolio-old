@@ -3,19 +3,16 @@ Global Config
 ==============================================================================*/
 
 // Font stacks
-
-$font-url--google        : 'https://fonts.googleapis.com/css?family=Nunito+Sans:800|Open+Sans:300,400';
-$font-family--primary    : 'Nunito Sans', sans-serif;
-$font-family--secondary  : 'Open Sans', sans-serif;
+$font-url--google        : "https://fonts.googleapis.com/css?family=Nunito+Sans:800|Open+Sans:300,400";
+$font-family--primary    : "Nunito Sans", sans-serif;
+$font-family--secondary  : "Open Sans", sans-serif;
 
 // Font weights
-
-$font-weight--thin       : 300;
-$font-weight--medium     : 400;
-$font-weight--bold       : 800;
+$font-weight--thin		: 300;
+$font-weight--medium	: 400;
+$font-weight--bold		: 800;
 
 // Descriptive base colors
-
 $white         : #fff;
 $black         : #1d2026;
 $grey          : #797e83;
@@ -33,56 +30,48 @@ $carrot-orange : #f5901e;
 $cream         : #ffffcb;
 
 // Color usage
-
 $color-primary   : $dodger-blue;
 $color-shadow    : rgba($dodger-blue, .4);
 
 // Color palette modifiers
-
 $color-palettes: (
-	grey: (
-	xx-light : lighten($grey, 43%),
-	x-light  : lighten($grey, 35%),
-	light    : lighten($grey, 12%),
-	base     : $grey,
-	dark     : darken($grey, 8%),
-	x-dark   : darken($grey, 16%)
-	),
-	black: (
-	light    : lighten($black, 10%),
-	base     : $black,
-	dark     : darken($black, 10%)
-	)
+  grey: (
+  xx-light : lighten($grey, 43%),
+  x-light  : lighten($grey, 35%),
+  light    : lighten($grey, 12%),
+  base     : $grey,
+  dark     : darken($grey, 8%),
+  x-dark   : darken($grey, 16%)
+  ),
+  black: (
+  light    : lighten($black, 10%),
+  base     : $black,
+  dark     : darken($black, 10%)
+  )
 );
 
 // Text
-
 $base__font-size : 16px;
 $base__line      : 24px;
 $letter-space    : 1px;
 
 // Border radius
-
 $br--default    : .4em;
 $br--round      : 50%;
 
 // Transitions
-
 $trns-duration  : .3s;
 
 // Path to assets
-
 $path-images    : "../images";
 
 // Grid
-
 $g-col-width    : 65px;
 $g-gutter-width : 20px;
 $g-col-count    : 12;
 $g-cont-max-w   : 1050px;
 
 // Breakpoints
-
 $brkpoint-sm    : 375px;
 $brkpoint-md    : 768px;
 $brkpoint-lg    : 1545px;

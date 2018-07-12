@@ -2,19 +2,38 @@
 Main Script
 ==============================================================================*/
 $(() => {
+
   "use strict";
+
+  // Preload images
+  $.fn.preload = function() {
+    this.each(() => {
+      $("<images/>")[0].src = this;
+    });
+  }
+
+  $(
+    ["code.svg","responsive.svg","seo.svg","macbook-pro.png","mac-agage.jpg",
+    "mac-int.jpg","mac-reg.jpg","me.jpg","thumb-ag.jpg","thumb-author.jpg",
+    "thumb-employee.jpg","thumb-int.jpg","thumb-pagination.jpg","thumb-performer.jpg",
+    "thumb-pnw.jpg","thumb-quotes.jpg","thumb-reg.jpg","thumb-tictactoe.jpg",
+    "thumb-uav.jpg","thumb-wino.jpg"]
+  ).preload();
+
   //  Landing page opening titles and effects
   $("#txt-col").show({
     effect: "slide",
     direction: "down",
     duration: 1000
   });
+
   // Adds .small class to nav bar on scroll
   $(document).on("scroll", () => {
     ($(document).scrollTop() > 1) ?
     $("#nav-lg").removeClass("large").addClass("small"):
       $("#nav-lg").removeClass("small").addClass("large");
   });
+
   // Title effects
   $(window).on("scroll", () => {
     if ($(this).scrollTop() > 400) {
@@ -41,6 +60,7 @@ $(() => {
       $("#blogbtn").show("fade");
     }
   });
+
   // Hamburger menu animation
   $(".hamburger").on("click", () => {
     $(".hamburger").toggleClass("is-active");
@@ -54,6 +74,7 @@ $(() => {
   $(".nav a").on("click", () => {
     $("#site-nav").hide();
   });
+
   // Nav bar links
   $("#first, #first-lg").on("click", () => {
     $("html, body").animate({
@@ -79,6 +100,7 @@ $(() => {
     }, 1000);
     $(".hamburger").toggleClass("is-active");
   });
+
   // Photo slider
   $("#macbook-slider").slick({
     accessibility: false,
@@ -97,6 +119,7 @@ $(() => {
     speed: 1000,
     autoplaySpeed: 2000
   });
+
   // Sequential Filtering Component
   const $filters = $(".filter [data-filter]"),
   $boxes = $(".boxes [data-category]");
@@ -120,6 +143,7 @@ $(() => {
       });
     }
   });
+
   // Keep Filter Links Highlighted
   $("a").click(() => {
     $(this).toggleClass("active");
@@ -153,6 +177,7 @@ $(() => {
       }
     });
   });
+
   // Dynamic copyright year
   $("#year").html(new Date().getFullYear());
 });

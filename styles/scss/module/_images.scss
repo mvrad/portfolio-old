@@ -87,7 +87,7 @@ Images
 }
 
 #black-bg {
-  background-color: #000;
+  background-color: $black;
   display: inline-block;
   height: 160px;
   width: 240px;
@@ -106,5 +106,5 @@ Images
 }
 
 #black-bg h1 {
-  color: #000;
+  color: $black;
 }

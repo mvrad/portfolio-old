@@ -30,7 +30,6 @@ Services
   background-color: $white;
   @include mq(large) {
     height: 100vh;
-    // height: 651px;
   }
   & .container {
     margin: 0 20px;
@@ -108,7 +107,6 @@ About
   background: linear-gradient(0deg, $carrot-orange, $trinidad);
   @include mq(large) {
     height: 100vh;
-    // height: 804px;
   }
   & .container {
     margin: 0 20px;

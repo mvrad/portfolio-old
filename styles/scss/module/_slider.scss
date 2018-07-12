@@ -16,6 +16,7 @@ Photo Slider
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
+
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -32,6 +33,7 @@ Photo Slider
     cursor: hand;
   }
 }
+
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -63,6 +65,7 @@ Photo Slider
     visibility: hidden;
   }
 }
+
 .slick-slide {
   outline: 0;
   float: left;
@@ -98,6 +101,7 @@ Photo Slider
     border: 1px solid transparent;
   }
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }
