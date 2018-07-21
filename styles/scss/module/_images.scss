@@ -72,11 +72,9 @@ Images
   width: 340px;
   height: auto;
   margin: 0 auto;
-  border: 8px solid $white;
   border-radius: $br--round;
   @include mq(medium) {
     width: 360px;
-    border: 12px solid $white;
   }
 }
 

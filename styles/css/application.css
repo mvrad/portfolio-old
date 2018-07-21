@@ -929,12 +929,10 @@ Images
   width: 340px;
   height: auto;
   margin: 0 auto;
-  border: 8px solid #fff;
   border-radius: 50%; }
   @media (min-width: 768px) {
     #profile-img {
-      width: 360px;
-      border: 12px solid #fff; } }
+      width: 360px; } }
 
 #black-bg-container {
   display: flex;
