@@ -447,6 +447,27 @@ Extends
   align-items: center;
   align-content: center; }
 
+.modal-header .modal-header-btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.modal-header, .modal-footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.modal-window_content {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "header" "main"; }
+
 .grid:after {
   display: table;
   clear: both;
@@ -778,6 +799,71 @@ Email Sent
     text-decoration: underline; }
   #sent a {
     color: #fff; }
+
+/*==============================================================================
+Modal Window
+==============================================================================*/
+.modal-window {
+  position: fixed;
+  background-color: #797e83;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  overflow: auto;
+  pointer-events: none;
+  opacity: 0; }
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .modal-window header {
+    font-weight: bold; }
+  .modal-window .modal-title {
+    color: #fff;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0; }
+  .modal-window .modal-close, .modal-window .modal-view-site {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fff;
+    color: #1d2026;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: 10px 5px;
+    padding: 10px 20px; }
+  .modal-window .modal-close:hover, .modal-window .modal-view-site:hover {
+    background-color: #1d2026;
+    color: #fff;
+    border: none;
+    transition: background-color .4s ease; }
+  .modal-window .modal-close {
+    cursor: pointer; }
+
+.modal-window_content {
+  height: 100vh; }
+
+.modal-header {
+  margin: 60px 60px 0 60px; }
+  .modal-header img {
+    max-width: 100%;
+    max-height: 500px; }
+
+.modal-footer {
+  background-color: #fff;
+  padding: 20px; }
+  .modal-footer > div {
+    max-width: 666.656px;
+    text-align: left; }
+  .modal-footer span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.125em; }
 
 /*==============================================================================
 Typography

@@ -178,6 +178,13 @@ $(() => {
     });
   });
 
+  $(".modal-close").on("click", () => {
+    $(".modal-window").css("display", "none");
+  });
+  $(".modal").on("click", () => {
+    $(".modal-window").css("display", "block");
+  });
+
   // Dynamic copyright year
   $("#year").html(new Date().getFullYear());
 });

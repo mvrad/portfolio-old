@@ -207,7 +207,8 @@
         <a class="apps" data-filter="apps" href="#" role="button">Apps</a>
       </div>
       <div class="grid boxes">
-        <a class="forms" data-category="forms" href="https://matthew-conrad.github.io/interactive-form" target="_blank">
+        <!-- Int Form -->
+        <a class="forms modal" data-category="forms" href="#int-form-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-int.jpg">
             <figcaption>
@@ -215,7 +216,37 @@
             </figcaption>
           </figure>
         </a>
-        <a class="sites" data-category="sites" href="https://matthew-conrad.github.io/explore-the-pnw" target="_blank">
+        <!-- Int Form Modal -->
+        <div id="int-form-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/interactive-form" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Interactive Registration Form</span>
+              <img src="images/thumb-int.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  A registration form that features various input fields and
+                  subtle jQuery animations complete with real-time form
+                  validation and error messages.
+                  <br><br>
+                  For example, the form checks
+                  for errors such as an invalid email address. The error
+                  appears as the user begins to type and disappears as soon
+                  as the user has entered a complete and correctly formatted
+                  email address. It does this by checking if the input matches
+                  a given JavaScript regular expression.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Parallax Demonstration -->
+        <a class="sites modal" data-category="sites" href="#pnw-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-pnw.jpg">
             <figcaption>
@@ -223,7 +254,34 @@
             </figcaption>
           </figure>
         </a>
-        <a class="sites" data-category="sites" href="https://matthew-conrad.github.io/anderson-gage" target="_blank">
+        <!-- Parallax Demonstration Modal -->
+        <div id="pnw-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/explore-the-pnw" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Parallax Demonstration</span>
+              <img src="images/thumb-pnw.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  A simple page I created where I wanted to experiment with
+                  various "parallax" scrolling effect animations.
+                  <br><br>
+                  It contains a full-page header that features a design
+                  technique called "fixed background, scrolling elements",
+                  a "periscope window" effect, and various "landing element"
+                  animations.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Architecture Firm Template -->
+        <a class="sites modal" data-category="sites" href="#ag-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-ag.jpg">
             <figcaption>
@@ -231,7 +289,31 @@
             </figcaption>
           </figure>
         </a>
-        <a class="apps" data-category="apps" href="https://matthew-conrad.github.io/random-quote-generator" target="_blank">
+        <!-- Architecture Firm Template Modal -->
+        <div id="ag-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/anderson-gage" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Architecture Firm Template</span>
+              <img src="images/thumb-ag.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  A multiple-page template website for an architecture firm.
+                  <br><br>
+                  The site features copyright-free photography from Unsplash
+                  and a logo that I designed.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Random Quote Generator -->
+        <a class="apps modal" data-category="apps" href="#quotes-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-quotes.jpg">
             <figcaption>
@@ -239,46 +321,193 @@
             </figcaption>
           </figure>
         </a>
-        <a class="apps" data-category="apps" href="https://matthew-conrad.github.io/tic-tac-toe" target="_blank">
+        <!-- Random Quote Generator Modal -->
+        <div id="quotes-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/random-quote-generator" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Random Quote Generator</span>
+              <img src="images/thumb-quotes.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  An app that generates a random quote from a fixed set of
+                  quotes.
+                  <br><br>
+                  Look, pretty colors!
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tic-Tac-Toe -->
+        <a class="apps modal" data-category="apps" href="#tictactoe-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-tictactoe.jpg">
             <figcaption>
-              <h5>Tic Tac Toe</h5>
+              <h5>Tic-Tac-Toe</h5>
             </figcaption>
           </figure>
         </a>
-        <a class="apps" data-category="apps" href="https://matthew-conrad.github.io/employee-directory" target="_blank">
+        <!-- Tic-Tac-Toe Modal -->
+        <div id="tictactoe-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/tic-tac-toe" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Tic-Tac-Toe</span>
+              <img src="images/thumb-tictactoe.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  Anyone up for a game of tic-tac-toe?
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Employee Directory -->
+        <a class="apps modal" data-category="apps" href="#emp-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-employee.jpg">
             <figcaption>
-              <h5>Employee Directory with AJAX and API</h5>
+              <h5>Employee Directory</h5>
             </figcaption>
           </figure>
         </a>
-        <a class="apps" data-category="apps" href="https://winoapp.herokuapp.com" target="_blank">
-          <figure class="effect-goliath">
-            <img src="images/thumb-wino.jpg">
-            <figcaption>
-              <h5>Node.js App with Authentication</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <a class="sites" data-category="sites" href="https://blog.mconrad.me" target="_blank">
+        <!-- Employee Directory Modal -->
+        <div id="emp-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://matthew-conrad.github.io/employee-directory" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Employee Directory</span>
+              <img src="images/thumb-employee.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  An app that features profiles of actual photographs of people
+                  and fictional information for each person. The photographs and
+                  information are generated via an API called "Random User
+                  Generator" which acts like "Lorem Ipsum" but with people. The
+                  app retrieves data from this API asynchronously without
+                  interfering with the display and behavior of the existing page
+                  in what is known as AJAX.
+                  <br><br>
+                  The app also features a modal window that appears and
+                  disappears with the click of a button.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog -->
+        <a class="sites modal" data-category="sites" href="#blog-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-blog.jpg">
             <figcaption>
-              <h5>Bootstrap 4 Blog</h5>
+              <h5>My Blog</h5>
             </figcaption>
           </figure>
         </a>
-        <a class="apps" data-category="apps" href="https://travelstar.herokuapp.com" target="_blank">
+        <!-- Blog Modal -->
+        <div id="blog-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://blog.mconrad.me" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Web Devolution: My Blog</span>
+              <img src="images/thumb-blog.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  Created using mostly Bootstrap 4 elements, I continue to write
+                  in my blog as often as I can&mdash;at least as often as I feel
+                  compelled enough to write about something, anyway.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Wino -->
+        <a class="apps modal" data-category="apps" href="#wino-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-wino.jpg">
+            <figcaption>
+              <h5>Wine Cellar App</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Wino Modal -->
+        <div id="wino-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://winoapp.herokuapp.com" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Wine Cellar App</span>
+              <img src="images/thumb-wino.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  Written in Node.js, Express, and MongoDB, "Wino" is a wine cellar management app
+                  that allows a user to create a secure account, search a third party API
+                  (snooth.com) for wine, store a single bottle at a time in a "virtual cellar",
+                  and keep saved notes for each bottle in a collection.
+                  <br><br>
+                  This app features user authentication.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- TravelStar -->
+        <a class="apps modal" data-category="apps" href="#travelstar-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-travelstar.jpg">
             <figcaption>
-              <h5>PHP Laravel App with API</h5>
+              <h5>Travel App</h5>
             </figcaption>
           </figure>
         </a>
+        <!-- TravelStar Modal -->
+        <div id="travelstar-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://travelstar.herokuapp.com" target="_blank">Visit Site</a>
+              </div>
+              <span class="modal-title">Travel App</span>
+              <img src="images/thumb-travelstar.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  "TravelStar" was written in the PHP Laravel web framework, and allows a user to
+                  search for a list of top ten attractions, top activities like bus tours, media
+                  such as photos and videos, and various dining options. This project
+                  utilizes the Sygic Travel API.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

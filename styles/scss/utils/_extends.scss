@@ -22,6 +22,24 @@ Extends
   align-content: center;
 }
 
+%flex-center-col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+// Grid 'modal'
+%grid-modal {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "header"
+    "main";
+}
+
 // Clearfix
 %clearfix {
   display: table;

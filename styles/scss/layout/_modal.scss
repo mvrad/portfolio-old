@@ -1,0 +1,84 @@
+/*==============================================================================
+Modal Window
+==============================================================================*/
+
+.modal-window {
+  position: fixed;
+  background-color: $grey;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  overflow: auto;
+  pointer-events: none;
+	opacity: 0;
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  header {
+    font-weight: bold;
+  }
+  .modal-title {
+    color: $white;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .modal-close, .modal-view-site {
+    font-family: $font-family--primary;
+    background-color: $white;
+    color: $black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    margin: 10px 5px;
+    padding: 10px 20px;
+  }
+  .modal-close:hover, .modal-view-site:hover {
+    background-color: $black;
+    color: $white;
+    border: none;
+    transition: background-color .4s ease;
+  }
+  .modal-close {
+    cursor: pointer;
+  }
+}
+
+.modal-window_content {
+  @extend %grid-modal;
+  height: 100vh;
+}
+
+.modal-header {
+  @extend %flex-center-col;
+  margin: 60px 60px 0 60px;
+  img {
+    max-width: 100%;
+    max-height: 500px;
+  }
+  .modal-header-btns {
+    @extend %flex-nowrap;
+  }
+}
+
+.modal-footer {
+  @extend %flex-center-col;
+  background-color: $white;
+  padding: 20px;
+  &>div {
+    max-width: 666.656px;
+    text-align: left;
+  }
+  span {
+    font-family: $font-family--secondary;
+    font-weight: $font-weight--medium;
+    font-size: 1.125em;
+  }
+}
