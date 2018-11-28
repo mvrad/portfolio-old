@@ -51,6 +51,14 @@ Modal Window
   }
 }
 
+.modal-link {
+  text-decoration: underline;
+  color: $dodger-blue;
+}
+.modal-link:hover {
+  text-decoration: none;
+}
+
 .modal-window_content {
   @extend %grid-modal;
   height: 100vh;

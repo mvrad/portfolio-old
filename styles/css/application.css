@@ -845,6 +845,13 @@ Modal Window
   .modal-window .modal-close {
     cursor: pointer; }
 
+.modal-link {
+  text-decoration: underline;
+  color: #1e90ff; }
+
+.modal-link:hover {
+  text-decoration: none; }
+
 .modal-window_content {
   height: 100vh; }
 
