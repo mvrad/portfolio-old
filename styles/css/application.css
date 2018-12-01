@@ -536,7 +536,7 @@ Services
     padding: 80px 0 20px; }
     @media (min-width: 1545px) {
       #services h1 {
-        padding: 220px 0 20px; } }
+        padding: 190px 0 20px; } }
   #services h2 {
     padding: 20px 0; }
   #services h1, #services h2, #services p {
@@ -1199,8 +1199,8 @@ Icons
   padding: 0; }
 
 .icons img {
-  width: 160px;
-  height: auto; }
+  width: auto;
+  height: 200px; }
 
 .social-links {
   background-color: #00ff7f;
