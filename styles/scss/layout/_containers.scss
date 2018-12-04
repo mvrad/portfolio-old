@@ -30,11 +30,7 @@ Services
   background-color: $white;
   @include mq(large) {
     height: 100vh;
-    background: linear-gradient(
-      rgba(255, 255, 255, .6), 
-      rgba(255, 255, 255, .6)
-    ),
-      url(../../images/computer.jpg) no-repeat center/cover;
+    background: url(../../images/computer.jpg) no-repeat center/cover;
   }
   & .container {
     margin: 0 20px;

@@ -500,7 +500,7 @@ Services
   @media (min-width: 1545px) {
     #services {
       height: 100vh;
-      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../images/computer.jpg) no-repeat center/cover; } }
+      background: url(../../images/computer.jpg) no-repeat center/cover; } }
   #services .container {
     margin: 0 20px; }
     @media (min-width: 768px) {
