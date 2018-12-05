@@ -695,7 +695,7 @@ Contact
     padding: 0; }
   #contact p {
     margin: 0;
-    padding: 40px 0; }
+    padding-bottom: 40px; }
     @media (min-width: 1545px) {
       #contact p {
         width: 500px;

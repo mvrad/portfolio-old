@@ -265,7 +265,7 @@ Contact
   }
   & p {
     margin: 0;
-    padding: 40px 0;
+    padding-bottom: 40px;
     @include mq(large) {
       width: 500px;
       margin: 0 auto;
