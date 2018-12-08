@@ -594,7 +594,7 @@ About
 #blogbtn-wrapper {
   text-align: center; }
 
-#blogbtn {
+#blogbtn, #resumebtn {
   font-family: "Nunito Sans", sans-serif;
   background-color: #fff;
   color: #1d2026;
@@ -602,13 +602,10 @@ About
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  margin-bottom: 80px;
+  margin: 0 5px 80px 5px;
   outline: 0; }
-  @media (min-width: 1545px) {
-    #blogbtn {
-      display: none; } }
 
-#blogbtn:hover {
+#blogbtn:hover, #resumebtn:hover {
   background-color: #1e90ff;
   color: #fff;
   transition: background-color .4s ease; }

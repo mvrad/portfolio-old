@@ -148,7 +148,7 @@ About
 #blogbtn-wrapper {
   text-align: center;
 }
-#blogbtn {
+#blogbtn, #resumebtn {
   font-family: $font-family--primary;
   background-color: $white;
   color: $black;
@@ -156,13 +156,10 @@ About
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  margin-bottom: 80px;
+  margin: 0 5px 80px 5px;
   outline: 0;
-  @include mq(large) {
-    display: none;
-  }
 }
-#blogbtn:hover {
+#blogbtn:hover, #resumebtn:hover {
   background-color: $dodger-blue;
   color: $white;
   transition: background-color .4s ease;
