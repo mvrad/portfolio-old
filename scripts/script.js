@@ -50,15 +50,6 @@ $(() => {
         }, (i * 175));
       });
     }
-    if ($(this).scrollTop() > 1400) {
-      $("#about .section-header").show("fade");
-    }
-    if ($(this).scrollTop() > 1700) {
-      $("#about p").show("fade");
-    }
-    if ($(this).scrollTop() > 1800) {
-      $("#blogbtn").show("fade");
-    }
   });
 
   // Hamburger menu animation

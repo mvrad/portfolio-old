@@ -115,11 +115,6 @@ About
       margin: 0 80px;
     }
   }
-  & .section-header {
-    @include mq(large) {
-      display: none;
-    }
-  }
   & h1 {
     margin: 0;
     padding: 80px 0 40px;
@@ -132,9 +127,6 @@ About
     padding: 40px 0 40px;
     @include mq(medium) {
       width: 500px;
-    }
-    @include mq(large) {
-      display: none;
     }
   }
   & h1, p {

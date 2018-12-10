@@ -566,9 +566,6 @@ About
     @media (min-width: 768px) {
       #about .container {
         margin: 0 80px; } }
-  @media (min-width: 1545px) {
-    #about .section-header {
-      display: none; } }
   #about h1 {
     margin: 0;
     padding: 80px 0 40px; }
@@ -581,9 +578,6 @@ About
     @media (min-width: 768px) {
       #about p {
         width: 500px; } }
-    @media (min-width: 1545px) {
-      #about p {
-        display: none; } }
   #about h1, #about p {
     color: #fff; }
 
