@@ -1191,7 +1191,11 @@ Icons
 
 .icons img {
   width: auto;
-  height: 200px; }
+  height: 140px;
+  margin-top: 80px; }
+  @media (min-width: 1545px) {
+    .icons img {
+      margin-top: 0; } }
 
 .social-links {
   background-color: #00ff7f;

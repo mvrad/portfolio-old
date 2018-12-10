@@ -10,7 +10,11 @@ Icons
 
 .icons img {
   width: auto;
-  height: 200px;
+  height: 140px;
+  margin-top: 80px;
+  @include mq(large) {
+    margin-top: 0;
+  }
 }
 
 .social-links {
