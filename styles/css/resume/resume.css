@@ -33,6 +33,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+#title {
+  font-weight: 300;
+}
+
 h1, h2 {
   font-weight: 700;
   text-align: center;
