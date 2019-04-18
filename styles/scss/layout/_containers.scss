@@ -54,13 +54,12 @@ Services
   }
   & .skills {
     margin: 0 auto;
-    padding-bottom: 80px;
     @include mq(medium) {
       width: 500px;
     }
     @include mq(large) {
       width: 100%;
-      padding-top: 100px;
+      padding-top: 40px;
     }
   }
   & .skill-wrapper {
@@ -97,6 +96,9 @@ Services
     @include mq(large) {
       display: none;
     }
+  }
+  & p {
+    margin-bottom: 80px;
   }
 }
 

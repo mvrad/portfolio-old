@@ -12,6 +12,16 @@ Extends
   align-content: center;
 }
 
+// Flexbox 'wrap' justify-content 'flex-start'
+%flex-wrap-start {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
 // Flexbox 'nowrap'
 %flex-nowrap {
   display: flex;

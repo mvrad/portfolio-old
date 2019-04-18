@@ -3,15 +3,16 @@ Icons
 ==============================================================================*/
 
 .icons {
-  text-align: center;
+  @extend %flex-wrap-start;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0;
 }
 
 .icons img {
   width: auto;
-  height: 140px;
-  margin-top: 80px;
+  height: 64px;
+  padding: 0 5px 5px;
   @include mq(large) {
     margin-top: 0;
   }
@@ -41,7 +42,7 @@ Icons
 
 .socialgithub,
 .socialtwitter,
-.socialsteam, {
+.socialsteam {
   height: 2em;
   width: 2em;
   stroke-width: 0;

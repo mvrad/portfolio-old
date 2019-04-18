@@ -447,6 +447,14 @@ Extends
   align-items: center;
   align-content: center; }
 
+.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center; }
+
 .modal-header .modal-header-btns {
   display: flex;
   flex-direction: row;
@@ -518,15 +526,14 @@ Services
     #services .dot {
       display: none; } }
   #services .skills {
-    margin: 0 auto;
-    padding-bottom: 80px; }
+    margin: 0 auto; }
     @media (min-width: 768px) {
       #services .skills {
         width: 500px; } }
     @media (min-width: 1545px) {
       #services .skills {
         width: 100%;
-        padding-top: 100px; } }
+        padding-top: 40px; } }
   @media (min-width: 1545px) {
     #services .skill-wrapper {
       float: left;
@@ -552,6 +559,8 @@ Services
   @media (min-width: 1545px) {
     #services .skill-wrapper {
       display: none; } }
+  #services p {
+    margin-bottom: 80px; }
 
 /*==============================================================================
 About
@@ -942,8 +951,11 @@ p {
   font-size: 1.125em;
   margin: 0; }
 
-h1, h2, p {
+h1, h2 {
   text-align: center; }
+
+p {
+  text-align: left; }
 
 /*==============================================================================
 Images
@@ -1185,14 +1197,14 @@ Nav
 Icons
 ==============================================================================*/
 .icons {
-  text-align: center;
+  max-width: 300px;
   margin: 0 auto;
   padding: 0; }
 
 .icons img {
   width: auto;
-  height: 140px;
-  margin-top: 80px; }
+  height: 64px;
+  padding: 0 5px 5px; }
   @media (min-width: 1545px) {
     .icons img {
       margin-top: 0; } }
