@@ -171,6 +171,7 @@ $(() => {
 
   $(".modal-close").on("click", () => {
     $(".modal-window").css("display", "none");
+    window.history.replaceState(null, null, window.location.pathname);
   });
   $(".modal").on("click", () => {
     $(".modal-window").css("display", "block");
