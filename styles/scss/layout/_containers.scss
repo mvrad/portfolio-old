@@ -47,6 +47,9 @@ Services
       width: 500px;
     }
   }
+  & .section-header p {
+    margin-bottom: 60px;
+  }
   & .dot {
     @include mq(large) {
       display: none;
@@ -63,6 +66,7 @@ Services
     }
   }
   & .skill-wrapper {
+    text-align: center;
     @include mq(large) {
       float: left;
       width: calc(100% / 3);
@@ -70,16 +74,23 @@ Services
     }
   }
   & h1 {
+    color: $purple;
     padding: 80px 0 20px;
     @include mq(large) {
       padding: 190px 0 20px;
     }
   }
   & h2 {
+    display: inline-block;
+    color: $purple;
+    border-bottom: 3px solid;
     padding: 20px 0;
+    margin: 0 auto;
   }
-  & h1, h2, p {
+  & p {
     color: $black;
+    line-height: 1.5;
+    padding-top: 20px;
   }
   .dot {
     text-align: center;
@@ -97,7 +108,7 @@ Services
       display: none;
     }
   }
-  & p {
+  & .skill-wrapper p {
     margin-bottom: 80px;
   }
 }
@@ -125,6 +136,7 @@ About
     }
   }
   & p {
+    line-height: 1.5;
     margin: 0 auto;
     padding: 40px 0 40px;
     @include mq(medium) {
@@ -180,9 +192,10 @@ Portfolio
   }
   & h1 {
     margin: 0;
-    padding: 80px 0 20px;
+    padding: 160px 0 20px;
   }
   & p {
+    line-height: 1.5;
     margin: 0;
     padding: 20px 0;
   }
@@ -255,6 +268,7 @@ Contact
     padding: 0;
   }
   & p {
+    line-height: 1.5;
     margin: 0;
     padding-bottom: 40px;
     @include mq(large) {

@@ -3,7 +3,7 @@ Icons
 ==============================================================================*/
 
 .icons {
-  @extend %flex-wrap-start;
+  @extend %flex-center-col;
   max-width: 300px;
   margin: 0 auto;
   padding: 0;
@@ -11,11 +11,15 @@ Icons
 
 .icons img {
   width: auto;
-  height: 64px;
+  height: 76px;
   padding: 0 5px 5px;
   @include mq(large) {
     margin-top: 0;
   }
+}
+
+#mobile-devices path {
+  fill: $dodger-blue;
 }
 
 .social-links {
