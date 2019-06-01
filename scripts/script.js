@@ -34,24 +34,6 @@ $(() => {
       $("#nav-lg").removeClass("small").addClass("large");
   });
 
-  // Title effects
-  $(window).on("scroll", () => {
-    if ($(this).scrollTop() > 400) {
-      $("#services .section-header").show("fade");
-    }
-    if ($(this).scrollTop() > 700) {
-      $.each($(".skill-wrapper"), (i, el) => {
-        setTimeout(() => {
-          $(el).show({
-            effect: "drop",
-            direction: "down",
-            duration: 1000
-          });
-        }, (i * 175));
-      });
-    }
-  });
-
   // Hamburger menu animation
   $(".hamburger").on("click", () => {
     $(".hamburger").toggleClass("is-active");

@@ -56,13 +56,13 @@ Services
     }
   }
   & .skills {
+    padding-bottom: 80px;
     margin: 0 auto;
     @include mq(medium) {
       width: 500px;
     }
     @include mq(large) {
       width: 100%;
-      padding-top: 40px;
     }
   }
   & .skill-wrapper {
@@ -70,14 +70,36 @@ Services
     @include mq(large) {
       float: left;
       width: calc(100% / 3);
-      padding: 0 30px;
+      height: 360px;
+      padding: 40px;
+    }
+  }
+  & .skill-wrapper:first-child {
+    @include mq(large) {
+      border: 1px solid $smoke;
+      border-radius: 50px 0 0 50px;
+      box-shadow: 0 8px 0 0 $smoke;
+    }
+  }
+  & .skill-wrapper:last-child {
+    @include mq(large) {
+      border: 1px solid $smoke;
+      border-radius: 0 50px 50px 0;
+      box-shadow: 0 8px 0 0 $smoke;
+    }
+  }
+  & .skill-wrapper:nth-child(2) {
+    @include mq(large) {
+      border-top: 1px solid $smoke;
+      border-bottom: 1px solid $smoke;
+      box-shadow: 0 8px 0 0 $smoke;
     }
   }
   & h1 {
     color: $purple;
     padding: 80px 0 20px;
     @include mq(large) {
-      padding: 190px 0 20px;
+      padding: 160px 0 20px;
     }
   }
   & h2 {
@@ -97,19 +119,6 @@ Services
     font-size: 4em;
     margin: 0 auto;
     padding: 0;
-  }
-  & .section-header {
-    @include mq(large) {
-      display: none;
-    }
-  }
-  & .skill-wrapper {
-    @include mq(large) {
-      display: none;
-    }
-  }
-  & .skill-wrapper p {
-    margin-bottom: 80px;
   }
 }
 
