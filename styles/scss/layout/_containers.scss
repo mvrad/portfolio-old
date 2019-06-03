@@ -77,21 +77,21 @@ Services
     @include mq(large) {
       border: 1px solid $iron;
       border-radius: 50px 0 0 50px;
-      box-shadow: 0 8px 0 0 $iron;
+      box-shadow: 0 4px 2px 0 $iron;
     }
   }
   & .skill-wrapper:last-child {
     @include mq(large) {
       border: 1px solid $iron;
       border-radius: 0 50px 50px 0;
-      box-shadow: 0 8px 0 0 $iron;
+      box-shadow: 0 4px 2px 0 $iron;
     }
   }
   & .skill-wrapper:nth-child(2) {
     @include mq(large) {
       border-top: 1px solid $iron;
       border-bottom: 1px solid $iron;
-      box-shadow: 0 8px 0 0 $iron;
+      box-shadow: 0 4px 2px 0 $iron;
     }
   }
   & h1 {
@@ -104,7 +104,7 @@ Services
   & h2 {
     display: inline-block;
     color: $black;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
     padding: 20px 0;
     margin: 0 auto;
   }
