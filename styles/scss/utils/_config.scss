@@ -15,8 +15,10 @@ $font-weight--bold		: 800;
 // Descriptive base colors
 $white         : #fff;
 $black         : #1d2026;
-$grey          : #797e83;
-$smoke         : #e0e0e0;
+$oxford-blue   : #3c415e;
+$slate-gray    : #738598;
+$iron          : #dfe2e2;
+$java          : #1cb3c8;
 
 $dodger-blue   : #1e90ff;
 $sherpa-blue   : #004056;
@@ -36,13 +38,13 @@ $color-shadow    : rgba($dodger-blue, .4);
 
 // Color palette modifiers
 $color-palettes: (
-  grey: (
-  xx-light : lighten($grey, 43%),
-  x-light  : lighten($grey, 35%),
-  light    : lighten($grey, 12%),
-  base     : $grey,
-  dark     : darken($grey, 8%),
-  x-dark   : darken($grey, 16%)
+  iron: (
+  xx-light : lighten($iron, 43%),
+  x-light  : lighten($iron, 35%),
+  light    : lighten($iron, 12%),
+  base     : $iron,
+  dark     : darken($iron, 8%),
+  x-dark   : darken($iron, 16%)
   ),
   black: (
   light    : lighten($black, 10%),

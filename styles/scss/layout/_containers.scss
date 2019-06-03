@@ -9,7 +9,7 @@ Home
 #home {
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(0deg, $dodger-blue, $purple);
+  background: linear-gradient(0deg, $oxford-blue, $java);
   & h1, h2 {
     color: $white;
   }
@@ -27,7 +27,6 @@ Services
 ==============================================================================*/
 
 #services {
-  background-color: $white;
   @include mq(large) {
     height: 100vh;
     background: url(../../images/computer.jpg) no-repeat center/cover;
@@ -76,27 +75,27 @@ Services
   }
   & .skill-wrapper:first-child {
     @include mq(large) {
-      border: 1px solid $smoke;
+      border: 1px solid $iron;
       border-radius: 50px 0 0 50px;
-      box-shadow: 0 8px 0 0 $smoke;
+      box-shadow: 0 8px 0 0 $iron;
     }
   }
   & .skill-wrapper:last-child {
     @include mq(large) {
-      border: 1px solid $smoke;
+      border: 1px solid $iron;
       border-radius: 0 50px 50px 0;
-      box-shadow: 0 8px 0 0 $smoke;
+      box-shadow: 0 8px 0 0 $iron;
     }
   }
   & .skill-wrapper:nth-child(2) {
     @include mq(large) {
-      border-top: 1px solid $smoke;
-      border-bottom: 1px solid $smoke;
-      box-shadow: 0 8px 0 0 $smoke;
+      border-top: 1px solid $iron;
+      border-bottom: 1px solid $iron;
+      box-shadow: 0 8px 0 0 $iron;
     }
   }
   & h1 {
-    color: $purple;
+    color: $black;
     padding: 80px 0 20px;
     @include mq(large) {
       padding: 160px 0 20px;
@@ -104,13 +103,13 @@ Services
   }
   & h2 {
     display: inline-block;
-    color: $purple;
+    color: $black;
     border-bottom: 3px solid;
     padding: 20px 0;
     margin: 0 auto;
   }
   & p {
-    color: $black;
+    color: $slate-gray;
     line-height: 1.5;
     padding-top: 20px;
   }
@@ -127,7 +126,7 @@ About
 ==============================================================================*/
 
 #about {
-  background: linear-gradient(0deg, $carrot-orange, $trinidad);
+  background: $java;
   @include mq(large) {
     height: 100vh;
   }
@@ -175,7 +174,7 @@ About
   outline: 0;
 }
 #blogbtn:hover, #resumebtn:hover {
-  background-color: $dodger-blue;
+  background-color: $black;
   color: $white;
   transition: background-color .4s ease;
 }
@@ -185,7 +184,7 @@ Portfolio
 ==============================================================================*/
 
 #portfolio {
-  background-color: $grey;
+  background-color: $oxford-blue;
   & .container {
     position: relative;
     margin: 0 20px;
@@ -248,7 +247,7 @@ Portfolio
 Contact
 ==============================================================================*/
 #contact {
-  background-color: $guppie-green;
+  background-color: $java;
   padding-bottom: 1px;
   & .container {
     margin: 0 20px;
@@ -277,6 +276,7 @@ Contact
     padding: 0;
   }
   & p {
+    color: $black;
     line-height: 1.5;
     margin: 0;
     padding-bottom: 40px;

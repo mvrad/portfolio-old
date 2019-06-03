@@ -19,11 +19,11 @@ Icons
 }
 
 #mobile-devices path {
-  fill: $dodger-blue;
+  fill: $java;
 }
 
 .social-links {
-  background-color: $guppie-green;
+  background-color: $java;
   text-align: center;
   background-color: $black;
   @media (min-width: $brkpoint-lg) {
@@ -56,7 +56,7 @@ Icons
   transition: color 0.4s;
   &:hover {
     @include mq(large) {
-      color:$guppie-green;
+      color:$java;
     }
   }
 }

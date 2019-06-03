@@ -9,8 +9,8 @@ Email Form
     margin: 0 auto;
   }
   & input[type="text"], textarea {
-    background-color: $snowy-mint;
-  	border: 2px solid $snowy-mint;
+    background-color: $iron;
+  	border: 2px solid $iron;
     border-radius: 20px;
     width: 250px;
     outline: 0;
@@ -20,12 +20,12 @@ Email Form
   }
   & input:focus, textarea:focus {
     background-color: $cream;
-  	border-color: $sherpa-blue;
+  	border-color: $black;
   	transition: border-color .4s ease, background-color .4s ease;
   }
   & input[type="submit"],
   & input[type="reset"] {
-  	background: $persian-green;
+  	background: $black;
   	color: $white;
     width: 120px;
     border-radius: 20px;
@@ -36,7 +36,8 @@ Email Form
   }
   & input[type="submit"]:hover,
   & input[type="reset"]:hover {
-  	background: $sherpa-blue;
+    background: $cream;
+    color: $black;
     transition: background-color .4s ease;
   }
   & textarea {
