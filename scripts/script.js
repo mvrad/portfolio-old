@@ -151,12 +151,14 @@ $(() => {
     });
   });
 
+  $(".modal").on("click", () => {
+    $(".modal-window").css("display", "block")
+    $("body").addClass("no-scroll");
+  });  
   $(".modal-close").on("click", () => {
     $(".modal-window").css("display", "none");
-    window.history.replaceState(null, null, window.location.pathname);
-  });
-  $(".modal").on("click", () => {
-    $(".modal-window").css("display", "block");
+    $("body").removeClass("no-scroll");
+    window.history.replaceState(null, null, window.location.pathname); 
   });
 
   // Dynamic copyright year
