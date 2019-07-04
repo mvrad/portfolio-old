@@ -223,52 +223,18 @@
       </header>
       <div id="portfolio-filter" class="filter">
         <a class="all active" data-filter="all" href="#" role="button">All</a>
-        <a class="forms" data-filter="forms" href="#" role="button">Forms</a>
-        <a class="sites" data-filter="sites" href="#" role="button">Sites</a>
         <a class="apps" data-filter="apps" href="#" role="button">Apps</a>
-        <a class="animation" data-filter="animation" href="#" role="button">Animation</a>
+        <a class="design" data-filter="design" href="#" role="button">Design</a>
+        <a class="dev tools" data-filter="devtools" href="#" role="button">Dev Tools</a>
+        <a class="open source" data-filter="opensource" href="#" role="button">Open Source</a>
       </div>
       <div class="grid boxes">
-        <!-- Blog -->
-        <a class="sites modal" data-category="sites" href="#blog-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-blog.jpg">
-            <figcaption>
-              <h5>My Blog</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Blog Modal -->
-        <div id="blog-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://blog.mconrad.me" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/blog" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Web Devolution: My Blog</span>
-              <img src="images/thumb-blog.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  My blog was created using the traditional web stack of
-                  HTML, CSS, and JavaScript, as well as Bootstrap
-                  components for styling. I continue to write in my blog
-                  as often as I can&mdash;or at least as often as I feel
-                  compelled enough to write about something.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Wino -->
         <a class="apps modal" data-category="apps" href="#wino-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-wino.jpg">
             <figcaption>
-              <h5>Wine Cellar App</h5>
+              <h5>Wino</h5>
             </figcaption>
           </figure>
         </a>
@@ -281,14 +247,14 @@
                 <a class="modal-view-site" href="https://winoapp.herokuapp.com" target="_blank">Visit</a>
                 <a class="modal-view-site" href="https://github.com/mvrad/wino" target="_blank">GitHub</a>
               </div>
-              <span class="modal-title">Wine Cellar App</span>
+              <span class="modal-title">Wino</span>
               <img src="images/thumb-wino.jpg">
             </div>
             <div class="modal-footer">
               <div>
                 <span>
-                  Created in the Node.js Express framework, "Wino" is a
-                  wine cellar management app that features a user
+                  Created using the Node.js framework Express, "Wino" 
+                  is a wine cellar management app that features a user
                   authentication system created for MongoDB using
                   Mongoose ODM that allows a user to create a secure
                   account and then search the Snooth.com API for wine,
@@ -299,31 +265,39 @@
             </div>
           </div>
         </div>
-        <!-- Interactive Form -->
-        <a class="intform modal" data-category="forms" href="#intform-modal">
+        <!-- TravelStar Demonstration -->
+        <a class="apps modal" data-category="apps" href="#travelstar-modal">
           <figure class="effect-goliath">
-            <img src="images/thumb-intform.jpg">
+            <img src="images/thumb-travelstar.jpg">
             <figcaption>
-              <h5>Interactive Form</h5>
+              <h5>TravelStar</h5>
             </figcaption>
           </figure>
         </a>
-        <!-- Interactive Form Modal -->
-        <div id="intform-modal" class="modal-window">
+        <!-- TravelStar Demonstration Modal -->
+        <div id="travelstar-modal" class="modal-window">
           <div class="modal-window_content">
             <div class="modal-header">
               <div class="modal-header-btns">
                 <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/interactive-form" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/interactive-form" target="_blank">GitHub</a>
+                <a class="modal-view-site" href="https://travelstar.herokuapp.com" target="_blank">Visit</a>
+                <a class="modal-view-site" href="https://github.com/mvrad/travelstar" target="_blank">GitHub</a>
               </div>
-              <span class="modal-title">Interactive Form</span>
-              <img src="images/thumb-intform.jpg">
+              <span class="modal-title">TravelStar</span>
+              <img src="images/thumb-travelstar.jpg">
             </div>
             <div class="modal-footer">
               <div>
                 <span>
-                  An interactive registration form that provides real-time validation error messages.
+                  Created using the PHP framework Laravel, 
+                  "TravelStar" is a small, lightweight web
+                  application hosted on Heroku that prompts
+                  a user to search the Sygic Travel
+                  third-party API for a list of top ten
+                  tourist attractions such as landmarks, top
+                  tourist activities such as bus tours, 
+                  photos of the location taken by tourists, 
+                  and various dining options in the area.
                 </span>
               </div>
             </div>
@@ -334,7 +308,7 @@
           <figure class="effect-goliath">
             <img src="images/thumb-blot.jpg">
             <figcaption>
-              <h5>To-Do App</h5>
+              <h5>Blot</h5>
             </figcaption>
           </figure>
         </a>
@@ -354,179 +328,9 @@
               <div>
                 <span>
                   Bootstrapped with Create React App and styled using
-                  Material-UI, Blot is a simple, easy-to-use to-do app
-                  that allows a user to create and save notes and lists,
-                  and features an authentication system so that the user
-                  can create a secure account in order to save his/her
-                  notes and lists.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Tic-Tac-Toe -->
-        <a class="apps modal" data-category="apps" href="#tictactoe-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-tictactoe.jpg">
-            <figcaption>
-              <h5>Tic-Tac-Toe</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Tic-Tac-Toe Modal -->
-        <div id="tictactoe-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/tic-tac-toe" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/tic-tac-toe" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Tic-Tac-Toe</span>
-              <img src="images/thumb-tictactoe.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  A functional, two-person Tic-Tac-Toe game
-                  created using "vanilla" JavaScript, or 
-                  JavaScript without the use of a library such as
-                  jQuery.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Performer Site -->
-        <a class="sites modal" data-category="sites" href="#performer-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-performer.jpg">
-            <figcaption>
-              <h5>Performer Site</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Performer Site Modal -->
-        <div id="performer-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://www.kjconrad.com" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/performer-site" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Performer Site</span>
-              <img src="images/thumb-performer.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  The official site of performer/instructor Kelly Conrad.
-                  This site was created using the traditional web stack
-                  of HTML, CSS, and JavaScript.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Parallax Demonstration -->
-        <a class="sites modal" data-category="sites" href="#pnw-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-pnw.jpg">
-            <figcaption>
-              <h5>Parallax Demonstration</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Parallax Demonstration Modal -->
-        <div id="pnw-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/explore-the-pnw" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/explore-the-pnw" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Parallax Demo</span>
-              <img src="images/thumb-pnw.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  A page I created where I wanted to experiment with
-                  various "parallax" scrolling effect animations. It
-                  contains a full-page header featuring a design technique
-                  called "fixed background, scrolling elements", a
-                  "periscope window" effect, and various "landing element"
-                  animations.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Anderson-Gage Architects -->
-        <a class="sites modal" data-category="sites" href="#agage-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-agage.jpg">
-            <figcaption>
-              <h5>Architecture Firm</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Anderson-Gage Architects Modal -->
-        <div id="agage-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/anderson-gage" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/anderson-gage" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Architecture Firm Template</span>
-              <img src="images/thumb-agage.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  A site template for an architecture firm.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Parallax Demonstration -->
-        <a class="apps modal" data-category="apps" href="#travelstar-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-travelstar.jpg">
-            <figcaption>
-              <h5>Travel App</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Parallax Demonstration Modal -->
-        <div id="travelstar-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://travelstar.herokuapp.com" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/travelstar" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Travel App</span>
-              <img src="images/thumb-travelstar.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  Created using Laravel, "TravelStar" is a
-                  small, lightweight web application hosted
-                  on Heroku that prompts a user to search
-                  the Sygic Travel third-party API for a
-                  list of top ten tourist attractions such
-                  as landmarks, top tourist activities such
-                  as bus tours, photos of the location taken
-                  by tourists, and various dining options in
-                  the area.
+                  Material-UI, Blot is a simple, easy-to-use note taking
+                  app that allows a user to create and save notes and
+                  lists.
                 </span>
               </div>
             </div>
@@ -592,7 +396,7 @@
       <a href="https://twitter.com/mc0nrad" title="Matthew Conrad on Twitter" target="_blank"><svg class="social socialtwitter"><use xlink:href="#socialtwitter"></use></svg></a>
     </div>
     <div id="copyright">
-      <span id="copyright-txt">Copyright &copy; <span id="year"></span> Matthew Conrad</span>
+      <span id="copyright-txt">&copy; <span id="year"></span> Matthew Conrad</span>
     </div>
   </footer>
 
