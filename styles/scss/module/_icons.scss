@@ -4,8 +4,6 @@ Icons
 
 .icons {
   @extend %flex-center-col;
-  max-width: 300px;
-  margin: 0 auto;
   padding: 0;
 }
 
@@ -22,20 +20,19 @@ Icons
   fill: $java;
 }
 
-.social-links {
-  background-color: $java;
-  text-align: center;
-  background-color: $black;
-  @media (min-width: $brkpoint-lg) {
-    text-align: center;
-    margin: 0;
-    padding: 20px 0 40px;
-  }
+.footer-wrapper {
+  @extend %flex-wrap;
+  height: 120px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .social-links__icons {
   display: inline-block;
-  margin: 20px 10px 0;
+}
+
+.social-links__icons:nth-child(2) {
+  margin: 0 10px;
 }
 
 .socialgithub,
@@ -61,13 +58,12 @@ Icons
   }
 }
 
-#copyright {
-  padding: 10px 0 20px;
-  @include mq(large) {
-    display: inline-block;
-    padding-left: 40px;
-  }
-}
+// #copyright {
+//   padding: 10px 0 20px;
+//   @include mq(large) {
+//     display: inline-block;
+//   }
+// }
 #copyright-txt {
   color: $white;
   font-family: $font-family--secondary;

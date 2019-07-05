@@ -32,11 +32,22 @@ Extends
   align-content: center;
 }
 
+// Flexbox 'column'
 %flex-center-col {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+// Flexbox 'space-between'
+%flex-space-around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
 }

@@ -1,3 +1,4 @@
+    
 /*==============================================================================
 Containers
 ==============================================================================*/
@@ -248,7 +249,6 @@ Contact
 ==============================================================================*/
 #contact {
   background-color: $java;
-  padding-bottom: 1px;
   & .container {
     margin: 0 20px;
     @include mq(medium) {
@@ -289,6 +289,12 @@ Contact
     color: $black;
     padding-bottom: 40px;
   }
+}
+footer {
+  background-color: $black;
+  height: 120px;
+  text-align: center;
+  margin: 0 auto;
 }
 #copyright span {
   font-size: 1em;
