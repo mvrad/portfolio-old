@@ -201,7 +201,10 @@ Portfolio
   }
   & h1 {
     margin: 0;
-    padding: 160px 0 20px;
+    padding: 80px 0 40px;
+    @include mq(large) {
+      padding: 160px 0 40px;
+    }
   }
   & p {
     line-height: 1.5;

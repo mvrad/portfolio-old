@@ -4,12 +4,15 @@ Typography
 
 #logo {
   font-family: $font-family--primary;
-  font-size: 2.4em;
+  font-size: 1.4em;
   font-weight: $font-weight--bold;
+  color: $black;
   text-align: center;
-  margin: 0 auto;
-  margin: 5px 10px 0;
-  padding: 5px;
+  padding-left: 15px;
+  margin: auto;
+  & a:visited {
+    color: $black;
+  }
   @include mq(medium) {
     display: none;
   }

@@ -8,7 +8,10 @@ Portfolio Gallery
   list-style: none;
   text-align: center;
   margin: 0 auto;
-  padding: 0 0 160px;
+  padding-bottom: 80px;
+  @include mq(large) {
+    padding-bottom: 160px;
+  }
 }
 .grid:after {
   @extend %clearfix;

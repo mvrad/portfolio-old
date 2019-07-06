@@ -4,7 +4,10 @@ Email Form
 ==============================================================================*/
 
 #ajax-contact {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
+  @include mq(large) {
+    padding-bottom: 160px;
+  }
   & .field {
     max-width: 220px;
     margin: 0 auto;

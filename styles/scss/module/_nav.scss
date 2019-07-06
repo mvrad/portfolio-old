@@ -24,14 +24,17 @@ Nav
     padding: 0;
   }
   & button {
-    width: 50px;
-    height: 50px;
     border: none;
     background-color: $white;
     text-decoration: none;
-    margin: 7px 15px 0 15px;
+    margin: auto;
     padding: 0;
   }
+}
+
+.navbar-header {
+  margin: auto;
+  padding-right: 15px;
 }
 
 #site-nav {
@@ -66,18 +69,12 @@ Nav
 
 #logo-sm {
   color: $oxford-blue;
+  width: 40px;
 }
 
 #logo-lg {
-  font-family: $font-family--primary;
-  font-weight: $font-weight--medium;
-  color: $white;
-  font-size: 2.5em;
-  border: solid 3px $white;
-  text-transform: none;
+  width: 50px;
   height: auto;
-  margin: 16px 0;
-  padding: 5px;
 }
 
 #hamburger {
@@ -99,9 +96,9 @@ Nav
   position: fixed;
   top: 0;
   width: 100%;
+  height: 80px;
   z-index: 99;
   margin: 0 auto;
-  padding: 0;
 
   display: flex;
   flex-direction: row;
@@ -128,7 +125,6 @@ Nav
     color: $white;
     font-size: 1em;
     width: 100%;
-    padding: 40px 0;
   }
   &.large {
     box-shadow: none;
@@ -147,9 +143,7 @@ Nav
       padding: 22px;
     }
     #logo-lg {
-      color: $black;
-      border: solid 3px $black;
-      font-size: 1.5em;
+      width: 45px;
     }
   }
   &.large,
