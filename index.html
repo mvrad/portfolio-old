@@ -214,10 +214,13 @@
           Portfolio
         </h1>
         <p>
-          Simply hover over one of the images and click for more information.
+          Simply hover over the images and click for more information.
           A window will then pop up containing a link to the project's
-          GitHub repository as well as a link to view the project as a
-          live site.
+          GitHub repository as well as a link to view the project as
+          either a live site or some other means of demonstration. The
+          projects are arranged in chronological order according to
+          each project's initial inception, from left to right, top to
+          bottom, under the 'All' tab.
         </p>
       </header>
       <div id="portfolio-filter" class="filter">
@@ -228,6 +231,126 @@
         <a class="open source" data-filter="opensource" href="#" role="button">Open Source</a>
       </div>
       <div class="grid boxes">
+        <!-- Explore the PNW -->
+        <a class="design modal" data-category="design" href="#parallax-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-parallax.jpg">
+            <figcaption>
+              <h5>Parallax Experiment</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Explore the PNW Modal -->
+        <div id="parallax-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://mvrad.github.io/explore-the-pnw" target="_blank">Visit</a>
+                <a class="modal-view-site" href="https://github.com/mvrad/explore-the-pnw" target="_blank">GitHub</a>
+              </div>
+              <span class="modal-title">Parallax Experiment</span>
+              <img src="images/thumb-parallax.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  <strong>Initial Commit</strong>: August 6, 2017
+                  <br>
+                  <strong>Latest Commit</strong>: December 3, 2018
+                  <br><br>
+                    A web page I created where I wanted to experiment
+                    with various 'parallax' scrolling effects such as
+                    the 'fixed background, scrolling elements' effect,
+                    as well as a window cut-out 'periscope' effect,
+                    and subtle 'landing elements' effects. These sort
+                    of effects in web design are now widely considered
+                    a short-lived 'fad' that ended in the mid-to-late
+                    2010s.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Anderson-Gage -->
+        <a class="design modal" data-category="design" href="#agage-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-agage.jpg">
+            <figcaption>
+              <h5>Architecture Firm</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Anderson-Gage Modal -->
+        <div id="agage-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://mvrad.github.io/anderson-gage" target="_blank">Visit</a>
+                <a class="modal-view-site" href="https://github.com/mvrad/anderson-gage" target="_blank">GitHub</a>
+              </div>
+              <span class="modal-title">Anderson-Gage Architects</span>
+              <img src="images/thumb-agage.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  <strong>Initial Commit</strong>: December 30, 2017
+                  <br>
+                  <strong>Latest Commit</strong>: May 29, 2019
+                  <br><br>
+                  A site template for an architecture firm created in the
+                  traditional web stack of HTML, CSS, and a touch of
+                  JavaScript (in the form of jQuery) to animate the mobile
+                  menu icon on a click event. 'Anderson-Gage Architects'
+                  is a purely fictional architecture firm.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Scraper -->
+        <a class="devtools modal" data-category="devtools" href="#scraper-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-scraper.jpg">
+            <figcaption>
+              <h5>Content Scraper</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Content Scraper Modal -->
+        <div id="scraper-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://github.com/mvrad/content-scraper" target="_blank">GitHub</a>
+              </div>
+              <span class="modal-title">Node.js Content Scraper</span>
+              <img src="images/thumb-scraper.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  <strong>Initial Commit</strong>: March 3, 2018
+                  <br>
+                  <strong>Latest Commit</strong>: March 10, 2019
+                  <br><br>
+                    A simple Node.js command line application that
+                    goes to an e-commerce site to get the latest
+                    prices and saves them to a spreadsheet in CSV
+                    format. The scraper.js file I have written for
+                    the application utilizes mostly the JavaScript
+                    'Promise' constructor and its methods and
+                    properties in order to extract specific data
+                    from a site, which is handled here as an
+                    asynchronous operation.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Wino -->
         <a class="apps modal" data-category="apps" href="#wino-modal">
           <figure class="effect-goliath">
@@ -252,6 +375,10 @@
             <div class="modal-footer">
               <div>
                 <span>
+                  <strong>Initial Commit</strong>: March 18, 2018
+                  <br>
+                  <strong>Latest Commit</strong>: June 15, 2019
+                  <br><br>
                   Created using the Node.js framework Express, "Wino" 
                   is a wine cellar management app that features a user
                   authentication system created for MongoDB using
@@ -259,6 +386,42 @@
                   account and then search the Snooth.com API for wine,
                   edit wine bottle information, and add information to
                   a collection.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Performer -->
+        <a class="design modal" data-category="design" href="#performer-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-performer.jpg">
+            <figcaption>
+              <h5>Performer Site</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Performer Modal -->
+        <div id="performer-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://www.kjconrad.com" target="_blank">Visit</a>
+                <a class="modal-view-site" href="https://github.com/mvrad/performer-site" target="_blank">GitHub</a>
+              </div>
+              <span class="modal-title">Kelly Conrad | Performer</span>
+              <img src="images/thumb-performer.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  <strong>Initial Commit</strong>: May 22, 2018
+                  <br>
+                  <strong>Latest Commit</strong>: July 9, 2019
+                  <br><br>
+                  The official site of performer and instructor Kelly Conrad.
+                  Created using the traditional web stack of HTML, CSS, and JavaScript 
+                  (in the form of jQuery).
                 </span>
               </div>
             </div>
@@ -288,6 +451,10 @@
             <div class="modal-footer">
               <div>
                 <span>
+                  <strong>Initial Commit</strong>: August 2, 2018
+                  <br>
+                  <strong>Latest Commit</strong>: June 2, 2019
+                  <br><br>
                   Created using the PHP framework Laravel, 
                   "TravelStar" is a small, lightweight web
                   application hosted on Heroku that prompts
@@ -326,42 +493,14 @@
             <div class="modal-footer">
               <div>
                 <span>
+                  <strong>Initial Commit</strong>: June 19, 2019
+                  <br>
+                  <strong>Latest Commit</strong>: June 19, 2019
+                  <br><br>
                   Bootstrapped with Create React App and styled using
                   Material-UI, Blot is a simple, easy-to-use note taking
                   app that allows a user to create and save notes and
                   lists.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Performer -->
-        <a class="design modal" data-category="design" href="#performer-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-performer.jpg">
-            <figcaption>
-              <h5>Performer Site</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Performer Modal -->
-        <div id="performer-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://www.kjconrad.com" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/performer-site" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Kelly Conrad | Performer</span>
-              <img src="images/thumb-performer.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  The official site of performer and instructor Kelly Conrad.
-                  Created using the traditional web stack of HTML, CSS, and JavaScript 
-                  (in the form of jQuery).
                 </span>
               </div>
             </div>
@@ -390,9 +529,51 @@
             <div class="modal-footer">
               <div>
                 <span>
+                  <strong>Began</strong>: July 10, 2019
+                  <br>
+                  <strong>Latest Commit</strong>: July 12, 2019
+                  <br><br>
                   A landing page design for a fictional artificial intelligence/machine 
                   learning company I dubbed "Alpha.ai". Images courtesy of Adobe Stock.
                   Mockup created in Adobe XD.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog -->
+        <a class="design modal" data-category="design" href="#blog-modal">
+          <figure class="effect-goliath">
+            <img src="images/thumb-blog.jpg">
+            <figcaption>
+              <h5>Blog</h5>
+            </figcaption>
+          </figure>
+        </a>
+        <!-- Blog Modal -->
+        <div id="blog-modal" class="modal-window">
+          <div class="modal-window_content">
+            <div class="modal-header">
+              <div class="modal-header-btns">
+                <span class="modal-close">Close</span>
+                <a class="modal-view-site" href="https://blog.mconrad.me" target="_blank">Visit</a>
+                <a class="modal-view-site" href="https://github.com/mvrad/blog" target="_blank">GitHub</a>
+              </div>
+              <span class="modal-title">My Blog</span>
+              <img src="images/thumb-blog.jpg">
+            </div>
+            <div class="modal-footer">
+              <div>
+                <span>
+                  <strong>Initial Commit</strong>: July 14, 2019
+                  <br>
+                  <strong>Latest Commit</strong>: July 14, 2019
+                  <br><br>
+                  Built in Laravel and styled using Bootstrap 4 components, my blog
+                  utilizes the ButterCMS API to retrieve posts that I've written in
+                  the ButterCMS blogging platform for display on the site. I try to
+                  write in my blog as often as I feel compelled enough to write
+                  about something that interests me.
                 </span>
               </div>
             </div>
