@@ -131,54 +131,57 @@
   ===========================================================================-->
   <section id="services" class="white-bg">
     <div class="container">
-      <header class="section-header">
+      <div class="section-header">
         <h1>
           What I Do
         </h1>
         <p>
-          I develop website designs with computer programming. I also work
-          with technologies like databases and APIs in creating interactive
+          I develop website designs in HTML and CSS, and add dynamic
+          functionality to them with JavaScript. I also work with
+          technologies like databases and APIs in creating interactive
           web applications.
         </p>
-      </header>
-      <br>
-      <article class="skills">
+      </div>
+      <div class="skills">
         <div class="skill-wrapper" id="wrapper-1">
           <div class="icons">       
             <img id="mobile-devices" src="images/mobile-devices.svg">
           </div>
-          <h2>Front-End Development</h2>
-          <p>
-            I design web applications using responsive web design techniques
-            and develop for the front end of websites in JavaScript libraries
-            like React.
-          </p>
-        <br>
+          <div>
+            <h2>Front-End Development</h2>
+            <p>
+              I design websites using responsive web design techniques
+              and develop for the front end of web applications in
+              React.
+            </p>
+          </div>
         </div>
         <div class="skill-wrapper" id="wrapper-2">
           <div class="icons">
             <img src="images/code.svg">
           </div>
-          <h2>Back-End Development</h2>
-          <p>
-            I program for the back end of web applications in frameworks like
-            Express and Django, all the while applying web application security
-            best practices.
-          </p>
-        <br>
+          <div>
+            <h2>Back-End Development</h2>
+            <p>
+              I program for the back end of web applications in frameworks like
+              Express and Django, all the while applying web application security
+              best practices.
+            </p>
+          </div>
         </div>
         <div class="skill-wrapper" id="wrapper-3">
           <div class="icons">
             <img src="images/wrench.svg">
           </div>
-          <h2>Development Tools</h2>
-          <p>
-            Other tools I use that enhance my workflow include Git and GitHub,
-            Webpack&ndash;a JavaScript module bundler, Gulp&ndash;a front-end
-            toolkit, and Adobe XD.
-          </p>
+          <div>
+            <h2>Development Tools</h2>
+            <p>
+              Other tools I use that enhance my workflow include Git and GitHub,
+              Webpack&ndash;a JavaScript module bundler, and Adobe XD.
+            </p>
+          </div>
         </div>
-      </article>
+      </div>
     </div>
   </section>
   <!--==========================================================================
@@ -198,10 +201,10 @@
         playing with an old cartoon creation program for MS-DOS called
         <a href="https://archive.org/details/msdos_Cartooners_1989" target="_blank" id="treehouse">Cartooners</a>.
       </p>
-    </div>
-    <div id="blogbtn-wrapper">
-      <a href="https://blog.mconrad.me" target="_blank"><button id="blogbtn" type="button">My Blog</button></a>
-      <a href="https://mconrad.me/resume" target="_blank"><button id="resumebtn" type="button">Résumé</button></a>
+      <div id="blogbtn-wrapper">
+        <a href="https://blog.mconrad.me" target="_blank"><button id="blogbtn" type="button">My Blog</button></a>
+        <a href="https://mconrad.me/resume" target="_blank"><button id="resumebtn" type="button">Résumé</button></a>
+      </div>
     </div>
   </section>
   <!--==========================================================================
@@ -227,130 +230,8 @@
         <a class="all active" data-filter="all" href="#" role="button">All</a>
         <a class="apps" data-filter="apps" href="#" role="button">Apps</a>
         <a class="design" data-filter="design" href="#" role="button">Design</a>
-        <a class="dev tools" data-filter="devtools" href="#" role="button">Dev Tools</a>
-        <a class="open source" data-filter="opensource" href="#" role="button">Open Source</a>
       </div>
       <div class="grid boxes">
-        <!-- Explore the PNW -->
-        <a class="design modal" data-category="design" href="#parallax-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-parallax.jpg">
-            <figcaption>
-              <h5>Parallax Experiment</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Explore the PNW Modal -->
-        <div id="parallax-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/explore-the-pnw" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/explore-the-pnw" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Parallax Experiment</span>
-              <img src="images/thumb-parallax.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  <strong>Initial Commit</strong>: August 6, 2017
-                  <br>
-                  <strong>Latest Commit</strong>: December 3, 2018
-                  <br><br>
-                    A web page I created where I wanted to experiment
-                    with various 'parallax' scrolling effects such as
-                    the 'fixed background, scrolling elements' effect,
-                    as well as a window cut-out 'periscope' effect,
-                    and subtle 'landing elements' effects. These sort
-                    of effects in web design are now widely considered
-                    a short-lived 'fad' that ended in the mid-to-late
-                    2010s.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Anderson-Gage -->
-        <a class="design modal" data-category="design" href="#agage-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-agage.jpg">
-            <figcaption>
-              <h5>Architecture Firm</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Anderson-Gage Modal -->
-        <div id="agage-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://mvrad.github.io/anderson-gage" target="_blank">Visit</a>
-                <a class="modal-view-site" href="https://github.com/mvrad/anderson-gage" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Anderson-Gage Architects</span>
-              <img src="images/thumb-agage.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  <strong>Initial Commit</strong>: December 30, 2017
-                  <br>
-                  <strong>Latest Commit</strong>: May 29, 2019
-                  <br><br>
-                  A site template for an architecture firm created in the
-                  traditional web stack of HTML, CSS, and a touch of
-                  JavaScript (in the form of jQuery) to animate the mobile
-                  menu icon on a click event. 'Anderson-Gage Architects'
-                  is a purely fictional architecture firm.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Content Scraper -->
-        <a class="devtools modal" data-category="devtools" href="#scraper-modal">
-          <figure class="effect-goliath">
-            <img src="images/thumb-scraper.jpg">
-            <figcaption>
-              <h5>Content Scraper</h5>
-            </figcaption>
-          </figure>
-        </a>
-        <!-- Content Scraper Modal -->
-        <div id="scraper-modal" class="modal-window">
-          <div class="modal-window_content">
-            <div class="modal-header">
-              <div class="modal-header-btns">
-                <span class="modal-close">Close</span>
-                <a class="modal-view-site" href="https://github.com/mvrad/content-scraper" target="_blank">GitHub</a>
-              </div>
-              <span class="modal-title">Node.js Content Scraper</span>
-              <img src="images/thumb-scraper.jpg">
-            </div>
-            <div class="modal-footer">
-              <div>
-                <span>
-                  <strong>Initial Commit</strong>: March 3, 2018
-                  <br>
-                  <strong>Latest Commit</strong>: March 10, 2019
-                  <br><br>
-                    A simple Node.js command line application that
-                    goes to an e-commerce site to get the latest
-                    prices and saves them to a spreadsheet in CSV
-                    format. The scraper.js file I have written for
-                    the application utilizes mostly the JavaScript
-                    'Promise' constructor and its methods and
-                    properties in order to extract specific data
-                    from a site, which is handled here as an
-                    asynchronous operation.
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Wino -->
         <a class="apps modal" data-category="apps" href="#wino-modal">
           <figure class="effect-goliath">
@@ -542,7 +423,7 @@
           </div>
         </div>
         <!-- Blog -->
-        <a class="design modal" data-category="design" href="#blog-modal">
+        <a class="apps modal" data-category="apps" href="#blog-modal">
           <figure class="effect-goliath">
             <img src="images/thumb-blog.jpg">
             <figcaption>
@@ -572,8 +453,7 @@
                   Built in Laravel and styled using Bootstrap 4 components, my blog
                   utilizes the ButterCMS API to retrieve posts that I've written in
                   the ButterCMS blogging platform for display on the site. I try to
-                  write in my blog as often as I feel compelled enough to write
-                  about something that interests me.
+                  write in my blog as often as I can.
                 </span>
               </div>
             </div>

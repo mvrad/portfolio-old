@@ -23,8 +23,18 @@ Icons
 .footer-wrapper {
   @extend %flex-wrap;
   height: 120px;
-  max-width: 500px;
+  width: 250px;
   margin: 0 auto;
+  @include mq(medium) {
+    width: 500px;
+  }
+}
+
+.social-links {
+  margin-bottom: 20px;
+  @include mq(medium) {
+  margin-bottom: 0;
+  }
 }
 
 .social-links__icons {
@@ -58,12 +68,13 @@ Icons
   }
 }
 
-// #copyright {
-//   padding: 10px 0 20px;
-//   @include mq(large) {
-//     display: inline-block;
-//   }
-// }
+footer .flex-grow {
+  display: none;
+  @include mq(medium) {
+    display: block;
+  }
+}
+
 #copyright-txt {
   color: $white;
   font-family: $font-family--secondary;

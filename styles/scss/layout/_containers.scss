@@ -29,16 +29,21 @@ Services
 
 #services {
   @include mq(large) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: url(../../images/computer.jpg) no-repeat center/cover;
   }
   & .container {
-    margin: 0 20px;
+    margin: 0 auto;
+    max-width: 414px;
     @include mq(medium) {
-      margin: 0 80px;
+      max-width: 100%;
     }
     @include mq(large) {
-      margin: 0 160px;
+      max-width: 1500px;
+      padding: 0;
     }
   }
   & .section-header {
@@ -47,21 +52,20 @@ Services
       width: 500px;
     }
   }
-  & .section-header p {
-    margin-bottom: 60px;
-  }
   & .dot {
     @include mq(large) {
       display: none;
     }
   }
   & .skills {
-    padding-bottom: 80px;
+    height: 100%;
+    padding-bottom: 20px;
     margin: 0 auto;
     @include mq(medium) {
       width: 500px;
     }
     @include mq(large) {
+      padding: 0;
       width: 100%;
     }
   }
@@ -99,7 +103,7 @@ Services
     color: $black;
     padding: 80px 0 20px;
     @include mq(large) {
-      padding: 160px 0 20px;
+      padding: 0 0 20px;
     }
   }
   & h2 {
@@ -113,6 +117,10 @@ Services
     color: $slate-gray;
     line-height: 1.5;
     padding-top: 20px;
+    margin: 0 auto 60px;
+    @include mq(large) {
+      width: 390px;
+    }
   }
   .dot {
     text-align: center;
@@ -129,19 +137,28 @@ About
 #about {
   background: $java;
   @include mq(large) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
   }
   & .container {
-    margin: 0 20px;
+    max-width: 414px;
+    margin: 0 auto;
+    padding-bottom: 80px;
     @include mq(medium) {
-      margin: 0 80px;
+      max-width: 100%;
+    }
+    @include mq(large) {
+      padding: 0;
     }
   }
   & h1 {
-    margin: 0;
-    padding: 80px 0 40px;
+    padding-top: 80px;
+    margin: 0 0 40px;
     @include mq(large) {
-      padding: 160px 0 40px;
+      padding-top: 0;
+      margin: 0 0 40px;
     }
   }
   & p {
@@ -171,7 +188,7 @@ About
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
-  margin: 0 5px 80px 5px;
+  margin: 0 5px;
   outline: 0;
 }
 #blogbtn:hover, #resumebtn:hover {
@@ -187,9 +204,10 @@ Portfolio
 #portfolio {
   background-color: $oxford-blue;
   & .container {
-    position: relative;
-    margin: 0 20px;
+    max-width: 414px;
+    margin: 0 auto;
     @include mq(medium) {
+      max-width: 100%;
       margin: 0 10px;
     }
   }
@@ -281,8 +299,12 @@ Contact
   & p {
     color: $black;
     line-height: 1.5;
-    margin: 0;
+    width: 414px;
+    margin: 0 auto;
     padding-bottom: 40px;
+    @include mq(medium) {
+      width: 100%;
+    }
     @include mq(large) {
       width: 500px;
       margin: 0 auto;
