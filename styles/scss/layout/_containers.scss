@@ -39,7 +39,7 @@ Services
     margin: 0 auto;
     max-width: 414px;
     @include mq(medium) {
-      max-width: 100%;
+      max-width: 500px;
     }
     @include mq(large) {
       max-width: 1500px;
@@ -117,7 +117,10 @@ Services
     color: $slate-gray;
     line-height: 1.5;
     padding-top: 20px;
-    margin: 0 auto 60px;
+    margin: 0 20px 60px;
+    @include mq(medium) {
+      margin: 0 auto 60px;
+    }
     @include mq(large) {
       width: 390px;
     }
@@ -147,7 +150,7 @@ About
     margin: 0 auto;
     padding-bottom: 80px;
     @include mq(medium) {
-      max-width: 100%;
+      max-width: 500px;
     }
     @include mq(large) {
       padding: 0;
@@ -163,10 +166,11 @@ About
   }
   & p {
     line-height: 1.5;
-    margin: 0 auto;
+    margin: 0 20px;
     padding: 40px 0 40px;
     @include mq(medium) {
-      width: 500px;
+      max-width: 500px;
+      margin: 0 auto;
     }
   }
   & h1, p {
@@ -227,7 +231,11 @@ Portfolio
   & p {
     line-height: 1.5;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
+    margin: 0 20px;
+    @include mq(medium) {
+      margin: 0;
+    }
   }
   & h1, p {
     color: $white;
@@ -236,7 +244,8 @@ Portfolio
   /*============================================================================
   Portfolio Filter
   ============================================================================*/
-#portfolio-filter {
+
+  #portfolio-filter {
   @extend %flex-wrap;
   max-width: 500px;
   text-align: center;
@@ -271,10 +280,12 @@ Contact
 #contact {
   background-color: $java;
   & .container {
-    margin: 0 20px;
+    margin: 0 auto;
+    max-width: 414px;
     @include mq(medium) {
+      max-width: 500px;
       height: auto;
-      margin: 0 80px;
+      margin: 0 auto;
     }
     @include mq(large) {
       height: calc(100vh - 120px);
@@ -282,9 +293,6 @@ Contact
   }
   & .section-header {
     margin: 0 auto;
-    @include mq(medium) {
-      width: 500px;
-    }
   }
   & h1 {
     margin: 0;
@@ -299,12 +307,8 @@ Contact
   & p {
     color: $black;
     line-height: 1.5;
-    width: 414px;
-    margin: 0 auto;
+    margin: 0 20px;
     padding-bottom: 40px;
-    @include mq(medium) {
-      width: 100%;
-    }
     @include mq(large) {
       width: 500px;
       margin: 0 auto;
@@ -315,12 +319,21 @@ Contact
     padding-bottom: 40px;
   }
 }
+
 footer {
   background-color: $black;
   height: 120px;
   text-align: center;
   margin: 0 auto;
 }
+
+footer .flex-grow {
+  display: none;
+  @include mq(medium) {
+    display: block;
+  }
+}
+
 #copyright span {
   font-size: 1em;
 }

@@ -12,7 +12,9 @@ Email Form
     max-width: 220px;
     margin: 0 auto;
   }
-  & input[type="text"], textarea {
+  & input[type="text"],
+    input[type="email"],
+    textarea {
     background-color: $iron;
   	border: 2px solid $iron;
     border-radius: 20px;
