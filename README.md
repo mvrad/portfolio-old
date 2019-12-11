@@ -24,4 +24,4 @@ sass --watch scss:css --style compressed
 
 ## View Project
 
-Visit https://mconrad.me
+Visit https://mvrad.github.io/portfolio-old
